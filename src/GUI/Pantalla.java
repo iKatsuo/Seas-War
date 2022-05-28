@@ -6,7 +6,6 @@
 package GUI;
 
 import Client.Client;
-import Client.Client;
 import Commands.BaseCommand;
 import Commands.CommandFactory;
 import Utils.CommandUtils;
