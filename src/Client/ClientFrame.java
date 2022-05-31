@@ -107,13 +107,13 @@ public class ClientFrame extends javax.swing.JFrame {
     private void btnConnectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConnectActionPerformed
         this.client.connect();
     }//GEN-LAST:event_btnConnectActionPerformed
-
+/*
     private void btnSend1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSend1ActionPerformed
         // chat hola a todos
         String comando = txfCommand.getText().trim();
         if (!comando.equals("")){
             String array[] = CommandUtils.convertToArray(comando);
-            BaseCommand newCommand = CommandFactory.getCommand(array[0], array);
+            BaseCommand newCommand = CommandFactory.getCommand(array[0], array,);
             if (newCommand.getCommandName().toUpperCase().equals("ERROR"))
                 showClientMessage(newCommand.executeOnClient());
             else{
@@ -125,7 +125,7 @@ public class ClientFrame extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnSend1ActionPerformed
-
+*/
     /**
      * @param args the command line arguments
      */
