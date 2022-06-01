@@ -1,23 +1,26 @@
 package seas.war;
+import java.util.ArrayList;
+
 import GUI.Pantalla;
 
 
 public class Jugador {
    String nombre;
    int cantidadVida;
+   ArrayList<Personaje> Personajes;
+
    Pantalla pantalla;
 
    public Jugador(String nombre, Pantalla pantalla) {
 
       this.nombre = nombre;
-      pantalla.getNombrejugador().setText("Si funciona");
+      this.cantidadVida = 100;
       this.pantalla = pantalla;
-      pantalla.getjLabel10().setText("50");
+
+      this.Personajes = new ArrayList<Personaje>();
 
    }
 
-   public void verLabel() {
-      // pantalla.jLjugador1.setIcon(icon);
-   }
+
 
 }

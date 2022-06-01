@@ -43,8 +43,4 @@ public abstract class BaseCommand implements iCommand, Serializable{
     public abstract String executeOnClient(); 
     
     
-    
-    
-    
-    
 }
