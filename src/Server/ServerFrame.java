@@ -5,7 +5,10 @@
  */
 package Server;
 
+import java.util.ArrayList;
+
 import GUI.Pantalla;
+import seas.war.Jugador;
 
 /**
  *
@@ -13,12 +16,16 @@ import GUI.Pantalla;
  */
 public class ServerFrame extends javax.swing.JFrame {
     
-    Server server;
+    public Server server;
+    public ArrayList<Jugador> Jugadores;
     
     public ServerFrame() {
         initComponents();
         server = new Server(this);
         server.start();
+
+        this.Jugadores = new ArrayList<Jugador>();
+
     }
     
     public void showServerMessage(String msg){
