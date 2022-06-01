@@ -5012,7 +5012,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
 
-        Nombrejugador.setText("nombre : juagador");
+        Nombrejugador.setText("Nombre : Jugador");
 
         lbVida.setText("jLabel601");
 
