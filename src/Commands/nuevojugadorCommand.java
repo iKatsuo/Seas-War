@@ -15,7 +15,6 @@ public class nuevojugadorCommand extends BaseCommand implements Serializable{
         
     }
 
-    // Hola como estan
     @Override
     public String executeOnServer() {
         return "Enviado: creado nuevo jugador" + CommandUtils.concatArray(getArgs());
