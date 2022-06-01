@@ -28,7 +28,6 @@ public class CommandFactory {
                 System.out.println("Nuevo jugador: " + args[1]);
                 return new ChatCommand(name, args);
             
-
             default:
                 return new ErrorCommand("Error", args);
 

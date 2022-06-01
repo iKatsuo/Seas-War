@@ -9,7 +9,8 @@ import GUI.Pantalla;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -20,8 +21,15 @@ public class Client {
     private final String SERVER_IP = "localhost";
     public Socket socket;
     public ObjectOutputStream writer;
+    public ClientFrame screenRef;
     public Pantalla screenRef2;
     private boolean isConnected = false;
+    private ThreadClient theadClient; 
+
+    public Client(ClientFrame screenRef) {
+        this.screenRef = screenRef;
+    }
+
     
 
     public Client(Pantalla screenRef) {
@@ -36,6 +44,8 @@ public class Client {
                 this.writer = new ObjectOutputStream(socket.getOutputStream());
                // this.screenRef.showClientMessage("Conectado al server");
                 this.screenRef2.showClientMessage("Conectado al server de la consola");
+                this.theadClient = new ThreadClient(this);
+                this.theadClient.start();
                 this.isConnected = true;
             }
             //threadClient
