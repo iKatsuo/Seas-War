@@ -23,14 +23,14 @@ public class CommandFactory {
             case "ATACAR":
                 return new PrivateChatCommand(name, args);
             case "NUEVOJUGADOR":
-                return new nuevojugadorCommand(name, args,pantalla );
-            case "armar":
-                System.out.println("soy un nuevo jugador " + args[1]);
+                return new nuevojugadorCommand(name, args, pantalla);
+            case "ARMAR":
+                System.out.println("Nuevo jugador: " + args[1]);
                 return new ChatCommand(name, args);
             
 
             default:
-                return new ErrorCommand("error", args);
+                return new ErrorCommand("Error", args);
 
         }
 

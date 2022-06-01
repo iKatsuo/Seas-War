@@ -1,25 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Commands;
 
 import GUI.Pantalla;
-import Utils.CommandUtils;
-import java.io.Serializable;
-import seas.war.jugador;
 
-/**
- *
- * @author juanj
- */
-public class nuevojugadorCommand   extends BaseCommand implements Serializable{
+import java.io.Serializable;
+import seas.war.Jugador;
+
+public class nuevojugadorCommand extends BaseCommand implements Serializable{
     
 
-    public nuevojugadorCommand(String commandName, String[] args,Pantalla pantalla) {
+    public nuevojugadorCommand(String commandName, String[] args, Pantalla pantalla) {
         super(commandName, args, true);
-        jugador jugador=new jugador(args[1],pantalla);
+        Jugador jugador = new Jugador(args[1], pantalla); 
         
         
     }

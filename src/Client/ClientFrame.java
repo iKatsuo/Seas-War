@@ -7,12 +7,13 @@ package Client;
 
 import Commands.BaseCommand;
 import Commands.CommandFactory;
+import Commands.CommandUtils;
+import Commands.Message;
 import Commands.iCommand;
-import Utils.CommandUtils;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import models.Message;
 
 /**
  *
@@ -64,7 +65,7 @@ public class ClientFrame extends javax.swing.JFrame {
         btnSend1.setText("Send");
         btnSend1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSend1ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 

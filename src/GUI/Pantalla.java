@@ -9,7 +9,8 @@ import Client.Client;
 import Client.Client;
 import Commands.BaseCommand;
 import Commands.CommandFactory;
-import Utils.CommandUtils;
+import Commands.CommandUtils;
+
 import java.io.IOException;
 import javax.swing.JLabel;
 
@@ -4986,16 +4987,16 @@ public class Pantalla extends javax.swing.JFrame {
 
         jTextField2.setText("jTextField2");
 
-        jLjugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Manta negra.png"))); // NOI18N
+        jLjugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Manta negra.png"))); // NOI18N
         jLjugador1.setBorder(new javax.swing.border.MatteBorder(null));
 
-        jLjugador2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Poseidón.png"))); // NOI18N
+        jLjugador2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Poseidón.png"))); // NOI18N
         jLjugador2.setText("jLabel452");
         jLjugador2.setAutoscrolls(true);
         jLjugador2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
 
         jLjugador3.setBackground(new java.awt.Color(255, 51, 51));
-        jLjugador3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Aquaman.png"))); // NOI18N
+        jLjugador3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Aquaman.png"))); // NOI18N
         jLjugador3.setText("jLabel452");
         jLjugador3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
 
@@ -5013,7 +5014,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
 
-        Nombrejugador.setText("nombre : juagador");
+        Nombrejugador.setText("Nombre : Jugador");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
