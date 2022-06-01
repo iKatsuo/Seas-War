@@ -12,6 +12,8 @@ import Commands.CommandFactory;
 import Commands.CommandUtils;
 
 import java.io.IOException;
+import java.security.PublicKey;
+
 import javax.swing.JLabel;
 
 
@@ -24,6 +26,7 @@ import javax.swing.JLabel;
  */
 public class Pantalla extends javax.swing.JFrame {
     
+
     private final Client client;
 
     /**
@@ -5012,7 +5015,7 @@ public class Pantalla extends javax.swing.JFrame {
             }
         });
 
-        Nombrejugador.setText("Nombre : Jugador");
+        Nombrejugador.setText("nombre : juagador");
 
         lbVida.setText("jLabel601");
 
@@ -5098,9 +5101,36 @@ public class Pantalla extends javax.swing.JFrame {
             BaseCommand newCommand = CommandFactory.getCommand(array[0], array,this);
             
             if (array[0].toUpperCase().equalsIgnoreCase("NUEVOJUGADOR")){
+
                 Nombrejugador.setText("jugador: "+array[1]);
                 jLabel1.setText("50");
               
+            }
+            else if(array[0].toUpperCase().equalsIgnoreCase("VIDA")){
+                if(array[1].equals('1')){ 
+                    this.lbVida.setText(array[3]);
+
+                }
+                else if(array[1].equals('2')){
+                    this.lbVida.setText(array[3]);
+                }
+                else if(array[1].equals('3')){
+                    this.lbVida.setText(array[3]);
+                }
+                
+            }
+            else if(array[0].toUpperCase().equalsIgnoreCase("IMAGEN")){
+                if(array[1].equals('1')){ 
+                    this.lbVida.setText(array[3]);
+
+                }
+                else if(array[1].equals('2')){
+                    this.lbVida.setText(array[3]);
+                }
+                else if(array[1].equals('3')){
+                    this.lbVida.setText(array[3]);
+                }
+                
             }
             
             if (newCommand.getCommandName().toUpperCase().equals("ERROR"))
@@ -5777,6 +5807,14 @@ public class Pantalla extends javax.swing.JFrame {
 
     public JLabel getjLabel10() {
         return jLabel10;
+    }
+
+    public JLabel setlbVida() {
+        return lbVida;
+    }
+
+    public JLabel getlbVida() {
+        return lbVida;
     }
 
 }
