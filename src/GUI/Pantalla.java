@@ -38,8 +38,12 @@ public class Pantalla extends javax.swing.JFrame {
     }
 
     
-     public void showClientMessage(String msg){
+    public void showClientMessage(String msg){
         this.jTextArea1.append(msg + "\n");
+    }
+
+    public void showClientAttack(String msg){
+        
     }
 
  

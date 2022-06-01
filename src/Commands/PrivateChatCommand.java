@@ -17,7 +17,7 @@ public class PrivateChatCommand  extends BaseCommand implements Serializable{
         super(commandName, args, true);
     }
 
-    // Diego Hola como estas?
+
     @Override
     public String executeOnServer() {
         return "Para "+ getArgs()[1] + ": "+ CommandUtils.concatArray(getArgs());

@@ -7,10 +7,7 @@ package Commands;
 
 import java.io.Serializable;
 
-/**
- *
- * @author diemo
- */
+
 public class ChatCommand extends BaseCommand implements Serializable{
 
     public ChatCommand(String commandName, String[] args) {
@@ -18,8 +15,6 @@ public class ChatCommand extends BaseCommand implements Serializable{
     }
 
    
-
-    // Hola como estan
     @Override
     public String executeOnServer() {
         return "Enviado: " + CommandUtils.concatArray(getArgs());
