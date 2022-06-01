@@ -45,9 +45,13 @@ public class ThreadServer extends Thread{
         while (isRunning) {
             
             try {
-                System.out.println("previous read command");
+                //System.out.println("previous read command");
                 readCommand = (BaseCommand)this.reader.readObject();
                 //System.out.println("read command");
+
+                //Creo que aca se verifica cual es el comando que se recibio para realizar la accion que se necesite...
+                
+
             } catch (IOException ex) { 
                 System.out.println(ex.getMessage());
             } catch (ClassNotFoundException ex) {
