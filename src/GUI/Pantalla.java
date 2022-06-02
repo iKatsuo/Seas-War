@@ -10,6 +10,7 @@ import Client.Client;
 import Commands.BaseCommand;
 import Commands.CommandFactory;
 import Commands.CommandUtils;
+import Server.ServerFrame;
 
 import java.io.IOException;
 import java.security.PublicKey;
@@ -5108,7 +5109,11 @@ public class Pantalla extends javax.swing.JFrame {
 
                 Nombrejugador.setText("jugador: "+array[1]);
                 jLabel1.setText("50");
-              
+
+                for(int i=0;i<ServerFrame.Jugadores.size();i++){
+                    System.out.println(ServerFrame.Jugadores.get(i).nombre);
+                }
+                
             }
             else if(array[0].toUpperCase().equalsIgnoreCase("VIDA")){
                 if(array[1].equals('1')){ 

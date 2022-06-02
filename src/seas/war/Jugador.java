@@ -5,11 +5,11 @@ import GUI.Pantalla;
 
 
 public class Jugador {
-   String nombre;
-   int cantidadVida;
-   ArrayList<Personaje> Personajes;
+   public String nombre;
+   public int cantidadVida;
+   public ArrayList<Personaje> Personajes;
 
-   Pantalla pantalla;
+   public Pantalla pantalla;
 
    public Jugador(String nombre, Pantalla pantalla) {
 

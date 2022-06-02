@@ -9,14 +9,14 @@ import seas.war.Jugador;
 public class ServerFrame extends javax.swing.JFrame {
     
     public Server server;
-    public ArrayList<Jugador> Jugadores;
+    public static ArrayList<Jugador> Jugadores= new ArrayList<Jugador>();
     
     public ServerFrame() {
         initComponents();
         server = new Server(this);
         server.start();
 
-        this.Jugadores = new ArrayList<Jugador>();
+       
 
     }
     
