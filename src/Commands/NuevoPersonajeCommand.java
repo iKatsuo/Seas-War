@@ -8,7 +8,7 @@ import seas.war.Personaje;
 public class NuevoPersonajeCommand extends BaseCommand {
 
     public NuevoPersonajeCommand(String commandName, String[] args, Pantalla pantalla) {
-        super(commandName, args, true);
+        super(commandName, args, true, false);
 
         int poder = Integer.parseInt(args[2]);
         int resistencia = Integer.parseInt(args[3]);

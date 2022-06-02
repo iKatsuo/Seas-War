@@ -6,6 +6,7 @@
 package Commands;
 
 import GUI.Pantalla;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -13,13 +14,13 @@ import java.util.logging.Logger;
 public class CommandFactory { 
     
     
-    public static BaseCommand getCommand(String name, String[] args,Pantalla pantalla){
+    public static BaseCommand getCommand(String name, String[] args, Pantalla pantalla){
         
         switch (name.toUpperCase()) {
             case "CHAT":
                 return new ChatCommand(name, args);
             case "PRIVATECHAT":
-                return new PrivateChatCommand(args[1], args);
+                return new PrivateChatCommand(name, args);
             case "ATACAR":
                 return new ChatCommand(name, args);
             case "NUEVOJUGADOR":

@@ -9,21 +9,20 @@ import seas.war.Jugador;
 public class ServerFrame extends javax.swing.JFrame {
     
     public Server server;
-    public static ArrayList<Jugador> Jugadores = new ArrayList<Jugador>();
+    
     
     public ServerFrame() {
         initComponents();
         server = new Server(this);
         server.start();
-
-       
-
     }
     
     public void showServerMessage(String msg){
         this.jTextArea1.append(msg + "\n");
         
     }
+
+    
 
 
     @SuppressWarnings("unchecked")

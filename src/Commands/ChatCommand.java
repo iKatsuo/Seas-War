@@ -6,12 +6,13 @@
 package Commands;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 
 public class ChatCommand extends BaseCommand implements Serializable{
 
     public ChatCommand(String commandName, String[] args) {
-        super(commandName, args, true);
+        super(commandName, args, true, false);
     }
 
    

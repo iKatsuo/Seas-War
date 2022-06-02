@@ -14,6 +14,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import seas.war.Jugador;
 
 /**
  *
@@ -26,11 +27,22 @@ public class Server extends Thread{
     private boolean isRunnig = true;
     private boolean isWaiting = false;
     private ArrayList<ThreadServer> connections;
+    private ArrayList<Jugador> Jugadores;
+    
     public ServerFrame screenRef;
     //
     public Server(ServerFrame screenRef){
         this.screenRef = screenRef;
         this.runServer();
+
+    }
+
+    public void addJugador(Jugador nuevo){
+        this.Jugadores.add(nuevo);
+    }
+
+    public ArrayList<Jugador> getJugadores(){
+        return Jugadores;
     }
     
     //mensaje para todos
@@ -46,6 +58,9 @@ public class Server extends Thread{
         }
         
     }
+    
+   
+  
     
     public String toString(){
         String str = "Datos del servidor:\n";

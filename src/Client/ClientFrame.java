@@ -10,14 +10,17 @@ import Commands.CommandFactory;
 import Commands.CommandUtils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import seas.war.Jugador;
 
 /**
  *
  * @author diemo
  */
 public class ClientFrame extends javax.swing.JFrame {
+    public static ArrayList<Jugador> Jugadores;
     private Client client;
 
     /**

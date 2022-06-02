@@ -7,6 +7,7 @@ package Commands;
 
 import java.io.Serializable;
 
+
 /**
  *
  * @author diemo
@@ -14,12 +15,14 @@ import java.io.Serializable;
 public abstract class BaseCommand implements iCommand, Serializable{
     private String[] args;
     private boolean isBroadcast;
+    private boolean isNuevoJugador;
     private String commandName;
 
-    public BaseCommand(String commandName, String[] args, boolean isBroadcast) {
+    public BaseCommand(String commandName, String[] args, boolean isBroadcast, boolean isNuevoJugador) {
         this.args = args;
         this.isBroadcast = isBroadcast;
         this.commandName = commandName;
+        this.isNuevoJugador = isNuevoJugador;
     }
     
     public String[] getArgs() {
@@ -37,7 +40,12 @@ public abstract class BaseCommand implements iCommand, Serializable{
     public boolean isBroadcast(){
         return isBroadcast;
     }
+
+    public boolean isNuevoJugador(){
+        return isNuevoJugador;
+    }
     
+
     
     public abstract String executeOnServer();
     public abstract String executeOnClient(); 

@@ -4,15 +4,15 @@ import GUI.Pantalla;
 import Server.ServerFrame;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import seas.war.Jugador;
 
 public class nuevojugadorCommand extends BaseCommand implements Serializable{
-    
+    Jugador jugador;
 
     public nuevojugadorCommand(String commandName, String[] args, Pantalla pantalla) {
-        super(commandName, args, true);
-        Jugador jugador = new Jugador(args[1], pantalla); 
-        ServerFrame.Jugadores.add(jugador);
+        super(commandName, args, false, true);
+        jugador = new Jugador(args[1], pantalla); 
         
     }
 
@@ -26,7 +26,9 @@ public class nuevojugadorCommand extends BaseCommand implements Serializable{
         return "Recibido: creado  " + CommandUtils.concatArray(getArgs());
     }
     
- 
+    public Jugador getJugador(){
+        return jugador;
+    }
 
     
 }

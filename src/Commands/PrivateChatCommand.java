@@ -5,7 +5,9 @@
  */
 package Commands;
 
+import Server.ServerFrame;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,18 +16,19 @@ import java.io.Serializable;
 public class PrivateChatCommand  extends BaseCommand implements Serializable{
 
     public PrivateChatCommand(String commandName, String[] args) {
-        super(commandName, args, true);
+        super(commandName, args, false, false);
     }
 
 
     @Override
     public String executeOnServer() {
-        return "Para "+ getArgs()[1] + ": "+ CommandUtils.concatArray(getArgs());
+      return "Para "+ getArgs()[1] + ": "+ CommandUtils.concatArray(getArgs());
+                  
     }
 
     @Override
     public String executeOnClient() {
-         return "Para "+ getArgs()[1] + ": "+ CommandUtils.concatArray(getArgs());
+        return "Para "+ getArgs()[1] + ": "+ CommandUtils.concatArray(getArgs());
         //return "Recibido: " + CommandUtils.concatArray(getArgs());
     }
  
