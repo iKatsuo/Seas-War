@@ -6,8 +6,9 @@ import GUI.Pantalla;
 
 public class Jugador {
    public String nombre;
-   public int cantidadVida;
-   public ArrayList<Personaje> Personajes;
+   private int cantidadVida;
+   public static Personaje[] Personajes = new Personaje[3];
+   public static int pRegistrados = 0; //Personajes registrados
 
    public Pantalla pantalla;
 
@@ -17,10 +18,35 @@ public class Jugador {
       this.cantidadVida = 100;
       this.pantalla = pantalla;
 
-      this.Personajes = new ArrayList<Personaje>();
+   }
 
+   public String getNombre() {
+       return nombre;
+   }
+
+   public void setNombre(String nombre) {
+       this.nombre = nombre;
+   }
+
+   public int getCantidadVida() {
+       return cantidadVida;
+   }
+
+   public void setCantidadVida(int cantidadVida) {
+       this.cantidadVida = cantidadVida;
+   }
+
+   public int getpRegistrados() {
+       return pRegistrados;
    }
 
 
+   public static void addPersonaje(Personaje nuevo){
+      if(pRegistrados < 3){
+         Personajes[pRegistrados] = nuevo;
+         pRegistrados++;
+      }
+
+   }
 
 }

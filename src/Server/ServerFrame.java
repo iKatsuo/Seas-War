@@ -9,7 +9,7 @@ import seas.war.Jugador;
 public class ServerFrame extends javax.swing.JFrame {
     
     public Server server;
-    public static ArrayList<Jugador> Jugadores= new ArrayList<Jugador>();
+    public static ArrayList<Jugador> Jugadores = new ArrayList<Jugador>();
     
     public ServerFrame() {
         initComponents();
