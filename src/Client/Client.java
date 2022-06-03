@@ -42,7 +42,7 @@ public class Client {
             if (!isConnected){
                 this.socket = new Socket(SERVER_IP , PORT);
                 this.writer = new ObjectOutputStream(socket.getOutputStream());
-               // this.screenRef.showClientMessage("Conectado al server");
+               //this.screenRef.showClientMessage("Conectado al server");
                 this.screenRef2.showClientMessage("Conectado al server de la consola");
                 this.theadClient = new ThreadClient(this);
                 this.theadClient.start();

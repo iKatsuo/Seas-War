@@ -5,6 +5,7 @@
  */
 package Commands;
 
+import GUI.Pantalla;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 public class ChatCommand extends BaseCommand implements Serializable{
 
     public ChatCommand(String commandName, String[] args) {
-        super(commandName, args, true, false);
+        super(commandName, args ,true, false ,false);
     }
 
    

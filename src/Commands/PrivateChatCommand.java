@@ -5,6 +5,7 @@
  */
 package Commands;
 
+import GUI.Pantalla;
 import Server.ServerFrame;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 public class PrivateChatCommand  extends BaseCommand implements Serializable{
 
     public PrivateChatCommand(String commandName, String[] args) {
-        super(commandName, args, false, false);
+        super(commandName, args, false, false,true);
     }
 
 

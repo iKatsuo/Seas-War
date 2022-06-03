@@ -41,16 +41,21 @@ public class ThreadClient extends Thread{
             } catch (IOException ex) {    
             } catch (ClassNotFoundException ex) {}
             
-            
-            //client.screenRef.showClientMessage(readMessage.executeOnClient());
-            client.screenRef2.showClientMessage(readMessage.executeOnClient());
-            
-//            if (readMessage.getName().toUpperCase().equals("CHAT")){
-//                System.out.println("recibido " + readMessage.toString());
-//                client.screenRef.showClientMessage("Recibido: " + readMessage.toString());
-//            }else if (readMessage.getName().toUpperCase().equals("ATTACK")){
-//                client.screenRef.showClientMessage("ATAQUE: " + readMessage.toString());
+//             if (readMessage.isBroadcast()) {
+//              client.screenRef2.showClientMessage(readMessage.executeOnClient());
 //            }
+            //client.screenRef.showClientMessage(readMessage.executeOnClient());
+          client.screenRef2.showClientMessage(readMessage.executeOnClient());
+            
+            if (readMessage.isIsPrivateChat()){
+               
+                client.screenRef2.showClientMessage("Recibido: " + readMessage.executeOnClient());
+                
+                
+            }else {
+//                if (readMessage){
+//                client.screenRef.showClientMessage("ATAQUE: " + readMessage.toString());
+            }
         }
     }
 }

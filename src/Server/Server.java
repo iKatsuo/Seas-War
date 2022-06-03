@@ -27,7 +27,7 @@ public class Server extends Thread{
     private boolean isRunnig = true;
     private boolean isWaiting = false;
     private ArrayList<ThreadServer> connections;
-    private ArrayList<Jugador> Jugadores;
+   
     
     public ServerFrame screenRef;
     //
@@ -37,26 +37,27 @@ public class Server extends Thread{
 
     }
 
-    public void addJugador(Jugador nuevo){
-        this.Jugadores.add(nuevo);
-    }
-
-    public ArrayList<Jugador> getJugadores(){
-        return Jugadores;
-    }
-    
+   
     //mensaje para todos
     public void broadcast (BaseCommand command){
         
         for (ThreadServer connection : connections) {
             try {
                 connection.writer.writeObject(command);
-                //this.screenRef.showServerMessage(command.toString());
+                this.screenRef.showServerMessage(command.toString());
             } catch (IOException ex) {
                 
             }
         }
         
+    }
+
+    public ArrayList<ThreadServer> getConnections() {
+        return connections;
+    }
+
+    public void setConnections(ArrayList<ThreadServer> connections) {
+        this.connections = connections;
     }
     
    

@@ -5,8 +5,10 @@
  */
 package Server;
 
+import static Client.ClientFrame.Jugadores;
 import Commands.BaseCommand;
 import Commands.CommandFactory;
+import static Commands.CommandFactory.getCommand;
 import Commands.Message;
 import Commands.nuevojugadorCommand;
 import GUI.Pantalla;
@@ -46,15 +48,20 @@ public class ThreadServer extends Thread {
         } catch (IOException ex) {
         }
     }
+    
 
     public void run() {
         BaseCommand readCommand = null;
+     
         while (isRunning) {
 
             try {
                 // System.out.println("previous read command");
                 readCommand = (BaseCommand) this.reader.readObject();
-                // System.out.println("read command");
+                
+                
+                //System.out.println("read command");
+              
 
                 // Creo que aca se verifica cual es el comando que se recibio para realizar la
                 // accion que se necesite...
@@ -70,12 +77,33 @@ public class ThreadServer extends Thread {
             }
 
             if (readCommand.isNuevoJugador()) {
-                nuevojugadorCommand command = (nuevojugadorCommand) readCommand;
-                Jugador nuevo = command.getJugador();
-                server.addJugador(nuevo);
+                this.name = readCommand.getArgs()[1];
+               // server.broadcast(readCommand);
+
             }
 
-            else {
+            if (readCommand.isPrivateChat()) {
+
+                System.out.println("preunta si es chat privado");
+                System.out.println("tamanio del arrego " + server.getConnections().size());
+                for (int i = 0; i < server.getConnections().size(); i++) {
+                    if (server.getConnections().get(i).name.equals(readCommand.getArgs()[1])) {
+                        
+                        try {
+                           this.writer.writeObject(readCommand.toString());
+                           server.getConnections().get(i).writer.writeObject(readCommand);
+                        } catch (IOException ex) {
+                            Logger.getLogger(ThreadServer.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        System.out.println("ya enconte a el jugador es:");
+                        System.out.println(server.getConnections().get(i).getName());
+
+                    }
+
+                }
+
+//         
+            } else {
                 server.screenRef.showServerMessage(readCommand.executeOnServer());
             }
         }

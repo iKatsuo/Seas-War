@@ -15,7 +15,7 @@ public class CommandFactory {
     
     
     public static BaseCommand getCommand(String name, String[] args, Pantalla pantalla){
-        
+      
         switch (name.toUpperCase()) {
             case "CHAT":
                 return new ChatCommand(name, args);
@@ -24,9 +24,10 @@ public class CommandFactory {
             case "ATACAR":
                 return new ChatCommand(name, args);
             case "NUEVOJUGADOR":
-                return new nuevojugadorCommand(name, args, pantalla);
+                return new nuevojugadorCommand(name, args);
             case "NUEVOPERSONAJE":
-                return new NuevoPersonajeCommand(name, args, pantalla);
+                return new NuevoPersonajeCommand(name, args);
+            
             
             default:
                 return new ErrorCommand("Error", args);
