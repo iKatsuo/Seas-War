@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import seas.war.Jugador;
+import seas.war.Personaje;
 
 import java.awt.Image;
 import java.io.IOException;
@@ -28,6 +29,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+
+import java.awt.Graphics;
+import java.awt.Image;
+import java.util.ArrayList;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author juanj
@@ -35,6 +43,7 @@ import javax.swing.ImageIcon;
 public class Pantalla extends javax.swing.JFrame {
 
         private final Client client;
+        private ArrayList<Personaje> personajes = new ArrayList<>();
 
         /**
          * Creates new form Pantalla
@@ -49,8 +58,15 @@ public class Pantalla extends javax.swing.JFrame {
                 this.jTextArea1.append(msg + "\n");
         }
 
-        public void showClientAttack(String msg) {
+        public void addPersonaje(String array[]) {
 
+                personajes.add(new Personaje(array[1], Integer.parseInt(array[2]), Integer.parseInt(array[2]),
+                                Integer.parseInt(array[3]), Integer.parseInt(array[2]), Integer.parseInt(array[4])));
+                // for(int i=0;i<personajes.size();i++){
+                // if(personajes.get(i).getNombre().equals(array[1])){
+
+                // }
+                // }
         }
 
         /**
@@ -60,5294 +76,5307 @@ public class Pantalla extends javax.swing.JFrame {
          */
         @SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated
-        // Code">//GEN-BEGIN:initComponents
-        private void initComponents() {
-
-                jPueblo = new javax.swing.JPanel();
-                jLabel1 = new javax.swing.JLabel();
-                jLabel2 = new javax.swing.JLabel();
-                jLabel4 = new javax.swing.JLabel();
-                jLabel3 = new javax.swing.JLabel();
-                jLabel8 = new javax.swing.JLabel();
-                jLabel7 = new javax.swing.JLabel();
-                jLabel6 = new javax.swing.JLabel();
-                jLabel5 = new javax.swing.JLabel();
-                jLabel12 = new javax.swing.JLabel();
-                jLabel11 = new javax.swing.JLabel();
-                jLabel10 = new javax.swing.JLabel();
-                jLabel9 = new javax.swing.JLabel();
-                jLabel14 = new javax.swing.JLabel();
-                jLabel15 = new javax.swing.JLabel();
-                jLabel13 = new javax.swing.JLabel();
-                jLabel17 = new javax.swing.JLabel();
-                jLabel18 = new javax.swing.JLabel();
-                jLabel16 = new javax.swing.JLabel();
-                jLabel20 = new javax.swing.JLabel();
-                jLabel19 = new javax.swing.JLabel();
-                jLabel21 = new javax.swing.JLabel();
-                jLabel22 = new javax.swing.JLabel();
-                jLabel23 = new javax.swing.JLabel();
-                jLabel24 = new javax.swing.JLabel();
-                jLabel25 = new javax.swing.JLabel();
-                jLabel26 = new javax.swing.JLabel();
-                jLabel27 = new javax.swing.JLabel();
-                jLabel28 = new javax.swing.JLabel();
-                jLabel29 = new javax.swing.JLabel();
-                jLabel30 = new javax.swing.JLabel();
-                jLabel31 = new javax.swing.JLabel();
-                jLabel32 = new javax.swing.JLabel();
-                jLabel33 = new javax.swing.JLabel();
-                jLabel34 = new javax.swing.JLabel();
-                jLabel35 = new javax.swing.JLabel();
-                jLabel36 = new javax.swing.JLabel();
-                jLabel37 = new javax.swing.JLabel();
-                jLabel38 = new javax.swing.JLabel();
-                jLabel39 = new javax.swing.JLabel();
-                jLabel40 = new javax.swing.JLabel();
-                jLabel41 = new javax.swing.JLabel();
-                jLabel42 = new javax.swing.JLabel();
-                jLabel43 = new javax.swing.JLabel();
-                jLabel44 = new javax.swing.JLabel();
-                jLabel45 = new javax.swing.JLabel();
-                jLabel46 = new javax.swing.JLabel();
-                jLabel47 = new javax.swing.JLabel();
-                jLabel48 = new javax.swing.JLabel();
-                jLabel49 = new javax.swing.JLabel();
-                jLabel50 = new javax.swing.JLabel();
-                jLabel51 = new javax.swing.JLabel();
-                jLabel52 = new javax.swing.JLabel();
-                jLabel53 = new javax.swing.JLabel();
-                jLabel54 = new javax.swing.JLabel();
-                jLabel55 = new javax.swing.JLabel();
-                jLabel56 = new javax.swing.JLabel();
-                jLabel57 = new javax.swing.JLabel();
-                jLabel58 = new javax.swing.JLabel();
-                jLabel59 = new javax.swing.JLabel();
-                jLabel60 = new javax.swing.JLabel();
-                jLabel61 = new javax.swing.JLabel();
-                jLabel62 = new javax.swing.JLabel();
-                jLabel63 = new javax.swing.JLabel();
-                jLabel64 = new javax.swing.JLabel();
-                jLabel65 = new javax.swing.JLabel();
-                jLabel66 = new javax.swing.JLabel();
-                jLabel67 = new javax.swing.JLabel();
-                jLabel68 = new javax.swing.JLabel();
-                jLabel69 = new javax.swing.JLabel();
-                jLabel70 = new javax.swing.JLabel();
-                jLabel71 = new javax.swing.JLabel();
-                jLabel72 = new javax.swing.JLabel();
-                jLabel73 = new javax.swing.JLabel();
-                jLabel74 = new javax.swing.JLabel();
-                jLabel75 = new javax.swing.JLabel();
-                jLabel76 = new javax.swing.JLabel();
-                jLabel77 = new javax.swing.JLabel();
-                jLabel78 = new javax.swing.JLabel();
-                jLabel79 = new javax.swing.JLabel();
-                jLabel80 = new javax.swing.JLabel();
-                jLabel81 = new javax.swing.JLabel();
-                jLabel82 = new javax.swing.JLabel();
-                jLabel83 = new javax.swing.JLabel();
-                jLabel84 = new javax.swing.JLabel();
-                jLabel85 = new javax.swing.JLabel();
-                jLabel86 = new javax.swing.JLabel();
-                jLabel87 = new javax.swing.JLabel();
-                jLabel88 = new javax.swing.JLabel();
-                jLabel89 = new javax.swing.JLabel();
-                jLabel90 = new javax.swing.JLabel();
-                jLabel91 = new javax.swing.JLabel();
-                jLabel92 = new javax.swing.JLabel();
-                jLabel93 = new javax.swing.JLabel();
-                jLabel94 = new javax.swing.JLabel();
-                jLabel95 = new javax.swing.JLabel();
-                jLabel96 = new javax.swing.JLabel();
-                jLabel97 = new javax.swing.JLabel();
-                jLabel98 = new javax.swing.JLabel();
-                jLabel99 = new javax.swing.JLabel();
-                jLabel100 = new javax.swing.JLabel();
-                jLabel101 = new javax.swing.JLabel();
-                jLabel102 = new javax.swing.JLabel();
-                jLabel103 = new javax.swing.JLabel();
-                jLabel104 = new javax.swing.JLabel();
-                jLabel105 = new javax.swing.JLabel();
-                jLabel106 = new javax.swing.JLabel();
-                jLabel107 = new javax.swing.JLabel();
-                jLabel108 = new javax.swing.JLabel();
-                jLabel109 = new javax.swing.JLabel();
-                jLabel110 = new javax.swing.JLabel();
-                jLabel111 = new javax.swing.JLabel();
-                jLabel112 = new javax.swing.JLabel();
-                jLabel113 = new javax.swing.JLabel();
-                jLabel114 = new javax.swing.JLabel();
-                jLabel115 = new javax.swing.JLabel();
-                jLabel116 = new javax.swing.JLabel();
-                jLabel117 = new javax.swing.JLabel();
-                jLabel118 = new javax.swing.JLabel();
-                jLabel119 = new javax.swing.JLabel();
-                jLabel120 = new javax.swing.JLabel();
-                jLabel121 = new javax.swing.JLabel();
-                jLabel122 = new javax.swing.JLabel();
-                jLabel123 = new javax.swing.JLabel();
-                jLabel124 = new javax.swing.JLabel();
-                jLabel125 = new javax.swing.JLabel();
-                jLabel126 = new javax.swing.JLabel();
-                jLabel127 = new javax.swing.JLabel();
-                jLabel128 = new javax.swing.JLabel();
-                jLabel129 = new javax.swing.JLabel();
-                jLabel130 = new javax.swing.JLabel();
-                jLabel131 = new javax.swing.JLabel();
-                jLabel132 = new javax.swing.JLabel();
-                jLabel133 = new javax.swing.JLabel();
-                jLabel134 = new javax.swing.JLabel();
-                jLabel135 = new javax.swing.JLabel();
-                jLabel136 = new javax.swing.JLabel();
-                jLabel137 = new javax.swing.JLabel();
-                jLabel138 = new javax.swing.JLabel();
-                jLabel139 = new javax.swing.JLabel();
-                jLabel140 = new javax.swing.JLabel();
-                jLabel141 = new javax.swing.JLabel();
-                jLabel142 = new javax.swing.JLabel();
-                jLabel143 = new javax.swing.JLabel();
-                jLabel144 = new javax.swing.JLabel();
-                jLabel145 = new javax.swing.JLabel();
-                jLabel146 = new javax.swing.JLabel();
-                jLabel147 = new javax.swing.JLabel();
-                jLabel148 = new javax.swing.JLabel();
-                jLabel149 = new javax.swing.JLabel();
-                jLabel150 = new javax.swing.JLabel();
-                jLabel151 = new javax.swing.JLabel();
-                jLabel152 = new javax.swing.JLabel();
-                jLabel153 = new javax.swing.JLabel();
-                jLabel154 = new javax.swing.JLabel();
-                jLabel155 = new javax.swing.JLabel();
-                jLabel156 = new javax.swing.JLabel();
-                jLabel157 = new javax.swing.JLabel();
-                jLabel158 = new javax.swing.JLabel();
-                jLabel159 = new javax.swing.JLabel();
-                jLabel160 = new javax.swing.JLabel();
-                jLabel161 = new javax.swing.JLabel();
-                jLabel162 = new javax.swing.JLabel();
-                jLabel163 = new javax.swing.JLabel();
-                jLabel164 = new javax.swing.JLabel();
-                jLabel165 = new javax.swing.JLabel();
-                jLabel166 = new javax.swing.JLabel();
-                jLabel167 = new javax.swing.JLabel();
-                jLabel168 = new javax.swing.JLabel();
-                jLabel169 = new javax.swing.JLabel();
-                jLabel170 = new javax.swing.JLabel();
-                jLabel171 = new javax.swing.JLabel();
-                jLabel172 = new javax.swing.JLabel();
-                jLabel173 = new javax.swing.JLabel();
-                jLabel174 = new javax.swing.JLabel();
-                jLabel175 = new javax.swing.JLabel();
-                jLabel176 = new javax.swing.JLabel();
-                jLabel177 = new javax.swing.JLabel();
-                jLabel178 = new javax.swing.JLabel();
-                jLabel179 = new javax.swing.JLabel();
-                jLabel180 = new javax.swing.JLabel();
-                jLabel181 = new javax.swing.JLabel();
-                jLabel182 = new javax.swing.JLabel();
-                jLabel183 = new javax.swing.JLabel();
-                jLabel184 = new javax.swing.JLabel();
-                jLabel185 = new javax.swing.JLabel();
-                jLabel186 = new javax.swing.JLabel();
-                jLabel187 = new javax.swing.JLabel();
-                jLabel188 = new javax.swing.JLabel();
-                jLabel189 = new javax.swing.JLabel();
-                jLabel190 = new javax.swing.JLabel();
-                jLabel191 = new javax.swing.JLabel();
-                jLabel192 = new javax.swing.JLabel();
-                jLabel193 = new javax.swing.JLabel();
-                jLabel194 = new javax.swing.JLabel();
-                jLabel195 = new javax.swing.JLabel();
-                jLabel196 = new javax.swing.JLabel();
-                jLabel197 = new javax.swing.JLabel();
-                jLabel198 = new javax.swing.JLabel();
-                jLabel199 = new javax.swing.JLabel();
-                jLabel200 = new javax.swing.JLabel();
-                jLabel201 = new javax.swing.JLabel();
-                jLabel202 = new javax.swing.JLabel();
-                jLabel203 = new javax.swing.JLabel();
-                jLabel204 = new javax.swing.JLabel();
-                jLabel205 = new javax.swing.JLabel();
-                jLabel206 = new javax.swing.JLabel();
-                jLabel207 = new javax.swing.JLabel();
-                jLabel208 = new javax.swing.JLabel();
-                jLabel209 = new javax.swing.JLabel();
-                jLabel210 = new javax.swing.JLabel();
-                jLabel211 = new javax.swing.JLabel();
-                jLabel212 = new javax.swing.JLabel();
-                jLabel213 = new javax.swing.JLabel();
-                jLabel214 = new javax.swing.JLabel();
-                jLabel215 = new javax.swing.JLabel();
-                jLabel216 = new javax.swing.JLabel();
-                jLabel217 = new javax.swing.JLabel();
-                jLabel218 = new javax.swing.JLabel();
-                jLabel219 = new javax.swing.JLabel();
-                jLabel220 = new javax.swing.JLabel();
-                jLabel221 = new javax.swing.JLabel();
-                jLabel222 = new javax.swing.JLabel();
-                jLabel223 = new javax.swing.JLabel();
-                jLabel224 = new javax.swing.JLabel();
-                jLabel225 = new javax.swing.JLabel();
-                jLabel226 = new javax.swing.JLabel();
-                jLabel227 = new javax.swing.JLabel();
-                jLabel228 = new javax.swing.JLabel();
-                jLabel229 = new javax.swing.JLabel();
-                jLabel230 = new javax.swing.JLabel();
-                jLabel231 = new javax.swing.JLabel();
-                jLabel232 = new javax.swing.JLabel();
-                jLabel233 = new javax.swing.JLabel();
-                jLabel234 = new javax.swing.JLabel();
-                jLabel235 = new javax.swing.JLabel();
-                jLabel236 = new javax.swing.JLabel();
-                jLabel237 = new javax.swing.JLabel();
-                jLabel238 = new javax.swing.JLabel();
-                jLabel239 = new javax.swing.JLabel();
-                jLabel240 = new javax.swing.JLabel();
-                jLabel241 = new javax.swing.JLabel();
-                jLabel242 = new javax.swing.JLabel();
-                jLabel243 = new javax.swing.JLabel();
-                jLabel244 = new javax.swing.JLabel();
-                jLabel245 = new javax.swing.JLabel();
-                jLabel246 = new javax.swing.JLabel();
-                jLabel247 = new javax.swing.JLabel();
-                jLabel248 = new javax.swing.JLabel();
-                jLabel249 = new javax.swing.JLabel();
-                jLabel250 = new javax.swing.JLabel();
-                jLabel251 = new javax.swing.JLabel();
-                jLabel252 = new javax.swing.JLabel();
-                jLabel253 = new javax.swing.JLabel();
-                jLabel254 = new javax.swing.JLabel();
-                jLabel255 = new javax.swing.JLabel();
-                jLabel256 = new javax.swing.JLabel();
-                jLabel257 = new javax.swing.JLabel();
-                jLabel258 = new javax.swing.JLabel();
-                jLabel259 = new javax.swing.JLabel();
-                jLabel260 = new javax.swing.JLabel();
-                jLabel261 = new javax.swing.JLabel();
-                jLabel262 = new javax.swing.JLabel();
-                jLabel263 = new javax.swing.JLabel();
-                jLabel264 = new javax.swing.JLabel();
-                jLabel265 = new javax.swing.JLabel();
-                jLabel266 = new javax.swing.JLabel();
-                jLabel267 = new javax.swing.JLabel();
-                jLabel268 = new javax.swing.JLabel();
-                jLabel269 = new javax.swing.JLabel();
-                jLabel270 = new javax.swing.JLabel();
-                jLabel271 = new javax.swing.JLabel();
-                jLabel272 = new javax.swing.JLabel();
-                jLabel273 = new javax.swing.JLabel();
-                jLabel274 = new javax.swing.JLabel();
-                jLabel275 = new javax.swing.JLabel();
-                jLabel276 = new javax.swing.JLabel();
-                jLabel277 = new javax.swing.JLabel();
-                jLabel278 = new javax.swing.JLabel();
-                jLabel279 = new javax.swing.JLabel();
-                jLabel280 = new javax.swing.JLabel();
-                jLabel281 = new javax.swing.JLabel();
-                jLabel282 = new javax.swing.JLabel();
-                jLabel283 = new javax.swing.JLabel();
-                jLabel284 = new javax.swing.JLabel();
-                jLabel285 = new javax.swing.JLabel();
-                jLabel286 = new javax.swing.JLabel();
-                jLabel287 = new javax.swing.JLabel();
-                jLabel288 = new javax.swing.JLabel();
-                jLabel289 = new javax.swing.JLabel();
-                jLabel290 = new javax.swing.JLabel();
-                jLabel291 = new javax.swing.JLabel();
-                jLabel292 = new javax.swing.JLabel();
-                jLabel293 = new javax.swing.JLabel();
-                jLabel294 = new javax.swing.JLabel();
-                jLabel295 = new javax.swing.JLabel();
-                jLabel296 = new javax.swing.JLabel();
-                jLabel297 = new javax.swing.JLabel();
-                jLabel298 = new javax.swing.JLabel();
-                jLabel299 = new javax.swing.JLabel();
-                jLabel300 = new javax.swing.JLabel();
-                jLabel301 = new javax.swing.JLabel();
-                jLabel302 = new javax.swing.JLabel();
-                jLabel303 = new javax.swing.JLabel();
-                jLabel304 = new javax.swing.JLabel();
-                jLabel305 = new javax.swing.JLabel();
-                jLabel306 = new javax.swing.JLabel();
-                jLabel307 = new javax.swing.JLabel();
-                jLabel308 = new javax.swing.JLabel();
-                jLabel309 = new javax.swing.JLabel();
-                jLabel310 = new javax.swing.JLabel();
-                jLabel311 = new javax.swing.JLabel();
-                jLabel312 = new javax.swing.JLabel();
-                jLabel313 = new javax.swing.JLabel();
-                jLabel314 = new javax.swing.JLabel();
-                jLabel315 = new javax.swing.JLabel();
-                jLabel316 = new javax.swing.JLabel();
-                jLabel317 = new javax.swing.JLabel();
-                jLabel318 = new javax.swing.JLabel();
-                jLabel319 = new javax.swing.JLabel();
-                jLabel320 = new javax.swing.JLabel();
-                jLabel321 = new javax.swing.JLabel();
-                jLabel322 = new javax.swing.JLabel();
-                jLabel323 = new javax.swing.JLabel();
-                jLabel324 = new javax.swing.JLabel();
-                jLabel325 = new javax.swing.JLabel();
-                jLabel326 = new javax.swing.JLabel();
-                jLabel327 = new javax.swing.JLabel();
-                jLabel328 = new javax.swing.JLabel();
-                jLabel329 = new javax.swing.JLabel();
-                jLabel330 = new javax.swing.JLabel();
-                jLabel331 = new javax.swing.JLabel();
-                jLabel332 = new javax.swing.JLabel();
-                jLabel333 = new javax.swing.JLabel();
-                jLabel334 = new javax.swing.JLabel();
-                jLabel335 = new javax.swing.JLabel();
-                jLabel336 = new javax.swing.JLabel();
-                jLabel337 = new javax.swing.JLabel();
-                jLabel338 = new javax.swing.JLabel();
-                jLabel339 = new javax.swing.JLabel();
-                jLabel340 = new javax.swing.JLabel();
-                jLabel341 = new javax.swing.JLabel();
-                jLabel342 = new javax.swing.JLabel();
-                jLabel343 = new javax.swing.JLabel();
-                jLabel344 = new javax.swing.JLabel();
-                jLabel345 = new javax.swing.JLabel();
-                jLabel346 = new javax.swing.JLabel();
-                jLabel347 = new javax.swing.JLabel();
-                jLabel348 = new javax.swing.JLabel();
-                jLabel349 = new javax.swing.JLabel();
-                jLabel350 = new javax.swing.JLabel();
-                jLabel351 = new javax.swing.JLabel();
-                jLabel352 = new javax.swing.JLabel();
-                jLabel353 = new javax.swing.JLabel();
-                jLabel354 = new javax.swing.JLabel();
-                jLabel355 = new javax.swing.JLabel();
-                jLabel356 = new javax.swing.JLabel();
-                jLabel357 = new javax.swing.JLabel();
-                jLabel358 = new javax.swing.JLabel();
-                jLabel359 = new javax.swing.JLabel();
-                jLabel360 = new javax.swing.JLabel();
-                jLabel361 = new javax.swing.JLabel();
-                jLabel362 = new javax.swing.JLabel();
-                jLabel363 = new javax.swing.JLabel();
-                jLabel364 = new javax.swing.JLabel();
-                jLabel365 = new javax.swing.JLabel();
-                jLabel366 = new javax.swing.JLabel();
-                jLabel367 = new javax.swing.JLabel();
-                jLabel368 = new javax.swing.JLabel();
-                jLabel369 = new javax.swing.JLabel();
-                jLabel370 = new javax.swing.JLabel();
-                jLabel371 = new javax.swing.JLabel();
-                jLabel372 = new javax.swing.JLabel();
-                jLabel373 = new javax.swing.JLabel();
-                jLabel374 = new javax.swing.JLabel();
-                jLabel375 = new javax.swing.JLabel();
-                jLabel376 = new javax.swing.JLabel();
-                jLabel377 = new javax.swing.JLabel();
-                jLabel378 = new javax.swing.JLabel();
-                jLabel379 = new javax.swing.JLabel();
-                jLabel380 = new javax.swing.JLabel();
-                jLabel381 = new javax.swing.JLabel();
-                jLabel382 = new javax.swing.JLabel();
-                jLabel383 = new javax.swing.JLabel();
-                jLabel384 = new javax.swing.JLabel();
-                jLabel385 = new javax.swing.JLabel();
-                jLabel386 = new javax.swing.JLabel();
-                jLabel387 = new javax.swing.JLabel();
-                jLabel388 = new javax.swing.JLabel();
-                jLabel389 = new javax.swing.JLabel();
-                jLabel390 = new javax.swing.JLabel();
-                jLabel391 = new javax.swing.JLabel();
-                jLabel392 = new javax.swing.JLabel();
-                jLabel393 = new javax.swing.JLabel();
-                jLabel394 = new javax.swing.JLabel();
-                jLabel395 = new javax.swing.JLabel();
-                jLabel396 = new javax.swing.JLabel();
-                jLabel397 = new javax.swing.JLabel();
-                jLabel398 = new javax.swing.JLabel();
-                jLabel399 = new javax.swing.JLabel();
-                jLabel400 = new javax.swing.JLabel();
-                jLabel401 = new javax.swing.JLabel();
-                jLabel402 = new javax.swing.JLabel();
-                jLabel403 = new javax.swing.JLabel();
-                jLabel404 = new javax.swing.JLabel();
-                jLabel405 = new javax.swing.JLabel();
-                jLabel406 = new javax.swing.JLabel();
-                jLabel407 = new javax.swing.JLabel();
-                jLabel408 = new javax.swing.JLabel();
-                jLabel409 = new javax.swing.JLabel();
-                jLabel410 = new javax.swing.JLabel();
-                jLabel411 = new javax.swing.JLabel();
-                jLabel412 = new javax.swing.JLabel();
-                jLabel413 = new javax.swing.JLabel();
-                jLabel414 = new javax.swing.JLabel();
-                jLabel415 = new javax.swing.JLabel();
-                jLabel416 = new javax.swing.JLabel();
-                jLabel417 = new javax.swing.JLabel();
-                jLabel418 = new javax.swing.JLabel();
-                jLabel419 = new javax.swing.JLabel();
-                jLabel420 = new javax.swing.JLabel();
-                jLabel421 = new javax.swing.JLabel();
-                jLabel422 = new javax.swing.JLabel();
-                jLabel423 = new javax.swing.JLabel();
-                jLabel424 = new javax.swing.JLabel();
-                jLabel425 = new javax.swing.JLabel();
-                jLabel426 = new javax.swing.JLabel();
-                jLabel427 = new javax.swing.JLabel();
-                jLabel428 = new javax.swing.JLabel();
-                jLabel429 = new javax.swing.JLabel();
-                jLabel430 = new javax.swing.JLabel();
-                jLabel431 = new javax.swing.JLabel();
-                jLabel432 = new javax.swing.JLabel();
-                jLabel433 = new javax.swing.JLabel();
-                jLabel434 = new javax.swing.JLabel();
-                jLabel435 = new javax.swing.JLabel();
-                jLabel436 = new javax.swing.JLabel();
-                jLabel437 = new javax.swing.JLabel();
-                jLabel438 = new javax.swing.JLabel();
-                jLabel439 = new javax.swing.JLabel();
-                jLabel440 = new javax.swing.JLabel();
-                jLabel441 = new javax.swing.JLabel();
-                jLabel442 = new javax.swing.JLabel();
-                jLabel443 = new javax.swing.JLabel();
-                jLabel444 = new javax.swing.JLabel();
-                jLabel445 = new javax.swing.JLabel();
-                jLabel446 = new javax.swing.JLabel();
-                jLabel447 = new javax.swing.JLabel();
-                jLabel448 = new javax.swing.JLabel();
-                jLabel449 = new javax.swing.JLabel();
-                jLabel450 = new javax.swing.JLabel();
-                jLabel451 = new javax.swing.JLabel();
-                jLabel452 = new javax.swing.JLabel();
-                jLabel453 = new javax.swing.JLabel();
-                jLabel454 = new javax.swing.JLabel();
-                jLabel455 = new javax.swing.JLabel();
-                jLabel456 = new javax.swing.JLabel();
-                jLabel457 = new javax.swing.JLabel();
-                jLabel458 = new javax.swing.JLabel();
-                jLabel459 = new javax.swing.JLabel();
-                jLabel460 = new javax.swing.JLabel();
-                jLabel461 = new javax.swing.JLabel();
-                jLabel462 = new javax.swing.JLabel();
-                jLabel463 = new javax.swing.JLabel();
-                jLabel464 = new javax.swing.JLabel();
-                jLabel465 = new javax.swing.JLabel();
-                jLabel466 = new javax.swing.JLabel();
-                jLabel467 = new javax.swing.JLabel();
-                jLabel468 = new javax.swing.JLabel();
-                jLabel469 = new javax.swing.JLabel();
-                jLabel470 = new javax.swing.JLabel();
-                jLabel471 = new javax.swing.JLabel();
-                jLabel472 = new javax.swing.JLabel();
-                jLabel473 = new javax.swing.JLabel();
-                jLabel474 = new javax.swing.JLabel();
-                jLabel475 = new javax.swing.JLabel();
-                jLabel476 = new javax.swing.JLabel();
-                jLabel477 = new javax.swing.JLabel();
-                jLabel478 = new javax.swing.JLabel();
-                jLabel479 = new javax.swing.JLabel();
-                jLabel480 = new javax.swing.JLabel();
-                jLabel481 = new javax.swing.JLabel();
-                jLabel482 = new javax.swing.JLabel();
-                jLabel483 = new javax.swing.JLabel();
-                jLabel484 = new javax.swing.JLabel();
-                jLabel485 = new javax.swing.JLabel();
-                jLabel486 = new javax.swing.JLabel();
-                jLabel487 = new javax.swing.JLabel();
-                jLabel488 = new javax.swing.JLabel();
-                jLabel489 = new javax.swing.JLabel();
-                jLabel490 = new javax.swing.JLabel();
-                jLabel491 = new javax.swing.JLabel();
-                jLabel492 = new javax.swing.JLabel();
-                jLabel493 = new javax.swing.JLabel();
-                jLabel494 = new javax.swing.JLabel();
-                jLabel495 = new javax.swing.JLabel();
-                jLabel496 = new javax.swing.JLabel();
-                jLabel497 = new javax.swing.JLabel();
-                jLabel498 = new javax.swing.JLabel();
-                jLabel499 = new javax.swing.JLabel();
-                jLabel500 = new javax.swing.JLabel();
-                jLabel501 = new javax.swing.JLabel();
-                jLabel502 = new javax.swing.JLabel();
-                jLabel503 = new javax.swing.JLabel();
-                jLabel504 = new javax.swing.JLabel();
-                jLabel505 = new javax.swing.JLabel();
-                jLabel506 = new javax.swing.JLabel();
-                jLabel507 = new javax.swing.JLabel();
-                jLabel508 = new javax.swing.JLabel();
-                jLabel509 = new javax.swing.JLabel();
-                jLabel510 = new javax.swing.JLabel();
-                jLabel511 = new javax.swing.JLabel();
-                jLabel512 = new javax.swing.JLabel();
-                jLabel513 = new javax.swing.JLabel();
-                jLabel514 = new javax.swing.JLabel();
-                jLabel515 = new javax.swing.JLabel();
-                jLabel516 = new javax.swing.JLabel();
-                jLabel517 = new javax.swing.JLabel();
-                jLabel518 = new javax.swing.JLabel();
-                jLabel519 = new javax.swing.JLabel();
-                jLabel520 = new javax.swing.JLabel();
-                jLabel521 = new javax.swing.JLabel();
-                jLabel522 = new javax.swing.JLabel();
-                jLabel523 = new javax.swing.JLabel();
-                jLabel524 = new javax.swing.JLabel();
-                jLabel525 = new javax.swing.JLabel();
-                jLabel526 = new javax.swing.JLabel();
-                jLabel527 = new javax.swing.JLabel();
-                jLabel528 = new javax.swing.JLabel();
-                jLabel529 = new javax.swing.JLabel();
-                jLabel530 = new javax.swing.JLabel();
-                jLabel531 = new javax.swing.JLabel();
-                jLabel532 = new javax.swing.JLabel();
-                jLabel533 = new javax.swing.JLabel();
-                jLabel534 = new javax.swing.JLabel();
-                jLabel535 = new javax.swing.JLabel();
-                jLabel536 = new javax.swing.JLabel();
-                jLabel537 = new javax.swing.JLabel();
-                jLabel538 = new javax.swing.JLabel();
-                jLabel539 = new javax.swing.JLabel();
-                jLabel540 = new javax.swing.JLabel();
-                jLabel571 = new javax.swing.JLabel();
-                jLabel572 = new javax.swing.JLabel();
-                jLabel573 = new javax.swing.JLabel();
-                jLabel574 = new javax.swing.JLabel();
-                jLabel575 = new javax.swing.JLabel();
-                jLabel576 = new javax.swing.JLabel();
-                jLabel578 = new javax.swing.JLabel();
-                jLabel579 = new javax.swing.JLabel();
-                jLabel580 = new javax.swing.JLabel();
-                jLabel581 = new javax.swing.JLabel();
-                jLabel582 = new javax.swing.JLabel();
-                jLabel583 = new javax.swing.JLabel();
-                jLabel584 = new javax.swing.JLabel();
-                jLabel585 = new javax.swing.JLabel();
-                jLabel586 = new javax.swing.JLabel();
-                jLabel587 = new javax.swing.JLabel();
-                jLabel588 = new javax.swing.JLabel();
-                jLabel589 = new javax.swing.JLabel();
-                jLabel590 = new javax.swing.JLabel();
-                jLabel591 = new javax.swing.JLabel();
-                jLabel592 = new javax.swing.JLabel();
-                jLabel593 = new javax.swing.JLabel();
-                jLabel594 = new javax.swing.JLabel();
-                jLabel595 = new javax.swing.JLabel();
-                jLabel596 = new javax.swing.JLabel();
-                jLabel597 = new javax.swing.JLabel();
-                jLabel598 = new javax.swing.JLabel();
-                jLabel599 = new javax.swing.JLabel();
-                jLabel600 = new javax.swing.JLabel();
-                jLabel541 = new javax.swing.JLabel();
-                jLabel542 = new javax.swing.JLabel();
-                jLabel543 = new javax.swing.JLabel();
-                jLabel544 = new javax.swing.JLabel();
-                jLabel545 = new javax.swing.JLabel();
-                jLabel546 = new javax.swing.JLabel();
-                jLabel547 = new javax.swing.JLabel();
-                jLabel548 = new javax.swing.JLabel();
-                jLabel549 = new javax.swing.JLabel();
-                jLabel550 = new javax.swing.JLabel();
-                jLabel551 = new javax.swing.JLabel();
-                jLabel552 = new javax.swing.JLabel();
-                jLabel553 = new javax.swing.JLabel();
-                jLabel554 = new javax.swing.JLabel();
-                jLabel555 = new javax.swing.JLabel();
-                jLabel556 = new javax.swing.JLabel();
-                jLabel557 = new javax.swing.JLabel();
-                jLabel558 = new javax.swing.JLabel();
-                jLabel559 = new javax.swing.JLabel();
-                jLabel560 = new javax.swing.JLabel();
-                jLabel561 = new javax.swing.JLabel();
-                jLabel562 = new javax.swing.JLabel();
-                jLabel563 = new javax.swing.JLabel();
-                jLabel564 = new javax.swing.JLabel();
-                jLabel565 = new javax.swing.JLabel();
-                jLabel566 = new javax.swing.JLabel();
-                jLabel567 = new javax.swing.JLabel();
-                jLabel568 = new javax.swing.JLabel();
-                jLabel569 = new javax.swing.JLabel();
-                jLabel570 = new javax.swing.JLabel();
-                jLabel577 = new javax.swing.JLabel();
-                txfCommand = new javax.swing.JTextField();
-                jScrollPane2 = new javax.swing.JScrollPane();
-                jTextArea1 = new javax.swing.JTextArea();
-                jLjugador1 = new javax.swing.JLabel();
-                jLjugador2 = new javax.swing.JLabel();
-                jLjugador3 = new javax.swing.JLabel();
-                btnSend1 = new javax.swing.JButton();
-                btnConnect = new javax.swing.JButton();
-                Nombrejugador = new javax.swing.JLabel();
-                lbVida = new javax.swing.JLabel();
-                jScrollPane1 = new javax.swing.JScrollPane();
-                jTextArea2 = new javax.swing.JTextArea();
-                jScrollPane3 = new javax.swing.JScrollPane();
-                jTextArea3 = new javax.swing.JTextArea();
-
-                setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-                jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel1.setText("100");
-                jLabel1.setAlignmentX(1.0F);
-                jLabel1.setAlignmentY(1.0F);
-                jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel2.setText("100");
-                jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel4.setText("100");
-                jLabel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel3.setText("100");
-                jLabel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel8.setText("100");
-                jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel7.setText("100");
-                jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel6.setText("100");
-                jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel5.setText("100");
-                jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel12.setText("100");
-                jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel11.setText("100");
-                jLabel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel10.setText("100");
-                jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel9.setText("100");
-                jLabel9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel14.setText("100");
-                jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel15.setText("100");
-                jLabel15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel13.setText("100");
-                jLabel13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel17.setText("100");
-                jLabel17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel18.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel18.setText("100");
-                jLabel18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel16.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel16.setText("100");
-                jLabel16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel20.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel20.setText("100");
-                jLabel20.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel19.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel19.setText("100");
-                jLabel19.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel21.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel21.setText("100");
-                jLabel21.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel22.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel22.setText("100");
-                jLabel22.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel23.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel23.setText("100");
-                jLabel23.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel24.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel24.setText("100");
-                jLabel24.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel25.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel25.setText("100");
-                jLabel25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel26.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel26.setText("100");
-                jLabel26.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel27.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel27.setText("100");
-                jLabel27.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel28.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel28.setText("100");
-                jLabel28.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel29.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel29.setText("100");
-                jLabel29.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel30.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel30.setText("100");
-                jLabel30.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel31.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel31.setText("100");
-                jLabel31.setAlignmentX(1.0F);
-                jLabel31.setAlignmentY(1.0F);
-                jLabel31.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel32.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel32.setText("100");
-                jLabel32.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel33.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel33.setText("100");
-                jLabel33.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel34.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel34.setText("100");
-                jLabel34.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel35.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel35.setText("100");
-                jLabel35.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel36.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel36.setText("100");
-                jLabel36.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel37.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel37.setText("100");
-                jLabel37.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel38.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel38.setText("100");
-                jLabel38.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel39.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel39.setText("100");
-                jLabel39.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel40.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel40.setText("100");
-                jLabel40.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel41.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel41.setText("100");
-                jLabel41.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel42.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel42.setText("100");
-                jLabel42.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel43.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel43.setText("100");
-                jLabel43.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel44.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel44.setText("100");
-                jLabel44.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel45.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel45.setText("100");
-                jLabel45.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel46.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel46.setText("100");
-                jLabel46.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel47.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel47.setText("100");
-                jLabel47.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel48.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel48.setText("100");
-                jLabel48.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel49.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel49.setText("100");
-                jLabel49.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel50.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel50.setText("100");
-                jLabel50.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel51.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel51.setText("100");
-                jLabel51.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel52.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel52.setText("100");
-                jLabel52.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel53.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel53.setText("100");
-                jLabel53.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel54.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel54.setText("100");
-                jLabel54.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel55.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel55.setText("100");
-                jLabel55.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel56.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel56.setText("100");
-                jLabel56.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel57.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel57.setText("100");
-                jLabel57.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel58.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel58.setText("100");
-                jLabel58.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel59.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel59.setText("100");
-                jLabel59.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel60.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel60.setText("100");
-                jLabel60.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel61.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel61.setText("100");
-                jLabel61.setAlignmentX(1.0F);
-                jLabel61.setAlignmentY(1.0F);
-                jLabel61.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel62.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel62.setText("100");
-                jLabel62.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel63.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel63.setText("100");
-                jLabel63.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel64.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel64.setText("100");
-                jLabel64.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel65.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel65.setText("100");
-                jLabel65.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel66.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel66.setText("100");
-                jLabel66.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel67.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel67.setText("100");
-                jLabel67.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel68.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel68.setText("100");
-                jLabel68.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel69.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel69.setText("100");
-                jLabel69.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel70.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel70.setText("100");
-                jLabel70.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel71.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel71.setText("100");
-                jLabel71.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel72.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel72.setText("100");
-                jLabel72.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel73.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel73.setText("100");
-                jLabel73.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel74.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel74.setText("100");
-                jLabel74.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel75.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel75.setText("100");
-                jLabel75.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel76.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel76.setText("100");
-                jLabel76.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel77.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel77.setText("100");
-                jLabel77.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel78.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel78.setText("100");
-                jLabel78.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel79.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel79.setText("100");
-                jLabel79.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel80.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel80.setText("100");
-                jLabel80.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel81.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel81.setText("100");
-                jLabel81.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel82.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel82.setText("100");
-                jLabel82.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel83.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel83.setText("100");
-                jLabel83.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel84.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel84.setText("100");
-                jLabel84.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel85.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel85.setText("100");
-                jLabel85.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel86.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel86.setText("100");
-                jLabel86.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel87.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel87.setText("100");
-                jLabel87.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel88.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel88.setText("100");
-                jLabel88.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel89.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel89.setText("100");
-                jLabel89.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel90.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel90.setText("100");
-                jLabel90.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel91.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel91.setText("100");
-                jLabel91.setAlignmentX(1.0F);
-                jLabel91.setAlignmentY(1.0F);
-                jLabel91.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel92.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel92.setText("100");
-                jLabel92.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel93.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel93.setText("100");
-                jLabel93.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel94.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel94.setText("100");
-                jLabel94.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel95.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel95.setText("100");
-                jLabel95.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel96.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel96.setText("100");
-                jLabel96.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel97.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel97.setText("100");
-                jLabel97.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel98.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel98.setText("100");
-                jLabel98.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel99.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel99.setText("100");
-                jLabel99.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel100.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel100.setText("100");
-                jLabel100.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel101.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel101.setText("100");
-                jLabel101.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel102.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel102.setText("100");
-                jLabel102.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel103.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel103.setText("100");
-                jLabel103.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel104.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel104.setText("100");
-                jLabel104.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel105.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel105.setText("100");
-                jLabel105.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel106.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel106.setText("100");
-                jLabel106.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel107.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel107.setText("100");
-                jLabel107.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel108.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel108.setText("100");
-                jLabel108.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel109.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel109.setText("100");
-                jLabel109.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel110.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel110.setText("100");
-                jLabel110.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel111.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel111.setText("100");
-                jLabel111.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel112.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel112.setText("100");
-                jLabel112.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel113.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel113.setText("100");
-                jLabel113.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel114.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel114.setText("100");
-                jLabel114.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel115.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel115.setText("100");
-                jLabel115.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel116.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel116.setText("100");
-                jLabel116.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel117.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel117.setText("100");
-                jLabel117.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel118.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel118.setText("100");
-                jLabel118.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel119.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel119.setText("100");
-                jLabel119.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel120.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel120.setText("100");
-                jLabel120.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel121.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel121.setText("100");
-                jLabel121.setAlignmentX(1.0F);
-                jLabel121.setAlignmentY(1.0F);
-                jLabel121.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel122.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel122.setText("100");
-                jLabel122.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel123.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel123.setText("100");
-                jLabel123.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel124.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel124.setText("100");
-                jLabel124.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel125.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel125.setText("100");
-                jLabel125.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel126.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel126.setText("100");
-                jLabel126.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel127.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel127.setText("100");
-                jLabel127.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel128.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel128.setText("100");
-                jLabel128.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel129.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel129.setText("100");
-                jLabel129.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel130.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel130.setText("100");
-                jLabel130.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel131.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel131.setText("100");
-                jLabel131.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel132.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel132.setText("100");
-                jLabel132.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel133.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel133.setText("100");
-                jLabel133.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel134.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel134.setText("100");
-                jLabel134.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel135.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel135.setText("100");
-                jLabel135.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel136.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel136.setText("100");
-                jLabel136.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel137.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel137.setText("100");
-                jLabel137.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel138.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel138.setText("100");
-                jLabel138.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel139.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel139.setText("100");
-                jLabel139.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel140.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel140.setText("100");
-                jLabel140.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel141.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel141.setText("100");
-                jLabel141.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel142.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel142.setText("100");
-                jLabel142.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel143.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel143.setText("100");
-                jLabel143.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel144.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel144.setText("100");
-                jLabel144.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel145.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel145.setText("100");
-                jLabel145.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel146.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel146.setText("100");
-                jLabel146.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel147.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel147.setText("100");
-                jLabel147.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel148.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel148.setText("100");
-                jLabel148.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel149.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel149.setText("100");
-                jLabel149.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel150.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel150.setText("100");
-                jLabel150.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel151.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel151.setText("100");
-                jLabel151.setAlignmentX(1.0F);
-                jLabel151.setAlignmentY(1.0F);
-                jLabel151.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel152.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel152.setText("100");
-                jLabel152.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel153.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel153.setText("100");
-                jLabel153.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel154.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel154.setText("100");
-                jLabel154.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel155.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel155.setText("100");
-                jLabel155.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel156.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel156.setText("100");
-                jLabel156.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel157.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel157.setText("100");
-                jLabel157.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel158.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel158.setText("100");
-                jLabel158.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel159.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel159.setText("100");
-                jLabel159.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel160.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel160.setText("100");
-                jLabel160.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel161.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel161.setText("100");
-                jLabel161.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel162.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel162.setText("100");
-                jLabel162.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel163.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel163.setText("100");
-                jLabel163.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel164.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel164.setText("100");
-                jLabel164.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel165.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel165.setText("100");
-                jLabel165.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel166.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel166.setText("100");
-                jLabel166.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel167.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel167.setText("100");
-                jLabel167.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel168.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel168.setText("100");
-                jLabel168.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel169.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel169.setText("100");
-                jLabel169.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel170.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel170.setText("100");
-                jLabel170.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel171.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel171.setText("100");
-                jLabel171.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel172.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel172.setText("100");
-                jLabel172.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel173.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel173.setText("100");
-                jLabel173.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel174.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel174.setText("100");
-                jLabel174.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel175.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel175.setText("100");
-                jLabel175.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel176.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel176.setText("100");
-                jLabel176.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel177.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel177.setText("100");
-                jLabel177.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel178.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel178.setText("100");
-                jLabel178.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel179.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel179.setText("100");
-                jLabel179.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel180.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel180.setText("100");
-                jLabel180.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel181.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel181.setText("100");
-                jLabel181.setAlignmentX(1.0F);
-                jLabel181.setAlignmentY(1.0F);
-                jLabel181.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel182.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel182.setText("100");
-                jLabel182.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel183.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel183.setText("100");
-                jLabel183.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel184.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel184.setText("100");
-                jLabel184.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel185.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel185.setText("100");
-                jLabel185.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel186.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel186.setText("100");
-                jLabel186.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel187.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel187.setText("100");
-                jLabel187.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel188.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel188.setText("100");
-                jLabel188.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel189.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel189.setText("100");
-                jLabel189.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel190.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel190.setText("100");
-                jLabel190.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel191.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel191.setText("100");
-                jLabel191.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel192.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel192.setText("100");
-                jLabel192.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel193.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel193.setText("100");
-                jLabel193.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel194.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel194.setText("100");
-                jLabel194.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel195.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel195.setText("100");
-                jLabel195.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel196.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel196.setText("100");
-                jLabel196.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel197.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel197.setText("100");
-                jLabel197.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel198.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel198.setText("100");
-                jLabel198.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel199.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel199.setText("100");
-                jLabel199.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel200.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel200.setText("100");
-                jLabel200.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel201.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel201.setText("100");
-                jLabel201.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel202.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel202.setText("100");
-                jLabel202.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel203.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel203.setText("100");
-                jLabel203.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel204.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel204.setText("100");
-                jLabel204.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel205.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel205.setText("100");
-                jLabel205.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel206.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel206.setText("100");
-                jLabel206.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel207.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel207.setText("100");
-                jLabel207.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel208.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel208.setText("100");
-                jLabel208.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel209.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel209.setText("100");
-                jLabel209.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel210.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel210.setText("100");
-                jLabel210.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel211.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel211.setText("100");
-                jLabel211.setAlignmentX(1.0F);
-                jLabel211.setAlignmentY(1.0F);
-                jLabel211.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel212.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel212.setText("100");
-                jLabel212.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel213.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel213.setText("100");
-                jLabel213.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel214.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel214.setText("100");
-                jLabel214.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel215.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel215.setText("100");
-                jLabel215.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel216.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel216.setText("100");
-                jLabel216.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel217.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel217.setText("100");
-                jLabel217.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel218.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel218.setText("100");
-                jLabel218.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel219.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel219.setText("100");
-                jLabel219.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel220.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel220.setText("100");
-                jLabel220.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel221.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel221.setText("100");
-                jLabel221.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel222.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel222.setText("100");
-                jLabel222.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel223.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel223.setText("100");
-                jLabel223.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel224.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel224.setText("100");
-                jLabel224.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel225.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel225.setText("100");
-                jLabel225.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel226.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel226.setText("100");
-                jLabel226.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel227.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel227.setText("100");
-                jLabel227.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel228.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel228.setText("100");
-                jLabel228.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel229.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel229.setText("100");
-                jLabel229.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel230.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel230.setText("100");
-                jLabel230.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel231.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel231.setText("100");
-                jLabel231.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel232.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel232.setText("100");
-                jLabel232.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel233.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel233.setText("100");
-                jLabel233.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel234.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel234.setText("100");
-                jLabel234.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel235.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel235.setText("100");
-                jLabel235.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel236.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel236.setText("100");
-                jLabel236.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel237.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel237.setText("100");
-                jLabel237.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel238.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel238.setText("100");
-                jLabel238.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel239.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel239.setText("100");
-                jLabel239.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel240.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel240.setText("100");
-                jLabel240.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel241.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel241.setText("100");
-                jLabel241.setAlignmentX(1.0F);
-                jLabel241.setAlignmentY(1.0F);
-                jLabel241.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel242.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel242.setText("100");
-                jLabel242.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel243.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel243.setText("100");
-                jLabel243.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel244.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel244.setText("100");
-                jLabel244.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel245.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel245.setText("100");
-                jLabel245.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel246.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel246.setText("100");
-                jLabel246.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel247.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel247.setText("100");
-                jLabel247.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel248.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel248.setText("100");
-                jLabel248.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel249.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel249.setText("100");
-                jLabel249.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel250.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel250.setText("100");
-                jLabel250.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel251.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel251.setText("100");
-                jLabel251.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel252.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel252.setText("100");
-                jLabel252.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel253.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel253.setText("100");
-                jLabel253.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel254.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel254.setText("100");
-                jLabel254.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel255.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel255.setText("100");
-                jLabel255.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel256.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel256.setText("100");
-                jLabel256.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel257.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel257.setText("100");
-                jLabel257.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel258.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel258.setText("100");
-                jLabel258.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel259.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel259.setText("100");
-                jLabel259.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel260.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel260.setText("100");
-                jLabel260.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel261.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel261.setText("100");
-                jLabel261.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel262.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel262.setText("100");
-                jLabel262.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel263.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel263.setText("100");
-                jLabel263.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel264.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel264.setText("100");
-                jLabel264.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel265.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel265.setText("100");
-                jLabel265.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel266.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel266.setText("100");
-                jLabel266.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel267.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel267.setText("100");
-                jLabel267.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel268.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel268.setText("100");
-                jLabel268.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel269.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel269.setText("100");
-                jLabel269.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel270.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel270.setText("100");
-                jLabel270.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel271.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel271.setText("100");
-                jLabel271.setAlignmentX(1.0F);
-                jLabel271.setAlignmentY(1.0F);
-                jLabel271.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel272.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel272.setText("100");
-                jLabel272.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel273.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel273.setText("100");
-                jLabel273.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel274.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel274.setText("100");
-                jLabel274.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel275.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel275.setText("100");
-                jLabel275.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel276.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel276.setText("100");
-                jLabel276.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel277.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel277.setText("100");
-                jLabel277.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel278.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel278.setText("100");
-                jLabel278.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel279.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel279.setText("100");
-                jLabel279.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel280.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel280.setText("100");
-                jLabel280.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel281.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel281.setText("100");
-                jLabel281.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel282.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel282.setText("100");
-                jLabel282.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel283.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel283.setText("100");
-                jLabel283.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel284.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel284.setText("100");
-                jLabel284.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel285.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel285.setText("100");
-                jLabel285.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel286.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel286.setText("100");
-                jLabel286.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel287.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel287.setText("100");
-                jLabel287.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel288.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel288.setText("100");
-                jLabel288.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel289.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel289.setText("100");
-                jLabel289.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel290.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel290.setText("100");
-                jLabel290.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel291.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel291.setText("100");
-                jLabel291.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel292.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel292.setText("100");
-                jLabel292.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel293.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel293.setText("100");
-                jLabel293.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel294.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel294.setText("100");
-                jLabel294.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel295.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel295.setText("100");
-                jLabel295.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel296.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel296.setText("100");
-                jLabel296.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel297.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel297.setText("100");
-                jLabel297.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel298.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel298.setText("100");
-                jLabel298.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel299.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel299.setText("100");
-                jLabel299.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel300.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel300.setText("100");
-                jLabel300.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel301.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel301.setText("100");
-                jLabel301.setAlignmentX(1.0F);
-                jLabel301.setAlignmentY(1.0F);
-                jLabel301.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel302.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel302.setText("100");
-                jLabel302.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel303.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel303.setText("100");
-                jLabel303.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel304.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel304.setText("100");
-                jLabel304.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel305.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel305.setText("100");
-                jLabel305.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel306.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel306.setText("100");
-                jLabel306.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel307.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel307.setText("100");
-                jLabel307.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel308.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel308.setText("100");
-                jLabel308.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel309.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel309.setText("100");
-                jLabel309.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel310.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel310.setText("100");
-                jLabel310.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel311.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel311.setText("100");
-                jLabel311.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel312.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel312.setText("100");
-                jLabel312.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel313.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel313.setText("100");
-                jLabel313.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel314.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel314.setText("100");
-                jLabel314.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel315.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel315.setText("100");
-                jLabel315.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel316.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel316.setText("100");
-                jLabel316.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel317.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel317.setText("100");
-                jLabel317.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel318.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel318.setText("100");
-                jLabel318.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel319.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel319.setText("100");
-                jLabel319.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel320.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel320.setText("100");
-                jLabel320.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel321.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel321.setText("100");
-                jLabel321.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel322.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel322.setText("100");
-                jLabel322.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel323.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel323.setText("100");
-                jLabel323.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel324.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel324.setText("100");
-                jLabel324.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel325.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel325.setText("100");
-                jLabel325.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel326.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel326.setText("100");
-                jLabel326.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel327.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel327.setText("100");
-                jLabel327.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel328.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel328.setText("100");
-                jLabel328.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel329.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel329.setText("100");
-                jLabel329.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel330.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel330.setText("100");
-                jLabel330.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel331.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel331.setText("100");
-                jLabel331.setAlignmentX(1.0F);
-                jLabel331.setAlignmentY(1.0F);
-                jLabel331.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel332.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel332.setText("100");
-                jLabel332.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel333.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel333.setText("100");
-                jLabel333.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel334.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel334.setText("100");
-                jLabel334.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel335.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel335.setText("100");
-                jLabel335.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel336.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel336.setText("100");
-                jLabel336.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel337.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel337.setText("100");
-                jLabel337.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel338.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel338.setText("100");
-                jLabel338.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel339.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel339.setText("100");
-                jLabel339.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel340.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel340.setText("100");
-                jLabel340.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel341.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel341.setText("100");
-                jLabel341.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel342.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel342.setText("100");
-                jLabel342.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel343.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel343.setText("100");
-                jLabel343.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel344.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel344.setText("100");
-                jLabel344.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel345.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel345.setText("100");
-                jLabel345.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel346.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel346.setText("100");
-                jLabel346.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel347.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel347.setText("100");
-                jLabel347.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel348.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel348.setText("100");
-                jLabel348.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel349.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel349.setText("100");
-                jLabel349.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel350.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel350.setText("100");
-                jLabel350.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel351.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel351.setText("100");
-                jLabel351.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel352.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel352.setText("100");
-                jLabel352.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel353.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel353.setText("100");
-                jLabel353.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel354.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel354.setText("100");
-                jLabel354.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel355.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel355.setText("100");
-                jLabel355.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel356.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel356.setText("100");
-                jLabel356.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel357.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel357.setText("100");
-                jLabel357.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel358.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel358.setText("100");
-                jLabel358.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel359.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel359.setText("100");
-                jLabel359.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel360.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel360.setText("100");
-                jLabel360.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel361.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel361.setText("100");
-                jLabel361.setAlignmentX(1.0F);
-                jLabel361.setAlignmentY(1.0F);
-                jLabel361.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel362.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel362.setText("100");
-                jLabel362.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel363.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel363.setText("100");
-                jLabel363.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel364.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel364.setText("100");
-                jLabel364.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel365.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel365.setText("100");
-                jLabel365.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel366.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel366.setText("100");
-                jLabel366.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel367.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel367.setText("100");
-                jLabel367.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel368.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel368.setText("100");
-                jLabel368.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel369.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel369.setText("100");
-                jLabel369.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel370.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel370.setText("100");
-                jLabel370.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel371.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel371.setText("100");
-                jLabel371.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel372.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel372.setText("100");
-                jLabel372.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel373.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel373.setText("100");
-                jLabel373.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel374.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel374.setText("100");
-                jLabel374.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel375.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel375.setText("100");
-                jLabel375.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel376.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel376.setText("100");
-                jLabel376.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel377.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel377.setText("100");
-                jLabel377.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel378.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel378.setText("100");
-                jLabel378.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel379.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel379.setText("100");
-                jLabel379.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel380.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel380.setText("100");
-                jLabel380.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel381.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel381.setText("100");
-                jLabel381.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel382.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel382.setText("100");
-                jLabel382.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel383.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel383.setText("100");
-                jLabel383.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel384.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel384.setText("100");
-                jLabel384.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel385.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel385.setText("100");
-                jLabel385.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel386.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel386.setText("100");
-                jLabel386.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel387.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel387.setText("100");
-                jLabel387.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel388.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel388.setText("100");
-                jLabel388.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel389.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel389.setText("100");
-                jLabel389.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel390.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel390.setText("100");
-                jLabel390.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel391.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel391.setText("100");
-                jLabel391.setAlignmentX(1.0F);
-                jLabel391.setAlignmentY(1.0F);
-                jLabel391.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel392.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel392.setText("100");
-                jLabel392.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel393.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel393.setText("100");
-                jLabel393.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel394.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel394.setText("100");
-                jLabel394.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel395.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel395.setText("100");
-                jLabel395.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel396.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel396.setText("100");
-                jLabel396.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel397.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel397.setText("100");
-                jLabel397.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel398.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel398.setText("100");
-                jLabel398.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel399.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel399.setText("100");
-                jLabel399.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel400.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel400.setText("100");
-                jLabel400.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel401.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel401.setText("100");
-                jLabel401.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel402.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel402.setText("100");
-                jLabel402.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel403.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel403.setText("100");
-                jLabel403.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel404.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel404.setText("100");
-                jLabel404.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel405.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel405.setText("100");
-                jLabel405.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel406.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel406.setText("100");
-                jLabel406.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel407.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel407.setText("100");
-                jLabel407.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel408.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel408.setText("100");
-                jLabel408.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel409.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel409.setText("100");
-                jLabel409.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel410.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel410.setText("100");
-                jLabel410.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel411.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel411.setText("100");
-                jLabel411.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel412.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel412.setText("100");
-                jLabel412.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel413.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel413.setText("100");
-                jLabel413.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel414.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel414.setText("100");
-                jLabel414.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel415.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel415.setText("100");
-                jLabel415.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel416.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel416.setText("100");
-                jLabel416.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel417.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel417.setText("100");
-                jLabel417.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel418.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel418.setText("100");
-                jLabel418.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel419.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel419.setText("100");
-                jLabel419.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel420.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel420.setText("100");
-                jLabel420.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel421.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel421.setText("100");
-                jLabel421.setAlignmentX(1.0F);
-                jLabel421.setAlignmentY(1.0F);
-                jLabel421.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel422.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel422.setText("100");
-                jLabel422.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel423.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel423.setText("100");
-                jLabel423.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel424.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel424.setText("100");
-                jLabel424.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel425.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel425.setText("100");
-                jLabel425.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel426.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel426.setText("100");
-                jLabel426.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel427.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel427.setText("100");
-                jLabel427.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel428.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel428.setText("100");
-                jLabel428.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel429.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel429.setText("100");
-                jLabel429.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel430.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel430.setText("100");
-                jLabel430.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel431.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel431.setText("100");
-                jLabel431.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel432.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel432.setText("100");
-                jLabel432.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel433.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel433.setText("100");
-                jLabel433.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel434.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel434.setText("100");
-                jLabel434.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel435.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel435.setText("100");
-                jLabel435.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel436.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel436.setText("100");
-                jLabel436.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel437.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel437.setText("100");
-                jLabel437.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel438.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel438.setText("100");
-                jLabel438.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel439.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel439.setText("100");
-                jLabel439.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel440.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel440.setText("100");
-                jLabel440.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel441.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel441.setText("100");
-                jLabel441.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel442.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel442.setText("100");
-                jLabel442.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel443.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel443.setText("100");
-                jLabel443.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel444.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel444.setText("100");
-                jLabel444.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel445.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel445.setText("100");
-                jLabel445.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel446.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel446.setText("100");
-                jLabel446.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel447.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel447.setText("100");
-                jLabel447.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel448.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel448.setText("100");
-                jLabel448.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel449.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel449.setText("100");
-                jLabel449.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel450.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel450.setText("100");
-                jLabel450.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel451.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel451.setText("100");
-                jLabel451.setAlignmentX(1.0F);
-                jLabel451.setAlignmentY(1.0F);
-                jLabel451.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel452.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel452.setText("100");
-                jLabel452.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel453.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel453.setText("100");
-                jLabel453.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel454.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel454.setText("100");
-                jLabel454.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel455.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel455.setText("100");
-                jLabel455.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel456.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel456.setText("100");
-                jLabel456.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel457.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel457.setText("100");
-                jLabel457.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel458.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel458.setText("100");
-                jLabel458.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel459.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel459.setText("100");
-                jLabel459.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel460.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel460.setText("100");
-                jLabel460.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel461.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel461.setText("100");
-                jLabel461.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel462.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel462.setText("100");
-                jLabel462.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel463.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel463.setText("100");
-                jLabel463.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel464.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel464.setText("100");
-                jLabel464.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel465.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel465.setText("100");
-                jLabel465.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel466.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel466.setText("100");
-                jLabel466.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel467.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel467.setText("100");
-                jLabel467.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel468.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel468.setText("100");
-                jLabel468.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel469.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel469.setText("100");
-                jLabel469.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel470.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel470.setText("100");
-                jLabel470.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel471.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel471.setText("100");
-                jLabel471.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel472.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel472.setText("100");
-                jLabel472.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel473.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel473.setText("100");
-                jLabel473.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel474.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel474.setText("100");
-                jLabel474.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel475.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel475.setText("100");
-                jLabel475.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel476.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel476.setText("100");
-                jLabel476.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel477.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel477.setText("100");
-                jLabel477.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel478.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel478.setText("100");
-                jLabel478.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel479.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel479.setText("100");
-                jLabel479.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel480.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel480.setText("100");
-                jLabel480.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel481.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel481.setText("100");
-                jLabel481.setAlignmentX(1.0F);
-                jLabel481.setAlignmentY(1.0F);
-                jLabel481.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel482.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel482.setText("100");
-                jLabel482.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel483.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel483.setText("100");
-                jLabel483.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel484.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel484.setText("100");
-                jLabel484.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel485.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel485.setText("100");
-                jLabel485.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel486.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel486.setText("100");
-                jLabel486.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel487.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel487.setText("100");
-                jLabel487.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel488.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel488.setText("100");
-                jLabel488.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel489.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel489.setText("100");
-                jLabel489.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel490.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel490.setText("100");
-                jLabel490.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel491.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel491.setText("100");
-                jLabel491.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel492.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel492.setText("100");
-                jLabel492.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel493.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel493.setText("100");
-                jLabel493.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel494.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel494.setText("100");
-                jLabel494.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel495.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel495.setText("100");
-                jLabel495.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel496.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel496.setText("100");
-                jLabel496.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel497.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel497.setText("100");
-                jLabel497.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel498.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel498.setText("100");
-                jLabel498.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel499.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel499.setText("100");
-                jLabel499.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel500.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel500.setText("100");
-                jLabel500.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel501.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel501.setText("100");
-                jLabel501.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel502.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel502.setText("100");
-                jLabel502.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel503.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel503.setText("100");
-                jLabel503.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel504.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel504.setText("100");
-                jLabel504.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel505.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel505.setText("100");
-                jLabel505.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel506.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel506.setText("100");
-                jLabel506.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel507.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel507.setText("100");
-                jLabel507.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel508.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel508.setText("100");
-                jLabel508.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel509.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel509.setText("100");
-                jLabel509.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel510.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel510.setText("100");
-                jLabel510.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel511.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel511.setText("100");
-                jLabel511.setAlignmentX(1.0F);
-                jLabel511.setAlignmentY(1.0F);
-                jLabel511.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel512.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel512.setText("100");
-                jLabel512.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel513.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel513.setText("100");
-                jLabel513.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel514.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel514.setText("100");
-                jLabel514.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel515.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel515.setText("100");
-                jLabel515.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel516.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel516.setText("100");
-                jLabel516.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel517.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel517.setText("100");
-                jLabel517.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel518.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel518.setText("100");
-                jLabel518.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel519.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel519.setText("100");
-                jLabel519.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel520.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel520.setText("100");
-                jLabel520.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel521.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel521.setText("100");
-                jLabel521.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel522.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel522.setText("100");
-                jLabel522.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel523.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel523.setText("100");
-                jLabel523.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel524.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel524.setText("100");
-                jLabel524.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel525.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel525.setText("100");
-                jLabel525.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel526.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel526.setText("100");
-                jLabel526.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel527.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel527.setText("100");
-                jLabel527.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel528.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel528.setText("100");
-                jLabel528.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel529.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel529.setText("100");
-                jLabel529.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel530.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel530.setText("100");
-                jLabel530.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel531.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel531.setText("100");
-                jLabel531.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel532.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel532.setText("100");
-                jLabel532.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel533.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel533.setText("100");
-                jLabel533.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel534.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel534.setText("100");
-                jLabel534.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel535.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel535.setText("100");
-                jLabel535.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel536.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel536.setText("100");
-                jLabel536.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel537.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel537.setText("100");
-                jLabel537.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel538.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel538.setText("100");
-                jLabel538.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel539.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel539.setText("100");
-                jLabel539.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel540.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel540.setText("100");
-                jLabel540.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel571.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel571.setText("100");
-                jLabel571.setAlignmentX(1.0F);
-                jLabel571.setAlignmentY(1.0F);
-                jLabel571.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel572.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel572.setText("100");
-                jLabel572.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel573.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel573.setText("100");
-                jLabel573.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel574.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel574.setText("100");
-                jLabel574.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel575.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel575.setText("100");
-                jLabel575.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel576.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel576.setText("100");
-                jLabel576.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel578.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel578.setText("100");
-                jLabel578.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel579.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel579.setText("100");
-                jLabel579.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel580.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel580.setText("100");
-                jLabel580.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel581.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel581.setText("100");
-                jLabel581.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel582.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel582.setText("100");
-                jLabel582.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel583.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel583.setText("100");
-                jLabel583.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel584.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel584.setText("100");
-                jLabel584.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel585.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel585.setText("100");
-                jLabel585.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel586.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel586.setText("100");
-                jLabel586.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel587.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel587.setText("100");
-                jLabel587.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel588.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel588.setText("100");
-                jLabel588.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel589.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel589.setText("100");
-                jLabel589.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel590.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel590.setText("100");
-                jLabel590.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel591.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel591.setText("100");
-                jLabel591.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel592.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel592.setText("100");
-                jLabel592.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel593.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel593.setText("100");
-                jLabel593.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel594.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel594.setText("100");
-                jLabel594.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel595.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel595.setText("100");
-                jLabel595.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel596.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel596.setText("100");
-                jLabel596.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel597.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel597.setText("100");
-                jLabel597.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel598.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel598.setText("100");
-                jLabel598.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel599.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel599.setText("100");
-                jLabel599.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel600.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel600.setText("100");
-                jLabel600.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel541.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel541.setText("100");
-                jLabel541.setAlignmentX(1.0F);
-                jLabel541.setAlignmentY(1.0F);
-                jLabel541.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel542.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel542.setText("100");
-                jLabel542.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel543.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel543.setText("100");
-                jLabel543.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel544.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel544.setText("100");
-                jLabel544.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel545.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel545.setText("100");
-                jLabel545.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel546.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel546.setText("100");
-                jLabel546.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel547.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel547.setText("100");
-                jLabel547.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel548.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel548.setText("100");
-                jLabel548.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel549.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel549.setText("100");
-                jLabel549.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel550.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel550.setText("100");
-                jLabel550.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel551.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel551.setText("100");
-                jLabel551.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel552.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel552.setText("100");
-                jLabel552.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel553.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel553.setText("100");
-                jLabel553.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel554.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel554.setText("100");
-                jLabel554.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel555.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel555.setText("100");
-                jLabel555.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel556.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel556.setText("100");
-                jLabel556.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel557.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel557.setText("100");
-                jLabel557.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel558.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel558.setText("100");
-                jLabel558.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel559.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel559.setText("100");
-                jLabel559.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel560.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel560.setText("100");
-                jLabel560.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel561.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel561.setText("100");
-                jLabel561.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel562.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel562.setText("100");
-                jLabel562.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel563.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel563.setText("100");
-                jLabel563.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel564.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel564.setText("100");
-                jLabel564.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel565.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel565.setText("100");
-                jLabel565.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel566.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel566.setText("100");
-                jLabel566.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel567.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel567.setText("100");
-                jLabel567.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel568.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel568.setText("100");
-                jLabel568.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel569.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel569.setText("100");
-                jLabel569.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel570.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel570.setText("100");
-                jLabel570.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                jLabel577.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-                jLabel577.setText("100");
-                jLabel577.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-                javax.swing.GroupLayout jPuebloLayout = new javax.swing.GroupLayout(jPueblo);
-                jPueblo.setLayout(jPuebloLayout);
-                jPuebloLayout.setHorizontalGroup(
-                                jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(jPuebloLayout.createSequentialGroup()
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createParallelGroup(
-                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createSequentialGroup()
-                                                                                                                .addComponent(jLabel271)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel272)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel273)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel274)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel275)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel276)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel277)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel278)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel279)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel280)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel281)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel282)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel283)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel284)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel285)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel286)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel287)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel288)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel289)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel290)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel291)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel292)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel293)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel294)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel295)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel296)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel297)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel298)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel299)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel300))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createParallelGroup(
-                                                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                .addComponent(jLabel151)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel152)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel153)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel154)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel155)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel156)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel157)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel158)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel159)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel160)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel161)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel162)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel163)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel164)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel165)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel166)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel167)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel168)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel169)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel170)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel171)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel172)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel173)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel174)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel175)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel176)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel177)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel178)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel179)
-                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                .addComponent(jLabel180))
-                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                .createParallelGroup(
-                                                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                .addComponent(jLabel1)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel2)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel3)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel4)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel5)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel6)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel7)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel8)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel9)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel10)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel11)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel12)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel13)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel14)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel15)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel16)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel17)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel18)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel19)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel20)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel21)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel22)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel23)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel24)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel25)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel26)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel27)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel28)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel29)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel30))
-                                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                .addComponent(jLabel31)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel32)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel33)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel34)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel35)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel36)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel37)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel38)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel39)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel40)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel41)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel42)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel43)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel44)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel45)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel46)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel47)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel48)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel49)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel50)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel51)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel52)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel53)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel54)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel55)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel56)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel57)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel58)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel59)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel60))
-                                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                .addComponent(jLabel61)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel62)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel63)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel64)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel65)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel66)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel67)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel68)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel69)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel70)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel71)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel72)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel73)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel74)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel75)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel76)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel77)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel78)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel79)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel80)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel81)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel82)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel83)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel84)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel85)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel86)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel87)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel88)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel89)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel90))
-                                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                .addComponent(jLabel91)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel92)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel93)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel94)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel95)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel96)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel97)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel98)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel99)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel100)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel101)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel102)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel103)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel104)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel105)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel106)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel107)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel108)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel109)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel110)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel111)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel112)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel113)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel114)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel115)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel116)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel117)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel118)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel119)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel120))
-                                                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                .addComponent(jLabel121)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel122)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel123)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel124)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel125)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel126)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel127)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel128)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel129)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel130)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel131)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel132)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel133)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel134)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel135)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel136)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel137)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel138)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel139)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel140)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel141)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel142)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel143)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel144)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel145)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel146)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel147)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel148)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel149)
-                                                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                                                .addComponent(jLabel150))))
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel181)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel182)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel183)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel184)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel185)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel186)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel187)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel188)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel189)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel190)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel191)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel192)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel193)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel194)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel195)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel196)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel197)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel198)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel199)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel200)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel201)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel202)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel203)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel204)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel205)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel206)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel207)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel208)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel209)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel210))
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel211)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel212)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel213)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel214)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel215)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel216)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel217)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel218)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel219)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel220)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel221)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel222)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel223)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel224)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel225)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel226)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel227)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel228)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel229)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel230)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel231)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel232)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel233)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel234)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel235)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel236)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel237)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel238)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel239)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel240))
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel241)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel242)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel243)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel244)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel245)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel246)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel247)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel248)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel249)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel250)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel251)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel252)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel253)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel254)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel255)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel256)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel257)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel258)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel259)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel260)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel261)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel262)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel263)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel264)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel265)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel266)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel267)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel268)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel269)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel270))))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel301)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel302)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel303)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel304)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel305)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel306)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel307)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel308)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel309)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel310)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel311)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel312)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel313)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel314)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel315)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel316)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel317)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel318)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel319)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel320)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel321)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel322)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel323)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel324)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel325)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel326)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel327)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel328)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel329)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel330))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel331)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel332)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel333)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel334)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel335)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel336)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel337)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel338)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel339)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel340)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel341)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel342)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel343)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel344)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel345)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel346)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel347)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel348)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel349)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel350)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel351)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel352)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel353)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel354)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel355)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel356)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel357)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel358)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel359)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel360))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel361)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel362)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel363)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel364)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel365)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel366)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel367)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel368)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel369)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel370)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel371)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel372)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel373)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel374)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel375)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel376)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel377)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel378)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel379)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel380)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel381)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel382)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel383)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel384)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel385)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel386)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel387)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel388)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel389)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel390))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel391)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel392)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel393)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel394)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel395)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel396)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel397)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel398)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel399)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel400)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel401)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel402)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel403)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel404)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel405)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel406)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel407)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel408)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel409)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel410)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel411)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel412)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel413)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel414)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel415)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel416)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel417)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel418)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel419)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel420))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel481)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel482)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel483)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel484)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel485)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel486)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel487)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel488)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel489)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel490)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel491)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel492)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel493)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel494)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel495)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel496)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel497)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel498)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel499)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel500)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel501)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel502)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel503)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel504)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel505)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel506)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel507)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel508)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel509)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel510))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addComponent(jLabel511)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel512)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel513)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel514)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel515)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel516)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel517)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel518)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel519)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel520)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel521)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel522)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel523)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel524)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel525)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel526)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel527)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel528)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel529)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel530)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel531)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel532)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel533)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel534)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel535)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel536)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel537)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel538)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel539)
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addComponent(jLabel540))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createSequentialGroup()
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel541,
-                                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel571)
-                                                                                                                                .addGap(0, 0, Short.MAX_VALUE)))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel542)
-                                                                                                                .addComponent(jLabel572))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel543)
-                                                                                                                .addComponent(jLabel573))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel544)
-                                                                                                                .addComponent(jLabel574))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel545)
-                                                                                                                .addComponent(jLabel575))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel546)
-                                                                                                                .addComponent(jLabel576))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                false)
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel547)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel548)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel549)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel550))
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel577)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel578)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel579)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel580)))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel551)
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                                                                                                .addComponent(jLabel581)))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addComponent(jLabel582)
-                                                                                                                .addComponent(jLabel552))
-                                                                                                .addGap(0, 0, 0)
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel583)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel584)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel585)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel586)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel587)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel588)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel589)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel590)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel591)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel592)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel593)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel594)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel595)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel596)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel597)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel598)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel599)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel600))
-                                                                                                                .addGroup(jPuebloLayout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(jLabel553)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel554)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel555)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel556)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel557)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel558)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel559)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel560)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel561)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel562)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel563)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel564)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel565)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel566)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel567)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel568)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel569)
-                                                                                                                                .addGap(0, 0, 0)
-                                                                                                                                .addComponent(jLabel570)))
-                                                                                                .addGap(29, 29, 29))
-                                                                                .addGroup(jPuebloLayout
-                                                                                                .createParallelGroup(
-                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING,
-                                                                                                                false)
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createSequentialGroup()
-                                                                                                                .addComponent(jLabel421)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel422)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel423)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel424)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel425)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel426)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel427)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel428)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel429)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel430)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel431)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel432)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel433)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel434)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel435)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel436)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel437)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel438)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel439)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel440)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel441)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel442)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel443)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel444)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel445)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel446)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel447)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel448)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel449)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel450,
-                                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                                Short.MAX_VALUE))
-                                                                                                .addGroup(jPuebloLayout
-                                                                                                                .createSequentialGroup()
-                                                                                                                .addComponent(jLabel451)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel452)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel453)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel454)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel455)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel456)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel457)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel458)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel459)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel460)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel461)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel462)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel463)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel464)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel465)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel466)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel467)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel468)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel469)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel470)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel471)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel472)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel473)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel474)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel475)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel476)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel477)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel478)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel479)
-                                                                                                                .addGap(0, 0, 0)
-                                                                                                                .addComponent(jLabel480))))
-                                                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                Short.MAX_VALUE)));
-                jPuebloLayout.setVerticalGroup(
-                                jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(jPuebloLayout.createSequentialGroup()
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel1)
-                                                                                .addComponent(jLabel2)
-                                                                                .addComponent(jLabel3)
-                                                                                .addComponent(jLabel4)
-                                                                                .addComponent(jLabel5)
-                                                                                .addComponent(jLabel6)
-                                                                                .addComponent(jLabel7)
-                                                                                .addComponent(jLabel8)
-                                                                                .addComponent(jLabel9)
-                                                                                .addComponent(jLabel10)
-                                                                                .addComponent(jLabel11)
-                                                                                .addComponent(jLabel12)
-                                                                                .addComponent(jLabel13)
-                                                                                .addComponent(jLabel14)
-                                                                                .addComponent(jLabel15)
-                                                                                .addComponent(jLabel16)
-                                                                                .addComponent(jLabel17)
-                                                                                .addComponent(jLabel18)
-                                                                                .addComponent(jLabel19)
-                                                                                .addComponent(jLabel20)
-                                                                                .addComponent(jLabel21)
-                                                                                .addComponent(jLabel22)
-                                                                                .addComponent(jLabel23)
-                                                                                .addComponent(jLabel24)
-                                                                                .addComponent(jLabel25)
-                                                                                .addComponent(jLabel26)
-                                                                                .addComponent(jLabel27)
-                                                                                .addComponent(jLabel28)
-                                                                                .addComponent(jLabel29)
-                                                                                .addComponent(jLabel30))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel31)
-                                                                                .addComponent(jLabel32)
-                                                                                .addComponent(jLabel33)
-                                                                                .addComponent(jLabel34)
-                                                                                .addComponent(jLabel35)
-                                                                                .addComponent(jLabel36)
-                                                                                .addComponent(jLabel37)
-                                                                                .addComponent(jLabel38)
-                                                                                .addComponent(jLabel39)
-                                                                                .addComponent(jLabel40)
-                                                                                .addComponent(jLabel41)
-                                                                                .addComponent(jLabel42)
-                                                                                .addComponent(jLabel43)
-                                                                                .addComponent(jLabel44)
-                                                                                .addComponent(jLabel45)
-                                                                                .addComponent(jLabel46)
-                                                                                .addComponent(jLabel47)
-                                                                                .addComponent(jLabel48)
-                                                                                .addComponent(jLabel49)
-                                                                                .addComponent(jLabel50)
-                                                                                .addComponent(jLabel51)
-                                                                                .addComponent(jLabel52)
-                                                                                .addComponent(jLabel53)
-                                                                                .addComponent(jLabel54)
-                                                                                .addComponent(jLabel55)
-                                                                                .addComponent(jLabel56)
-                                                                                .addComponent(jLabel57)
-                                                                                .addComponent(jLabel58)
-                                                                                .addComponent(jLabel59)
-                                                                                .addComponent(jLabel60))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel61)
-                                                                                .addComponent(jLabel62)
-                                                                                .addComponent(jLabel63)
-                                                                                .addComponent(jLabel64)
-                                                                                .addComponent(jLabel65)
-                                                                                .addComponent(jLabel66)
-                                                                                .addComponent(jLabel67)
-                                                                                .addComponent(jLabel68)
-                                                                                .addComponent(jLabel69)
-                                                                                .addComponent(jLabel70)
-                                                                                .addComponent(jLabel71)
-                                                                                .addComponent(jLabel72)
-                                                                                .addComponent(jLabel73)
-                                                                                .addComponent(jLabel74)
-                                                                                .addComponent(jLabel75)
-                                                                                .addComponent(jLabel76)
-                                                                                .addComponent(jLabel77)
-                                                                                .addComponent(jLabel78)
-                                                                                .addComponent(jLabel79)
-                                                                                .addComponent(jLabel80)
-                                                                                .addComponent(jLabel81)
-                                                                                .addComponent(jLabel82)
-                                                                                .addComponent(jLabel83)
-                                                                                .addComponent(jLabel84)
-                                                                                .addComponent(jLabel85)
-                                                                                .addComponent(jLabel86)
-                                                                                .addComponent(jLabel87)
-                                                                                .addComponent(jLabel88)
-                                                                                .addComponent(jLabel89)
-                                                                                .addComponent(jLabel90))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel91)
-                                                                                .addComponent(jLabel92)
-                                                                                .addComponent(jLabel93)
-                                                                                .addComponent(jLabel94)
-                                                                                .addComponent(jLabel95)
-                                                                                .addComponent(jLabel96)
-                                                                                .addComponent(jLabel97)
-                                                                                .addComponent(jLabel98)
-                                                                                .addComponent(jLabel99)
-                                                                                .addComponent(jLabel100)
-                                                                                .addComponent(jLabel101)
-                                                                                .addComponent(jLabel102)
-                                                                                .addComponent(jLabel103)
-                                                                                .addComponent(jLabel104)
-                                                                                .addComponent(jLabel105)
-                                                                                .addComponent(jLabel106)
-                                                                                .addComponent(jLabel107)
-                                                                                .addComponent(jLabel108)
-                                                                                .addComponent(jLabel109)
-                                                                                .addComponent(jLabel110)
-                                                                                .addComponent(jLabel111)
-                                                                                .addComponent(jLabel112)
-                                                                                .addComponent(jLabel113)
-                                                                                .addComponent(jLabel114)
-                                                                                .addComponent(jLabel115)
-                                                                                .addComponent(jLabel116)
-                                                                                .addComponent(jLabel117)
-                                                                                .addComponent(jLabel118)
-                                                                                .addComponent(jLabel119)
-                                                                                .addComponent(jLabel120))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel121)
-                                                                                .addComponent(jLabel122)
-                                                                                .addComponent(jLabel123)
-                                                                                .addComponent(jLabel124)
-                                                                                .addComponent(jLabel125)
-                                                                                .addComponent(jLabel126)
-                                                                                .addComponent(jLabel127)
-                                                                                .addComponent(jLabel128)
-                                                                                .addComponent(jLabel129)
-                                                                                .addComponent(jLabel130)
-                                                                                .addComponent(jLabel131)
-                                                                                .addComponent(jLabel132)
-                                                                                .addComponent(jLabel133)
-                                                                                .addComponent(jLabel134)
-                                                                                .addComponent(jLabel135)
-                                                                                .addComponent(jLabel136)
-                                                                                .addComponent(jLabel137)
-                                                                                .addComponent(jLabel138)
-                                                                                .addComponent(jLabel139)
-                                                                                .addComponent(jLabel140)
-                                                                                .addComponent(jLabel141)
-                                                                                .addComponent(jLabel142)
-                                                                                .addComponent(jLabel143)
-                                                                                .addComponent(jLabel144)
-                                                                                .addComponent(jLabel145)
-                                                                                .addComponent(jLabel146)
-                                                                                .addComponent(jLabel147)
-                                                                                .addComponent(jLabel148)
-                                                                                .addComponent(jLabel149)
-                                                                                .addComponent(jLabel150))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel151)
-                                                                                .addComponent(jLabel152)
-                                                                                .addComponent(jLabel153)
-                                                                                .addComponent(jLabel154)
-                                                                                .addComponent(jLabel155)
-                                                                                .addComponent(jLabel156)
-                                                                                .addComponent(jLabel157)
-                                                                                .addComponent(jLabel158)
-                                                                                .addComponent(jLabel159)
-                                                                                .addComponent(jLabel160)
-                                                                                .addComponent(jLabel161)
-                                                                                .addComponent(jLabel162)
-                                                                                .addComponent(jLabel163)
-                                                                                .addComponent(jLabel164)
-                                                                                .addComponent(jLabel165)
-                                                                                .addComponent(jLabel166)
-                                                                                .addComponent(jLabel167)
-                                                                                .addComponent(jLabel168)
-                                                                                .addComponent(jLabel169)
-                                                                                .addComponent(jLabel170)
-                                                                                .addComponent(jLabel171)
-                                                                                .addComponent(jLabel172)
-                                                                                .addComponent(jLabel173)
-                                                                                .addComponent(jLabel174)
-                                                                                .addComponent(jLabel175)
-                                                                                .addComponent(jLabel176)
-                                                                                .addComponent(jLabel177)
-                                                                                .addComponent(jLabel178)
-                                                                                .addComponent(jLabel179)
-                                                                                .addComponent(jLabel180))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel181)
-                                                                                .addComponent(jLabel182)
-                                                                                .addComponent(jLabel183)
-                                                                                .addComponent(jLabel184)
-                                                                                .addComponent(jLabel185)
-                                                                                .addComponent(jLabel186)
-                                                                                .addComponent(jLabel187)
-                                                                                .addComponent(jLabel188)
-                                                                                .addComponent(jLabel189)
-                                                                                .addComponent(jLabel190)
-                                                                                .addComponent(jLabel191)
-                                                                                .addComponent(jLabel192)
-                                                                                .addComponent(jLabel193)
-                                                                                .addComponent(jLabel194)
-                                                                                .addComponent(jLabel195)
-                                                                                .addComponent(jLabel196)
-                                                                                .addComponent(jLabel197)
-                                                                                .addComponent(jLabel198)
-                                                                                .addComponent(jLabel199)
-                                                                                .addComponent(jLabel200)
-                                                                                .addComponent(jLabel201)
-                                                                                .addComponent(jLabel202)
-                                                                                .addComponent(jLabel203)
-                                                                                .addComponent(jLabel204)
-                                                                                .addComponent(jLabel205)
-                                                                                .addComponent(jLabel206)
-                                                                                .addComponent(jLabel207)
-                                                                                .addComponent(jLabel208)
-                                                                                .addComponent(jLabel209)
-                                                                                .addComponent(jLabel210))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel211)
-                                                                                .addComponent(jLabel212)
-                                                                                .addComponent(jLabel213)
-                                                                                .addComponent(jLabel214)
-                                                                                .addComponent(jLabel215)
-                                                                                .addComponent(jLabel216)
-                                                                                .addComponent(jLabel217)
-                                                                                .addComponent(jLabel218)
-                                                                                .addComponent(jLabel219)
-                                                                                .addComponent(jLabel220)
-                                                                                .addComponent(jLabel221)
-                                                                                .addComponent(jLabel222)
-                                                                                .addComponent(jLabel223)
-                                                                                .addComponent(jLabel224)
-                                                                                .addComponent(jLabel225)
-                                                                                .addComponent(jLabel226)
-                                                                                .addComponent(jLabel227)
-                                                                                .addComponent(jLabel228)
-                                                                                .addComponent(jLabel229)
-                                                                                .addComponent(jLabel230)
-                                                                                .addComponent(jLabel231)
-                                                                                .addComponent(jLabel232)
-                                                                                .addComponent(jLabel233)
-                                                                                .addComponent(jLabel234)
-                                                                                .addComponent(jLabel235)
-                                                                                .addComponent(jLabel236)
-                                                                                .addComponent(jLabel237)
-                                                                                .addComponent(jLabel238)
-                                                                                .addComponent(jLabel239)
-                                                                                .addComponent(jLabel240))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel241)
-                                                                                .addComponent(jLabel242)
-                                                                                .addComponent(jLabel243)
-                                                                                .addComponent(jLabel244)
-                                                                                .addComponent(jLabel245)
-                                                                                .addComponent(jLabel246)
-                                                                                .addComponent(jLabel247)
-                                                                                .addComponent(jLabel248)
-                                                                                .addComponent(jLabel249)
-                                                                                .addComponent(jLabel250)
-                                                                                .addComponent(jLabel251)
-                                                                                .addComponent(jLabel252)
-                                                                                .addComponent(jLabel253)
-                                                                                .addComponent(jLabel254)
-                                                                                .addComponent(jLabel255)
-                                                                                .addComponent(jLabel256)
-                                                                                .addComponent(jLabel257)
-                                                                                .addComponent(jLabel258)
-                                                                                .addComponent(jLabel259)
-                                                                                .addComponent(jLabel260)
-                                                                                .addComponent(jLabel261)
-                                                                                .addComponent(jLabel262)
-                                                                                .addComponent(jLabel263)
-                                                                                .addComponent(jLabel264)
-                                                                                .addComponent(jLabel265)
-                                                                                .addComponent(jLabel266)
-                                                                                .addComponent(jLabel267)
-                                                                                .addComponent(jLabel268)
-                                                                                .addComponent(jLabel269)
-                                                                                .addComponent(jLabel270))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel271)
-                                                                                .addComponent(jLabel272)
-                                                                                .addComponent(jLabel273)
-                                                                                .addComponent(jLabel274)
-                                                                                .addComponent(jLabel275)
-                                                                                .addComponent(jLabel276)
-                                                                                .addComponent(jLabel277)
-                                                                                .addComponent(jLabel278)
-                                                                                .addComponent(jLabel279)
-                                                                                .addComponent(jLabel280)
-                                                                                .addComponent(jLabel281)
-                                                                                .addComponent(jLabel282)
-                                                                                .addComponent(jLabel283)
-                                                                                .addComponent(jLabel284)
-                                                                                .addComponent(jLabel285)
-                                                                                .addComponent(jLabel286)
-                                                                                .addComponent(jLabel287)
-                                                                                .addComponent(jLabel288)
-                                                                                .addComponent(jLabel289)
-                                                                                .addComponent(jLabel290)
-                                                                                .addComponent(jLabel291)
-                                                                                .addComponent(jLabel292)
-                                                                                .addComponent(jLabel293)
-                                                                                .addComponent(jLabel294)
-                                                                                .addComponent(jLabel295)
-                                                                                .addComponent(jLabel296)
-                                                                                .addComponent(jLabel297)
-                                                                                .addComponent(jLabel298)
-                                                                                .addComponent(jLabel299)
-                                                                                .addComponent(jLabel300))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel301)
-                                                                                .addComponent(jLabel302)
-                                                                                .addComponent(jLabel303)
-                                                                                .addComponent(jLabel304)
-                                                                                .addComponent(jLabel305)
-                                                                                .addComponent(jLabel306)
-                                                                                .addComponent(jLabel307)
-                                                                                .addComponent(jLabel308)
-                                                                                .addComponent(jLabel309)
-                                                                                .addComponent(jLabel310)
-                                                                                .addComponent(jLabel311)
-                                                                                .addComponent(jLabel312)
-                                                                                .addComponent(jLabel313)
-                                                                                .addComponent(jLabel314)
-                                                                                .addComponent(jLabel315)
-                                                                                .addComponent(jLabel316)
-                                                                                .addComponent(jLabel317)
-                                                                                .addComponent(jLabel318)
-                                                                                .addComponent(jLabel319)
-                                                                                .addComponent(jLabel320)
-                                                                                .addComponent(jLabel321)
-                                                                                .addComponent(jLabel322)
-                                                                                .addComponent(jLabel323)
-                                                                                .addComponent(jLabel324)
-                                                                                .addComponent(jLabel325)
-                                                                                .addComponent(jLabel326)
-                                                                                .addComponent(jLabel327)
-                                                                                .addComponent(jLabel328)
-                                                                                .addComponent(jLabel329)
-                                                                                .addComponent(jLabel330))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel331)
-                                                                                .addComponent(jLabel332)
-                                                                                .addComponent(jLabel333)
-                                                                                .addComponent(jLabel334)
-                                                                                .addComponent(jLabel335)
-                                                                                .addComponent(jLabel336)
-                                                                                .addComponent(jLabel337)
-                                                                                .addComponent(jLabel338)
-                                                                                .addComponent(jLabel339)
-                                                                                .addComponent(jLabel340)
-                                                                                .addComponent(jLabel341)
-                                                                                .addComponent(jLabel342)
-                                                                                .addComponent(jLabel343)
-                                                                                .addComponent(jLabel344)
-                                                                                .addComponent(jLabel345)
-                                                                                .addComponent(jLabel346)
-                                                                                .addComponent(jLabel347)
-                                                                                .addComponent(jLabel348)
-                                                                                .addComponent(jLabel349)
-                                                                                .addComponent(jLabel350)
-                                                                                .addComponent(jLabel351)
-                                                                                .addComponent(jLabel352)
-                                                                                .addComponent(jLabel353)
-                                                                                .addComponent(jLabel354)
-                                                                                .addComponent(jLabel355)
-                                                                                .addComponent(jLabel356)
-                                                                                .addComponent(jLabel357)
-                                                                                .addComponent(jLabel358)
-                                                                                .addComponent(jLabel359)
-                                                                                .addComponent(jLabel360))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel361)
-                                                                                .addComponent(jLabel362)
-                                                                                .addComponent(jLabel363)
-                                                                                .addComponent(jLabel364)
-                                                                                .addComponent(jLabel365)
-                                                                                .addComponent(jLabel366)
-                                                                                .addComponent(jLabel367)
-                                                                                .addComponent(jLabel368)
-                                                                                .addComponent(jLabel369)
-                                                                                .addComponent(jLabel370)
-                                                                                .addComponent(jLabel371)
-                                                                                .addComponent(jLabel372)
-                                                                                .addComponent(jLabel373)
-                                                                                .addComponent(jLabel374)
-                                                                                .addComponent(jLabel375)
-                                                                                .addComponent(jLabel376)
-                                                                                .addComponent(jLabel377)
-                                                                                .addComponent(jLabel378)
-                                                                                .addComponent(jLabel379)
-                                                                                .addComponent(jLabel380)
-                                                                                .addComponent(jLabel381)
-                                                                                .addComponent(jLabel382)
-                                                                                .addComponent(jLabel383)
-                                                                                .addComponent(jLabel384)
-                                                                                .addComponent(jLabel385)
-                                                                                .addComponent(jLabel386)
-                                                                                .addComponent(jLabel387)
-                                                                                .addComponent(jLabel388)
-                                                                                .addComponent(jLabel389)
-                                                                                .addComponent(jLabel390))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel391)
-                                                                                .addComponent(jLabel392)
-                                                                                .addComponent(jLabel393)
-                                                                                .addComponent(jLabel394)
-                                                                                .addComponent(jLabel395)
-                                                                                .addComponent(jLabel396)
-                                                                                .addComponent(jLabel397)
-                                                                                .addComponent(jLabel398)
-                                                                                .addComponent(jLabel399)
-                                                                                .addComponent(jLabel400)
-                                                                                .addComponent(jLabel401)
-                                                                                .addComponent(jLabel402)
-                                                                                .addComponent(jLabel403)
-                                                                                .addComponent(jLabel404)
-                                                                                .addComponent(jLabel405)
-                                                                                .addComponent(jLabel406)
-                                                                                .addComponent(jLabel407)
-                                                                                .addComponent(jLabel408)
-                                                                                .addComponent(jLabel409)
-                                                                                .addComponent(jLabel410)
-                                                                                .addComponent(jLabel411)
-                                                                                .addComponent(jLabel412)
-                                                                                .addComponent(jLabel413)
-                                                                                .addComponent(jLabel414)
-                                                                                .addComponent(jLabel415)
-                                                                                .addComponent(jLabel416)
-                                                                                .addComponent(jLabel417)
-                                                                                .addComponent(jLabel418)
-                                                                                .addComponent(jLabel419)
-                                                                                .addComponent(jLabel420))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel421)
-                                                                                .addComponent(jLabel422)
-                                                                                .addComponent(jLabel423)
-                                                                                .addComponent(jLabel424)
-                                                                                .addComponent(jLabel425)
-                                                                                .addComponent(jLabel426)
-                                                                                .addComponent(jLabel427)
-                                                                                .addComponent(jLabel428)
-                                                                                .addComponent(jLabel429)
-                                                                                .addComponent(jLabel430)
-                                                                                .addComponent(jLabel431)
-                                                                                .addComponent(jLabel432)
-                                                                                .addComponent(jLabel433)
-                                                                                .addComponent(jLabel434)
-                                                                                .addComponent(jLabel435)
-                                                                                .addComponent(jLabel436)
-                                                                                .addComponent(jLabel437)
-                                                                                .addComponent(jLabel438)
-                                                                                .addComponent(jLabel439)
-                                                                                .addComponent(jLabel440)
-                                                                                .addComponent(jLabel441)
-                                                                                .addComponent(jLabel442)
-                                                                                .addComponent(jLabel443)
-                                                                                .addComponent(jLabel444)
-                                                                                .addComponent(jLabel445)
-                                                                                .addComponent(jLabel446)
-                                                                                .addComponent(jLabel447)
-                                                                                .addComponent(jLabel448)
-                                                                                .addComponent(jLabel449)
-                                                                                .addComponent(jLabel450))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel451)
-                                                                                .addComponent(jLabel452)
-                                                                                .addComponent(jLabel453)
-                                                                                .addComponent(jLabel454)
-                                                                                .addComponent(jLabel455)
-                                                                                .addComponent(jLabel456)
-                                                                                .addComponent(jLabel457)
-                                                                                .addComponent(jLabel458)
-                                                                                .addComponent(jLabel459)
-                                                                                .addComponent(jLabel460)
-                                                                                .addComponent(jLabel461)
-                                                                                .addComponent(jLabel462)
-                                                                                .addComponent(jLabel463)
-                                                                                .addComponent(jLabel464)
-                                                                                .addComponent(jLabel465)
-                                                                                .addComponent(jLabel466)
-                                                                                .addComponent(jLabel467)
-                                                                                .addComponent(jLabel468)
-                                                                                .addComponent(jLabel469)
-                                                                                .addComponent(jLabel470)
-                                                                                .addComponent(jLabel471)
-                                                                                .addComponent(jLabel472)
-                                                                                .addComponent(jLabel473)
-                                                                                .addComponent(jLabel474)
-                                                                                .addComponent(jLabel475)
-                                                                                .addComponent(jLabel476)
-                                                                                .addComponent(jLabel477)
-                                                                                .addComponent(jLabel478)
-                                                                                .addComponent(jLabel479)
-                                                                                .addComponent(jLabel480))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel481)
-                                                                                .addComponent(jLabel482)
-                                                                                .addComponent(jLabel483)
-                                                                                .addComponent(jLabel484)
-                                                                                .addComponent(jLabel485)
-                                                                                .addComponent(jLabel486)
-                                                                                .addComponent(jLabel487)
-                                                                                .addComponent(jLabel488)
-                                                                                .addComponent(jLabel489)
-                                                                                .addComponent(jLabel490)
-                                                                                .addComponent(jLabel491)
-                                                                                .addComponent(jLabel492)
-                                                                                .addComponent(jLabel493)
-                                                                                .addComponent(jLabel494)
-                                                                                .addComponent(jLabel495)
-                                                                                .addComponent(jLabel496)
-                                                                                .addComponent(jLabel497)
-                                                                                .addComponent(jLabel498)
-                                                                                .addComponent(jLabel499)
-                                                                                .addComponent(jLabel500)
-                                                                                .addComponent(jLabel501)
-                                                                                .addComponent(jLabel502)
-                                                                                .addComponent(jLabel503)
-                                                                                .addComponent(jLabel504)
-                                                                                .addComponent(jLabel505)
-                                                                                .addComponent(jLabel506)
-                                                                                .addComponent(jLabel507)
-                                                                                .addComponent(jLabel508)
-                                                                                .addComponent(jLabel509)
-                                                                                .addComponent(jLabel510))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel511)
-                                                                                .addComponent(jLabel512)
-                                                                                .addComponent(jLabel513)
-                                                                                .addComponent(jLabel514)
-                                                                                .addComponent(jLabel515)
-                                                                                .addComponent(jLabel516)
-                                                                                .addComponent(jLabel517)
-                                                                                .addComponent(jLabel518)
-                                                                                .addComponent(jLabel519)
-                                                                                .addComponent(jLabel520)
-                                                                                .addComponent(jLabel521)
-                                                                                .addComponent(jLabel522)
-                                                                                .addComponent(jLabel523)
-                                                                                .addComponent(jLabel524)
-                                                                                .addComponent(jLabel525)
-                                                                                .addComponent(jLabel526)
-                                                                                .addComponent(jLabel527)
-                                                                                .addComponent(jLabel528)
-                                                                                .addComponent(jLabel529)
-                                                                                .addComponent(jLabel530)
-                                                                                .addComponent(jLabel531)
-                                                                                .addComponent(jLabel532)
-                                                                                .addComponent(jLabel533)
-                                                                                .addComponent(jLabel534)
-                                                                                .addComponent(jLabel535)
-                                                                                .addComponent(jLabel536)
-                                                                                .addComponent(jLabel537)
-                                                                                .addComponent(jLabel538)
-                                                                                .addComponent(jLabel539)
-                                                                                .addComponent(jLabel540))
-                                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel541)
-                                                                                .addComponent(jLabel542)
-                                                                                .addComponent(jLabel543)
-                                                                                .addComponent(jLabel544)
-                                                                                .addComponent(jLabel545)
-                                                                                .addComponent(jLabel546)
-                                                                                .addComponent(jLabel547)
-                                                                                .addComponent(jLabel548)
-                                                                                .addComponent(jLabel549)
-                                                                                .addComponent(jLabel550)
-                                                                                .addComponent(jLabel551)
-                                                                                .addComponent(jLabel552)
-                                                                                .addComponent(jLabel553)
-                                                                                .addComponent(jLabel554)
-                                                                                .addComponent(jLabel555)
-                                                                                .addComponent(jLabel556)
-                                                                                .addComponent(jLabel557)
-                                                                                .addComponent(jLabel558)
-                                                                                .addComponent(jLabel559)
-                                                                                .addComponent(jLabel560)
-                                                                                .addComponent(jLabel561)
-                                                                                .addComponent(jLabel562)
-                                                                                .addComponent(jLabel563)
-                                                                                .addComponent(jLabel564)
-                                                                                .addComponent(jLabel565)
-                                                                                .addComponent(jLabel566)
-                                                                                .addComponent(jLabel567)
-                                                                                .addComponent(jLabel568)
-                                                                                .addComponent(jLabel569)
-                                                                                .addComponent(jLabel570))
-                                                                .addGap(0, 0, 0)
-                                                                .addGroup(jPuebloLayout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel571)
-                                                                                .addComponent(jLabel572)
-                                                                                .addComponent(jLabel573)
-                                                                                .addComponent(jLabel574)
-                                                                                .addComponent(jLabel575)
-                                                                                .addComponent(jLabel576)
-                                                                                .addComponent(jLabel578)
-                                                                                .addComponent(jLabel579)
-                                                                                .addComponent(jLabel580)
-                                                                                .addComponent(jLabel581)
-                                                                                .addComponent(jLabel582)
-                                                                                .addComponent(jLabel583)
-                                                                                .addComponent(jLabel584)
-                                                                                .addComponent(jLabel585)
-                                                                                .addComponent(jLabel586)
-                                                                                .addComponent(jLabel587)
-                                                                                .addComponent(jLabel588)
-                                                                                .addComponent(jLabel589)
-                                                                                .addComponent(jLabel590)
-                                                                                .addComponent(jLabel591)
-                                                                                .addComponent(jLabel592)
-                                                                                .addComponent(jLabel593)
-                                                                                .addComponent(jLabel594)
-                                                                                .addComponent(jLabel595)
-                                                                                .addComponent(jLabel596)
-                                                                                .addComponent(jLabel597)
-                                                                                .addComponent(jLabel598)
-                                                                                .addComponent(jLabel599)
-                                                                                .addComponent(jLabel600)
-                                                                                .addComponent(jLabel577))
-                                                                .addContainerGap()));
-
-                jLabel2.getAccessibleContext().setAccessibleName("1");
-
-                txfCommand.setText("area de Comandos");
-                txfCommand.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                txfCommandActionPerformed(evt);
-                        }
-                });
-
-                jTextArea1.setColumns(20);
-                jTextArea1.setRows(5);
-                jScrollPane2.setViewportView(jTextArea1);
-
-                jLjugador1.setBorder(new javax.swing.border.MatteBorder(null));
-
-                jLjugador2.setText("jLabel452");
-                jLjugador2.setAutoscrolls(true);
-                jLjugador2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
-
-                jLjugador3.setBackground(new java.awt.Color(255, 51, 51));
-                jLjugador3.setText("jLabel452");
-                jLjugador3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
-
-                btnSend1.setText("Send");
-                btnSend1.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnSend1ActionPerformed(evt);
-                        }
-                });
-
-                btnConnect.setText("Connect");
-                btnConnect.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnConnectActionPerformed(evt);
-                        }
-                });
-
-                Nombrejugador.setText("nombre : juagador");
-
-                lbVida.setText("jLabel601");
-
-                jTextArea2.setColumns(20);
-                jTextArea2.setRows(5);
-                jScrollPane1.setViewportView(jTextArea2);
-
-                jTextArea3.setColumns(20);
-                jTextArea3.setRows(5);
-                jScrollPane3.setViewportView(jTextArea3);
-
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                .addComponent(jScrollPane1,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                226,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(jScrollPane3,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                226,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(
-                                                                                javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addComponent(jPueblo,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                .addPreferredGap(
-                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                Short.MAX_VALUE)
-                                                                                                .addGroup(layout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING,
-                                                                                                                                false)
-                                                                                                                .addComponent(jLjugador1,
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                0,
-                                                                                                                                Short.MAX_VALUE)
-                                                                                                                .addComponent(jLjugador2,
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                162,
-                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                                .addComponent(jLjugador3,
-                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                0,
-                                                                                                                                Short.MAX_VALUE))
-                                                                                                .addPreferredGap(
-                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addComponent(lbVida))
-                                                                                .addGroup(layout
-                                                                                                .createParallelGroup(
-                                                                                                                javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                false)
-                                                                                                .addComponent(jScrollPane2,
-                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING,
-                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                916,
-                                                                                                                Short.MAX_VALUE)
-                                                                                                .addComponent(txfCommand)))
-                                                                .addGap(18, 18, Short.MAX_VALUE)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addComponent(btnSend1,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                134,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnConnect,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                131,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(Nombrejugador,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                249,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))));
-                layout.setVerticalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addGroup(layout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                                                .addGap(6, 6, 6)
-                                                                                                                                .addComponent(jLjugador1,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                141,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                                                .addGap(15, 15, 15)
-                                                                                                                                .addComponent(lbVida)))
-                                                                                                .addPreferredGap(
-                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                                                .addComponent(jLjugador2,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                125,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                .addPreferredGap(
-                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                Short.MAX_VALUE)
-                                                                                                .addComponent(jLjugador3,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                113,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addComponent(Nombrejugador)
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addContainerGap()
-                                                                                                .addComponent(jPueblo,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addComponent(jScrollPane1,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                206,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                .addPreferredGap(
-                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                .addComponent(jScrollPane3,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                206,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addGap(18, 18, 18)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addComponent(jScrollPane2,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnConnect,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                37,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(
-                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(txfCommand,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnSend1))
-                                                                .addGap(10, 10, 10)));
-
-                pack();
-        }// </editor-fold>//GEN-END:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPueblo = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel107 = new javax.swing.JLabel();
+        jLabel108 = new javax.swing.JLabel();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel110 = new javax.swing.JLabel();
+        jLabel111 = new javax.swing.JLabel();
+        jLabel112 = new javax.swing.JLabel();
+        jLabel113 = new javax.swing.JLabel();
+        jLabel114 = new javax.swing.JLabel();
+        jLabel115 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jLabel117 = new javax.swing.JLabel();
+        jLabel118 = new javax.swing.JLabel();
+        jLabel119 = new javax.swing.JLabel();
+        jLabel120 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        jLabel122 = new javax.swing.JLabel();
+        jLabel123 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jLabel125 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        jLabel130 = new javax.swing.JLabel();
+        jLabel131 = new javax.swing.JLabel();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        jLabel134 = new javax.swing.JLabel();
+        jLabel135 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
+        jLabel146 = new javax.swing.JLabel();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        jLabel151 = new javax.swing.JLabel();
+        jLabel152 = new javax.swing.JLabel();
+        jLabel153 = new javax.swing.JLabel();
+        jLabel154 = new javax.swing.JLabel();
+        jLabel155 = new javax.swing.JLabel();
+        jLabel156 = new javax.swing.JLabel();
+        jLabel157 = new javax.swing.JLabel();
+        jLabel158 = new javax.swing.JLabel();
+        jLabel159 = new javax.swing.JLabel();
+        jLabel160 = new javax.swing.JLabel();
+        jLabel161 = new javax.swing.JLabel();
+        jLabel162 = new javax.swing.JLabel();
+        jLabel163 = new javax.swing.JLabel();
+        jLabel164 = new javax.swing.JLabel();
+        jLabel165 = new javax.swing.JLabel();
+        jLabel166 = new javax.swing.JLabel();
+        jLabel167 = new javax.swing.JLabel();
+        jLabel168 = new javax.swing.JLabel();
+        jLabel169 = new javax.swing.JLabel();
+        jLabel170 = new javax.swing.JLabel();
+        jLabel171 = new javax.swing.JLabel();
+        jLabel172 = new javax.swing.JLabel();
+        jLabel173 = new javax.swing.JLabel();
+        jLabel174 = new javax.swing.JLabel();
+        jLabel175 = new javax.swing.JLabel();
+        jLabel176 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        jLabel178 = new javax.swing.JLabel();
+        jLabel179 = new javax.swing.JLabel();
+        jLabel180 = new javax.swing.JLabel();
+        jLabel181 = new javax.swing.JLabel();
+        jLabel182 = new javax.swing.JLabel();
+        jLabel183 = new javax.swing.JLabel();
+        jLabel184 = new javax.swing.JLabel();
+        jLabel185 = new javax.swing.JLabel();
+        jLabel186 = new javax.swing.JLabel();
+        jLabel187 = new javax.swing.JLabel();
+        jLabel188 = new javax.swing.JLabel();
+        jLabel189 = new javax.swing.JLabel();
+        jLabel190 = new javax.swing.JLabel();
+        jLabel191 = new javax.swing.JLabel();
+        jLabel192 = new javax.swing.JLabel();
+        jLabel193 = new javax.swing.JLabel();
+        jLabel194 = new javax.swing.JLabel();
+        jLabel195 = new javax.swing.JLabel();
+        jLabel196 = new javax.swing.JLabel();
+        jLabel197 = new javax.swing.JLabel();
+        jLabel198 = new javax.swing.JLabel();
+        jLabel199 = new javax.swing.JLabel();
+        jLabel200 = new javax.swing.JLabel();
+        jLabel201 = new javax.swing.JLabel();
+        jLabel202 = new javax.swing.JLabel();
+        jLabel203 = new javax.swing.JLabel();
+        jLabel204 = new javax.swing.JLabel();
+        jLabel205 = new javax.swing.JLabel();
+        jLabel206 = new javax.swing.JLabel();
+        jLabel207 = new javax.swing.JLabel();
+        jLabel208 = new javax.swing.JLabel();
+        jLabel209 = new javax.swing.JLabel();
+        jLabel210 = new javax.swing.JLabel();
+        jLabel211 = new javax.swing.JLabel();
+        jLabel212 = new javax.swing.JLabel();
+        jLabel213 = new javax.swing.JLabel();
+        jLabel214 = new javax.swing.JLabel();
+        jLabel215 = new javax.swing.JLabel();
+        jLabel216 = new javax.swing.JLabel();
+        jLabel217 = new javax.swing.JLabel();
+        jLabel218 = new javax.swing.JLabel();
+        jLabel219 = new javax.swing.JLabel();
+        jLabel220 = new javax.swing.JLabel();
+        jLabel221 = new javax.swing.JLabel();
+        jLabel222 = new javax.swing.JLabel();
+        jLabel223 = new javax.swing.JLabel();
+        jLabel224 = new javax.swing.JLabel();
+        jLabel225 = new javax.swing.JLabel();
+        jLabel226 = new javax.swing.JLabel();
+        jLabel227 = new javax.swing.JLabel();
+        jLabel228 = new javax.swing.JLabel();
+        jLabel229 = new javax.swing.JLabel();
+        jLabel230 = new javax.swing.JLabel();
+        jLabel231 = new javax.swing.JLabel();
+        jLabel232 = new javax.swing.JLabel();
+        jLabel233 = new javax.swing.JLabel();
+        jLabel234 = new javax.swing.JLabel();
+        jLabel235 = new javax.swing.JLabel();
+        jLabel236 = new javax.swing.JLabel();
+        jLabel237 = new javax.swing.JLabel();
+        jLabel238 = new javax.swing.JLabel();
+        jLabel239 = new javax.swing.JLabel();
+        jLabel240 = new javax.swing.JLabel();
+        jLabel241 = new javax.swing.JLabel();
+        jLabel242 = new javax.swing.JLabel();
+        jLabel243 = new javax.swing.JLabel();
+        jLabel244 = new javax.swing.JLabel();
+        jLabel245 = new javax.swing.JLabel();
+        jLabel246 = new javax.swing.JLabel();
+        jLabel247 = new javax.swing.JLabel();
+        jLabel248 = new javax.swing.JLabel();
+        jLabel249 = new javax.swing.JLabel();
+        jLabel250 = new javax.swing.JLabel();
+        jLabel251 = new javax.swing.JLabel();
+        jLabel252 = new javax.swing.JLabel();
+        jLabel253 = new javax.swing.JLabel();
+        jLabel254 = new javax.swing.JLabel();
+        jLabel255 = new javax.swing.JLabel();
+        jLabel256 = new javax.swing.JLabel();
+        jLabel257 = new javax.swing.JLabel();
+        jLabel258 = new javax.swing.JLabel();
+        jLabel259 = new javax.swing.JLabel();
+        jLabel260 = new javax.swing.JLabel();
+        jLabel261 = new javax.swing.JLabel();
+        jLabel262 = new javax.swing.JLabel();
+        jLabel263 = new javax.swing.JLabel();
+        jLabel264 = new javax.swing.JLabel();
+        jLabel265 = new javax.swing.JLabel();
+        jLabel266 = new javax.swing.JLabel();
+        jLabel267 = new javax.swing.JLabel();
+        jLabel268 = new javax.swing.JLabel();
+        jLabel269 = new javax.swing.JLabel();
+        jLabel270 = new javax.swing.JLabel();
+        jLabel271 = new javax.swing.JLabel();
+        jLabel272 = new javax.swing.JLabel();
+        jLabel273 = new javax.swing.JLabel();
+        jLabel274 = new javax.swing.JLabel();
+        jLabel275 = new javax.swing.JLabel();
+        jLabel276 = new javax.swing.JLabel();
+        jLabel277 = new javax.swing.JLabel();
+        jLabel278 = new javax.swing.JLabel();
+        jLabel279 = new javax.swing.JLabel();
+        jLabel280 = new javax.swing.JLabel();
+        jLabel281 = new javax.swing.JLabel();
+        jLabel282 = new javax.swing.JLabel();
+        jLabel283 = new javax.swing.JLabel();
+        jLabel284 = new javax.swing.JLabel();
+        jLabel285 = new javax.swing.JLabel();
+        jLabel286 = new javax.swing.JLabel();
+        jLabel287 = new javax.swing.JLabel();
+        jLabel288 = new javax.swing.JLabel();
+        jLabel289 = new javax.swing.JLabel();
+        jLabel290 = new javax.swing.JLabel();
+        jLabel291 = new javax.swing.JLabel();
+        jLabel292 = new javax.swing.JLabel();
+        jLabel293 = new javax.swing.JLabel();
+        jLabel294 = new javax.swing.JLabel();
+        jLabel295 = new javax.swing.JLabel();
+        jLabel296 = new javax.swing.JLabel();
+        jLabel297 = new javax.swing.JLabel();
+        jLabel298 = new javax.swing.JLabel();
+        jLabel299 = new javax.swing.JLabel();
+        jLabel300 = new javax.swing.JLabel();
+        jLabel301 = new javax.swing.JLabel();
+        jLabel302 = new javax.swing.JLabel();
+        jLabel303 = new javax.swing.JLabel();
+        jLabel304 = new javax.swing.JLabel();
+        jLabel305 = new javax.swing.JLabel();
+        jLabel306 = new javax.swing.JLabel();
+        jLabel307 = new javax.swing.JLabel();
+        jLabel308 = new javax.swing.JLabel();
+        jLabel309 = new javax.swing.JLabel();
+        jLabel310 = new javax.swing.JLabel();
+        jLabel311 = new javax.swing.JLabel();
+        jLabel312 = new javax.swing.JLabel();
+        jLabel313 = new javax.swing.JLabel();
+        jLabel314 = new javax.swing.JLabel();
+        jLabel315 = new javax.swing.JLabel();
+        jLabel316 = new javax.swing.JLabel();
+        jLabel317 = new javax.swing.JLabel();
+        jLabel318 = new javax.swing.JLabel();
+        jLabel319 = new javax.swing.JLabel();
+        jLabel320 = new javax.swing.JLabel();
+        jLabel321 = new javax.swing.JLabel();
+        jLabel322 = new javax.swing.JLabel();
+        jLabel323 = new javax.swing.JLabel();
+        jLabel324 = new javax.swing.JLabel();
+        jLabel325 = new javax.swing.JLabel();
+        jLabel326 = new javax.swing.JLabel();
+        jLabel327 = new javax.swing.JLabel();
+        jLabel328 = new javax.swing.JLabel();
+        jLabel329 = new javax.swing.JLabel();
+        jLabel330 = new javax.swing.JLabel();
+        jLabel331 = new javax.swing.JLabel();
+        jLabel332 = new javax.swing.JLabel();
+        jLabel333 = new javax.swing.JLabel();
+        jLabel334 = new javax.swing.JLabel();
+        jLabel335 = new javax.swing.JLabel();
+        jLabel336 = new javax.swing.JLabel();
+        jLabel337 = new javax.swing.JLabel();
+        jLabel338 = new javax.swing.JLabel();
+        jLabel339 = new javax.swing.JLabel();
+        jLabel340 = new javax.swing.JLabel();
+        jLabel341 = new javax.swing.JLabel();
+        jLabel342 = new javax.swing.JLabel();
+        jLabel343 = new javax.swing.JLabel();
+        jLabel344 = new javax.swing.JLabel();
+        jLabel345 = new javax.swing.JLabel();
+        jLabel346 = new javax.swing.JLabel();
+        jLabel347 = new javax.swing.JLabel();
+        jLabel348 = new javax.swing.JLabel();
+        jLabel349 = new javax.swing.JLabel();
+        jLabel350 = new javax.swing.JLabel();
+        jLabel351 = new javax.swing.JLabel();
+        jLabel352 = new javax.swing.JLabel();
+        jLabel353 = new javax.swing.JLabel();
+        jLabel354 = new javax.swing.JLabel();
+        jLabel355 = new javax.swing.JLabel();
+        jLabel356 = new javax.swing.JLabel();
+        jLabel357 = new javax.swing.JLabel();
+        jLabel358 = new javax.swing.JLabel();
+        jLabel359 = new javax.swing.JLabel();
+        jLabel360 = new javax.swing.JLabel();
+        jLabel361 = new javax.swing.JLabel();
+        jLabel362 = new javax.swing.JLabel();
+        jLabel363 = new javax.swing.JLabel();
+        jLabel364 = new javax.swing.JLabel();
+        jLabel365 = new javax.swing.JLabel();
+        jLabel366 = new javax.swing.JLabel();
+        jLabel367 = new javax.swing.JLabel();
+        jLabel368 = new javax.swing.JLabel();
+        jLabel369 = new javax.swing.JLabel();
+        jLabel370 = new javax.swing.JLabel();
+        jLabel371 = new javax.swing.JLabel();
+        jLabel372 = new javax.swing.JLabel();
+        jLabel373 = new javax.swing.JLabel();
+        jLabel374 = new javax.swing.JLabel();
+        jLabel375 = new javax.swing.JLabel();
+        jLabel376 = new javax.swing.JLabel();
+        jLabel377 = new javax.swing.JLabel();
+        jLabel378 = new javax.swing.JLabel();
+        jLabel379 = new javax.swing.JLabel();
+        jLabel380 = new javax.swing.JLabel();
+        jLabel381 = new javax.swing.JLabel();
+        jLabel382 = new javax.swing.JLabel();
+        jLabel383 = new javax.swing.JLabel();
+        jLabel384 = new javax.swing.JLabel();
+        jLabel385 = new javax.swing.JLabel();
+        jLabel386 = new javax.swing.JLabel();
+        jLabel387 = new javax.swing.JLabel();
+        jLabel388 = new javax.swing.JLabel();
+        jLabel389 = new javax.swing.JLabel();
+        jLabel390 = new javax.swing.JLabel();
+        jLabel391 = new javax.swing.JLabel();
+        jLabel392 = new javax.swing.JLabel();
+        jLabel393 = new javax.swing.JLabel();
+        jLabel394 = new javax.swing.JLabel();
+        jLabel395 = new javax.swing.JLabel();
+        jLabel396 = new javax.swing.JLabel();
+        jLabel397 = new javax.swing.JLabel();
+        jLabel398 = new javax.swing.JLabel();
+        jLabel399 = new javax.swing.JLabel();
+        jLabel400 = new javax.swing.JLabel();
+        jLabel401 = new javax.swing.JLabel();
+        jLabel402 = new javax.swing.JLabel();
+        jLabel403 = new javax.swing.JLabel();
+        jLabel404 = new javax.swing.JLabel();
+        jLabel405 = new javax.swing.JLabel();
+        jLabel406 = new javax.swing.JLabel();
+        jLabel407 = new javax.swing.JLabel();
+        jLabel408 = new javax.swing.JLabel();
+        jLabel409 = new javax.swing.JLabel();
+        jLabel410 = new javax.swing.JLabel();
+        jLabel411 = new javax.swing.JLabel();
+        jLabel412 = new javax.swing.JLabel();
+        jLabel413 = new javax.swing.JLabel();
+        jLabel414 = new javax.swing.JLabel();
+        jLabel415 = new javax.swing.JLabel();
+        jLabel416 = new javax.swing.JLabel();
+        jLabel417 = new javax.swing.JLabel();
+        jLabel418 = new javax.swing.JLabel();
+        jLabel419 = new javax.swing.JLabel();
+        jLabel420 = new javax.swing.JLabel();
+        jLabel421 = new javax.swing.JLabel();
+        jLabel422 = new javax.swing.JLabel();
+        jLabel423 = new javax.swing.JLabel();
+        jLabel424 = new javax.swing.JLabel();
+        jLabel425 = new javax.swing.JLabel();
+        jLabel426 = new javax.swing.JLabel();
+        jLabel427 = new javax.swing.JLabel();
+        jLabel428 = new javax.swing.JLabel();
+        jLabel429 = new javax.swing.JLabel();
+        jLabel430 = new javax.swing.JLabel();
+        jLabel431 = new javax.swing.JLabel();
+        jLabel432 = new javax.swing.JLabel();
+        jLabel433 = new javax.swing.JLabel();
+        jLabel434 = new javax.swing.JLabel();
+        jLabel435 = new javax.swing.JLabel();
+        jLabel436 = new javax.swing.JLabel();
+        jLabel437 = new javax.swing.JLabel();
+        jLabel438 = new javax.swing.JLabel();
+        jLabel439 = new javax.swing.JLabel();
+        jLabel440 = new javax.swing.JLabel();
+        jLabel441 = new javax.swing.JLabel();
+        jLabel442 = new javax.swing.JLabel();
+        jLabel443 = new javax.swing.JLabel();
+        jLabel444 = new javax.swing.JLabel();
+        jLabel445 = new javax.swing.JLabel();
+        jLabel446 = new javax.swing.JLabel();
+        jLabel447 = new javax.swing.JLabel();
+        jLabel448 = new javax.swing.JLabel();
+        jLabel449 = new javax.swing.JLabel();
+        jLabel450 = new javax.swing.JLabel();
+        jLabel451 = new javax.swing.JLabel();
+        jLabel452 = new javax.swing.JLabel();
+        jLabel453 = new javax.swing.JLabel();
+        jLabel454 = new javax.swing.JLabel();
+        jLabel455 = new javax.swing.JLabel();
+        jLabel456 = new javax.swing.JLabel();
+        jLabel457 = new javax.swing.JLabel();
+        jLabel458 = new javax.swing.JLabel();
+        jLabel459 = new javax.swing.JLabel();
+        jLabel460 = new javax.swing.JLabel();
+        jLabel461 = new javax.swing.JLabel();
+        jLabel462 = new javax.swing.JLabel();
+        jLabel463 = new javax.swing.JLabel();
+        jLabel464 = new javax.swing.JLabel();
+        jLabel465 = new javax.swing.JLabel();
+        jLabel466 = new javax.swing.JLabel();
+        jLabel467 = new javax.swing.JLabel();
+        jLabel468 = new javax.swing.JLabel();
+        jLabel469 = new javax.swing.JLabel();
+        jLabel470 = new javax.swing.JLabel();
+        jLabel471 = new javax.swing.JLabel();
+        jLabel472 = new javax.swing.JLabel();
+        jLabel473 = new javax.swing.JLabel();
+        jLabel474 = new javax.swing.JLabel();
+        jLabel475 = new javax.swing.JLabel();
+        jLabel476 = new javax.swing.JLabel();
+        jLabel477 = new javax.swing.JLabel();
+        jLabel478 = new javax.swing.JLabel();
+        jLabel479 = new javax.swing.JLabel();
+        jLabel480 = new javax.swing.JLabel();
+        jLabel481 = new javax.swing.JLabel();
+        jLabel482 = new javax.swing.JLabel();
+        jLabel483 = new javax.swing.JLabel();
+        jLabel484 = new javax.swing.JLabel();
+        jLabel485 = new javax.swing.JLabel();
+        jLabel486 = new javax.swing.JLabel();
+        jLabel487 = new javax.swing.JLabel();
+        jLabel488 = new javax.swing.JLabel();
+        jLabel489 = new javax.swing.JLabel();
+        jLabel490 = new javax.swing.JLabel();
+        jLabel491 = new javax.swing.JLabel();
+        jLabel492 = new javax.swing.JLabel();
+        jLabel493 = new javax.swing.JLabel();
+        jLabel494 = new javax.swing.JLabel();
+        jLabel495 = new javax.swing.JLabel();
+        jLabel496 = new javax.swing.JLabel();
+        jLabel497 = new javax.swing.JLabel();
+        jLabel498 = new javax.swing.JLabel();
+        jLabel499 = new javax.swing.JLabel();
+        jLabel500 = new javax.swing.JLabel();
+        jLabel501 = new javax.swing.JLabel();
+        jLabel502 = new javax.swing.JLabel();
+        jLabel503 = new javax.swing.JLabel();
+        jLabel504 = new javax.swing.JLabel();
+        jLabel505 = new javax.swing.JLabel();
+        jLabel506 = new javax.swing.JLabel();
+        jLabel507 = new javax.swing.JLabel();
+        jLabel508 = new javax.swing.JLabel();
+        jLabel509 = new javax.swing.JLabel();
+        jLabel510 = new javax.swing.JLabel();
+        jLabel511 = new javax.swing.JLabel();
+        jLabel512 = new javax.swing.JLabel();
+        jLabel513 = new javax.swing.JLabel();
+        jLabel514 = new javax.swing.JLabel();
+        jLabel515 = new javax.swing.JLabel();
+        jLabel516 = new javax.swing.JLabel();
+        jLabel517 = new javax.swing.JLabel();
+        jLabel518 = new javax.swing.JLabel();
+        jLabel519 = new javax.swing.JLabel();
+        jLabel520 = new javax.swing.JLabel();
+        jLabel521 = new javax.swing.JLabel();
+        jLabel522 = new javax.swing.JLabel();
+        jLabel523 = new javax.swing.JLabel();
+        jLabel524 = new javax.swing.JLabel();
+        jLabel525 = new javax.swing.JLabel();
+        jLabel526 = new javax.swing.JLabel();
+        jLabel527 = new javax.swing.JLabel();
+        jLabel528 = new javax.swing.JLabel();
+        jLabel529 = new javax.swing.JLabel();
+        jLabel530 = new javax.swing.JLabel();
+        jLabel531 = new javax.swing.JLabel();
+        jLabel532 = new javax.swing.JLabel();
+        jLabel533 = new javax.swing.JLabel();
+        jLabel534 = new javax.swing.JLabel();
+        jLabel535 = new javax.swing.JLabel();
+        jLabel536 = new javax.swing.JLabel();
+        jLabel537 = new javax.swing.JLabel();
+        jLabel538 = new javax.swing.JLabel();
+        jLabel539 = new javax.swing.JLabel();
+        jLabel540 = new javax.swing.JLabel();
+        jLabel571 = new javax.swing.JLabel();
+        jLabel572 = new javax.swing.JLabel();
+        jLabel573 = new javax.swing.JLabel();
+        jLabel574 = new javax.swing.JLabel();
+        jLabel575 = new javax.swing.JLabel();
+        jLabel576 = new javax.swing.JLabel();
+        jLabel578 = new javax.swing.JLabel();
+        jLabel579 = new javax.swing.JLabel();
+        jLabel580 = new javax.swing.JLabel();
+        jLabel581 = new javax.swing.JLabel();
+        jLabel582 = new javax.swing.JLabel();
+        jLabel583 = new javax.swing.JLabel();
+        jLabel584 = new javax.swing.JLabel();
+        jLabel585 = new javax.swing.JLabel();
+        jLabel586 = new javax.swing.JLabel();
+        jLabel587 = new javax.swing.JLabel();
+        jLabel588 = new javax.swing.JLabel();
+        jLabel589 = new javax.swing.JLabel();
+        jLabel590 = new javax.swing.JLabel();
+        jLabel591 = new javax.swing.JLabel();
+        jLabel592 = new javax.swing.JLabel();
+        jLabel593 = new javax.swing.JLabel();
+        jLabel594 = new javax.swing.JLabel();
+        jLabel595 = new javax.swing.JLabel();
+        jLabel596 = new javax.swing.JLabel();
+        jLabel597 = new javax.swing.JLabel();
+        jLabel598 = new javax.swing.JLabel();
+        jLabel599 = new javax.swing.JLabel();
+        jLabel600 = new javax.swing.JLabel();
+        jLabel541 = new javax.swing.JLabel();
+        jLabel542 = new javax.swing.JLabel();
+        jLabel543 = new javax.swing.JLabel();
+        jLabel544 = new javax.swing.JLabel();
+        jLabel545 = new javax.swing.JLabel();
+        jLabel546 = new javax.swing.JLabel();
+        jLabel547 = new javax.swing.JLabel();
+        jLabel548 = new javax.swing.JLabel();
+        jLabel549 = new javax.swing.JLabel();
+        jLabel550 = new javax.swing.JLabel();
+        jLabel551 = new javax.swing.JLabel();
+        jLabel552 = new javax.swing.JLabel();
+        jLabel553 = new javax.swing.JLabel();
+        jLabel554 = new javax.swing.JLabel();
+        jLabel555 = new javax.swing.JLabel();
+        jLabel556 = new javax.swing.JLabel();
+        jLabel557 = new javax.swing.JLabel();
+        jLabel558 = new javax.swing.JLabel();
+        jLabel559 = new javax.swing.JLabel();
+        jLabel560 = new javax.swing.JLabel();
+        jLabel561 = new javax.swing.JLabel();
+        jLabel562 = new javax.swing.JLabel();
+        jLabel563 = new javax.swing.JLabel();
+        jLabel564 = new javax.swing.JLabel();
+        jLabel565 = new javax.swing.JLabel();
+        jLabel566 = new javax.swing.JLabel();
+        jLabel567 = new javax.swing.JLabel();
+        jLabel568 = new javax.swing.JLabel();
+        jLabel569 = new javax.swing.JLabel();
+        jLabel570 = new javax.swing.JLabel();
+        jLabel577 = new javax.swing.JLabel();
+        txfCommand = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLjugador1 = new javax.swing.JLabel();
+        jLjugador2 = new javax.swing.JLabel();
+        jLjugador3 = new javax.swing.JLabel();
+        btnSend1 = new javax.swing.JButton();
+        btnConnect = new javax.swing.JButton();
+        Nombrejugador = new javax.swing.JLabel();
+        lbVidaP = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextArea3 = new javax.swing.JTextArea();
+        lbVida1 = new javax.swing.JLabel();
+        lbResistenciaP = new javax.swing.JLabel();
+        lbSanacionP = new javax.swing.JLabel();
+        lbNombreP = new javax.swing.JLabel();
+        lbVidaP1 = new javax.swing.JLabel();
+        lbNombreP1 = new javax.swing.JLabel();
+        lbSanacionP1 = new javax.swing.JLabel();
+        lbResistenciaP1 = new javax.swing.JLabel();
+        lbVidaP2 = new javax.swing.JLabel();
+        lbNombreP2 = new javax.swing.JLabel();
+        lbSanacionP2 = new javax.swing.JLabel();
+        lbResistenciaP2 = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel1.setText("100");
+        jLabel1.setAlignmentX(1.0F);
+        jLabel1.setAlignmentY(1.0F);
+        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel2.setText("100");
+        jLabel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel4.setText("100");
+        jLabel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel3.setText("100");
+        jLabel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel8.setText("100");
+        jLabel8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel7.setText("100");
+        jLabel7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel6.setText("100");
+        jLabel6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel5.setText("100");
+        jLabel5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel12.setText("100");
+        jLabel12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel11.setText("100");
+        jLabel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel10.setText("100");
+        jLabel10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel9.setText("100");
+        jLabel9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel14.setText("100");
+        jLabel14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel15.setText("100");
+        jLabel15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel13.setText("100");
+        jLabel13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel17.setText("100");
+        jLabel17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel18.setText("100");
+        jLabel18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel16.setText("100");
+        jLabel16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel20.setText("100");
+        jLabel20.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel19.setText("100");
+        jLabel19.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel21.setText("100");
+        jLabel21.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel22.setText("100");
+        jLabel22.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel23.setText("100");
+        jLabel23.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel24.setText("100");
+        jLabel24.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel25.setText("100");
+        jLabel25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel26.setText("100");
+        jLabel26.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel27.setText("100");
+        jLabel27.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel28.setText("100");
+        jLabel28.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel29.setText("100");
+        jLabel29.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel30.setText("100");
+        jLabel30.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel31.setText("100");
+        jLabel31.setAlignmentX(1.0F);
+        jLabel31.setAlignmentY(1.0F);
+        jLabel31.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel32.setText("100");
+        jLabel32.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel33.setText("100");
+        jLabel33.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel34.setText("100");
+        jLabel34.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel35.setText("100");
+        jLabel35.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel36.setText("100");
+        jLabel36.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel37.setText("100");
+        jLabel37.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel38.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel38.setText("100");
+        jLabel38.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel39.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel39.setText("100");
+        jLabel39.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel40.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel40.setText("100");
+        jLabel40.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel41.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel41.setText("100");
+        jLabel41.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel42.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel42.setText("100");
+        jLabel42.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel43.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel43.setText("100");
+        jLabel43.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel44.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel44.setText("100");
+        jLabel44.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel45.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel45.setText("100");
+        jLabel45.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel46.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel46.setText("100");
+        jLabel46.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel47.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel47.setText("100");
+        jLabel47.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel48.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel48.setText("100");
+        jLabel48.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel49.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel49.setText("100");
+        jLabel49.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel50.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel50.setText("100");
+        jLabel50.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel51.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel51.setText("100");
+        jLabel51.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel52.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel52.setText("100");
+        jLabel52.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel53.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel53.setText("100");
+        jLabel53.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel54.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel54.setText("100");
+        jLabel54.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel55.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel55.setText("100");
+        jLabel55.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel56.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel56.setText("100");
+        jLabel56.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel57.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel57.setText("100");
+        jLabel57.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel58.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel58.setText("100");
+        jLabel58.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel59.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel59.setText("100");
+        jLabel59.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel60.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel60.setText("100");
+        jLabel60.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel61.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel61.setText("100");
+        jLabel61.setAlignmentX(1.0F);
+        jLabel61.setAlignmentY(1.0F);
+        jLabel61.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel62.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel62.setText("100");
+        jLabel62.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel63.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel63.setText("100");
+        jLabel63.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel64.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel64.setText("100");
+        jLabel64.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel65.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel65.setText("100");
+        jLabel65.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel66.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel66.setText("100");
+        jLabel66.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel67.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel67.setText("100");
+        jLabel67.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel68.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel68.setText("100");
+        jLabel68.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel69.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel69.setText("100");
+        jLabel69.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel70.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel70.setText("100");
+        jLabel70.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel71.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel71.setText("100");
+        jLabel71.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel72.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel72.setText("100");
+        jLabel72.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel73.setText("100");
+        jLabel73.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel74.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel74.setText("100");
+        jLabel74.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel75.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel75.setText("100");
+        jLabel75.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel76.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel76.setText("100");
+        jLabel76.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel77.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel77.setText("100");
+        jLabel77.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel78.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel78.setText("100");
+        jLabel78.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel79.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel79.setText("100");
+        jLabel79.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel80.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel80.setText("100");
+        jLabel80.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel81.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel81.setText("100");
+        jLabel81.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel82.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel82.setText("100");
+        jLabel82.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel83.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel83.setText("100");
+        jLabel83.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel84.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel84.setText("100");
+        jLabel84.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel85.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel85.setText("100");
+        jLabel85.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel86.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel86.setText("100");
+        jLabel86.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel87.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel87.setText("100");
+        jLabel87.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel88.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel88.setText("100");
+        jLabel88.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel89.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel89.setText("100");
+        jLabel89.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel90.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel90.setText("100");
+        jLabel90.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel91.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel91.setText("100");
+        jLabel91.setAlignmentX(1.0F);
+        jLabel91.setAlignmentY(1.0F);
+        jLabel91.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel92.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel92.setText("100");
+        jLabel92.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel93.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel93.setText("100");
+        jLabel93.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel94.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel94.setText("100");
+        jLabel94.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel95.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel95.setText("100");
+        jLabel95.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel96.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel96.setText("100");
+        jLabel96.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel97.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel97.setText("100");
+        jLabel97.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel98.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel98.setText("100");
+        jLabel98.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel99.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel99.setText("100");
+        jLabel99.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel100.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel100.setText("100");
+        jLabel100.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel101.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel101.setText("100");
+        jLabel101.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel102.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel102.setText("100");
+        jLabel102.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel103.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel103.setText("100");
+        jLabel103.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel104.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel104.setText("100");
+        jLabel104.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel105.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel105.setText("100");
+        jLabel105.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel106.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel106.setText("100");
+        jLabel106.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel107.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel107.setText("100");
+        jLabel107.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel108.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel108.setText("100");
+        jLabel108.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel109.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel109.setText("100");
+        jLabel109.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel110.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel110.setText("100");
+        jLabel110.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel111.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel111.setText("100");
+        jLabel111.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel112.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel112.setText("100");
+        jLabel112.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel113.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel113.setText("100");
+        jLabel113.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel114.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel114.setText("100");
+        jLabel114.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel115.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel115.setText("100");
+        jLabel115.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel116.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel116.setText("100");
+        jLabel116.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel117.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel117.setText("100");
+        jLabel117.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel118.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel118.setText("100");
+        jLabel118.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel119.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel119.setText("100");
+        jLabel119.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel120.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel120.setText("100");
+        jLabel120.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel121.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel121.setText("100");
+        jLabel121.setAlignmentX(1.0F);
+        jLabel121.setAlignmentY(1.0F);
+        jLabel121.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel122.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel122.setText("100");
+        jLabel122.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel123.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel123.setText("100");
+        jLabel123.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel124.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel124.setText("100");
+        jLabel124.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel125.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel125.setText("100");
+        jLabel125.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel126.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel126.setText("100");
+        jLabel126.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel127.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel127.setText("100");
+        jLabel127.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel128.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel128.setText("100");
+        jLabel128.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel129.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel129.setText("100");
+        jLabel129.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel130.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel130.setText("100");
+        jLabel130.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel131.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel131.setText("100");
+        jLabel131.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel132.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel132.setText("100");
+        jLabel132.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel133.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel133.setText("100");
+        jLabel133.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel134.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel134.setText("100");
+        jLabel134.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel135.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel135.setText("100");
+        jLabel135.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel136.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel136.setText("100");
+        jLabel136.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel137.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel137.setText("100");
+        jLabel137.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel138.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel138.setText("100");
+        jLabel138.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel139.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel139.setText("100");
+        jLabel139.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel140.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel140.setText("100");
+        jLabel140.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel141.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel141.setText("100");
+        jLabel141.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel142.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel142.setText("100");
+        jLabel142.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel143.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel143.setText("100");
+        jLabel143.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel144.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel144.setText("100");
+        jLabel144.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel145.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel145.setText("100");
+        jLabel145.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel146.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel146.setText("100");
+        jLabel146.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel147.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel147.setText("100");
+        jLabel147.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel148.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel148.setText("100");
+        jLabel148.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel149.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel149.setText("100");
+        jLabel149.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel150.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel150.setText("100");
+        jLabel150.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel151.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel151.setText("100");
+        jLabel151.setAlignmentX(1.0F);
+        jLabel151.setAlignmentY(1.0F);
+        jLabel151.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel152.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel152.setText("100");
+        jLabel152.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel153.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel153.setText("100");
+        jLabel153.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel154.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel154.setText("100");
+        jLabel154.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel155.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel155.setText("100");
+        jLabel155.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel156.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel156.setText("100");
+        jLabel156.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel157.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel157.setText("100");
+        jLabel157.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel158.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel158.setText("100");
+        jLabel158.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel159.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel159.setText("100");
+        jLabel159.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel160.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel160.setText("100");
+        jLabel160.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel161.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel161.setText("100");
+        jLabel161.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel162.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel162.setText("100");
+        jLabel162.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel163.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel163.setText("100");
+        jLabel163.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel164.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel164.setText("100");
+        jLabel164.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel165.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel165.setText("100");
+        jLabel165.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel166.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel166.setText("100");
+        jLabel166.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel167.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel167.setText("100");
+        jLabel167.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel168.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel168.setText("100");
+        jLabel168.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel169.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel169.setText("100");
+        jLabel169.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel170.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel170.setText("100");
+        jLabel170.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel171.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel171.setText("100");
+        jLabel171.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel172.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel172.setText("100");
+        jLabel172.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel173.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel173.setText("100");
+        jLabel173.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel174.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel174.setText("100");
+        jLabel174.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel175.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel175.setText("100");
+        jLabel175.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel176.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel176.setText("100");
+        jLabel176.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel177.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel177.setText("100");
+        jLabel177.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel178.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel178.setText("100");
+        jLabel178.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel179.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel179.setText("100");
+        jLabel179.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel180.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel180.setText("100");
+        jLabel180.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel181.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel181.setText("100");
+        jLabel181.setAlignmentX(1.0F);
+        jLabel181.setAlignmentY(1.0F);
+        jLabel181.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel182.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel182.setText("100");
+        jLabel182.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel183.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel183.setText("100");
+        jLabel183.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel184.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel184.setText("100");
+        jLabel184.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel185.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel185.setText("100");
+        jLabel185.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel186.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel186.setText("100");
+        jLabel186.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel187.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel187.setText("100");
+        jLabel187.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel188.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel188.setText("100");
+        jLabel188.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel189.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel189.setText("100");
+        jLabel189.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel190.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel190.setText("100");
+        jLabel190.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel191.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel191.setText("100");
+        jLabel191.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel192.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel192.setText("100");
+        jLabel192.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel193.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel193.setText("100");
+        jLabel193.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel194.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel194.setText("100");
+        jLabel194.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel195.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel195.setText("100");
+        jLabel195.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel196.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel196.setText("100");
+        jLabel196.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel197.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel197.setText("100");
+        jLabel197.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel198.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel198.setText("100");
+        jLabel198.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel199.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel199.setText("100");
+        jLabel199.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel200.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel200.setText("100");
+        jLabel200.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel201.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel201.setText("100");
+        jLabel201.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel202.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel202.setText("100");
+        jLabel202.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel203.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel203.setText("100");
+        jLabel203.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel204.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel204.setText("100");
+        jLabel204.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel205.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel205.setText("100");
+        jLabel205.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel206.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel206.setText("100");
+        jLabel206.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel207.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel207.setText("100");
+        jLabel207.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel208.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel208.setText("100");
+        jLabel208.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel209.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel209.setText("100");
+        jLabel209.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel210.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel210.setText("100");
+        jLabel210.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel211.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel211.setText("100");
+        jLabel211.setAlignmentX(1.0F);
+        jLabel211.setAlignmentY(1.0F);
+        jLabel211.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel212.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel212.setText("100");
+        jLabel212.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel213.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel213.setText("100");
+        jLabel213.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel214.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel214.setText("100");
+        jLabel214.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel215.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel215.setText("100");
+        jLabel215.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel216.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel216.setText("100");
+        jLabel216.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel217.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel217.setText("100");
+        jLabel217.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel218.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel218.setText("100");
+        jLabel218.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel219.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel219.setText("100");
+        jLabel219.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel220.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel220.setText("100");
+        jLabel220.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel221.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel221.setText("100");
+        jLabel221.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel222.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel222.setText("100");
+        jLabel222.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel223.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel223.setText("100");
+        jLabel223.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel224.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel224.setText("100");
+        jLabel224.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel225.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel225.setText("100");
+        jLabel225.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel226.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel226.setText("100");
+        jLabel226.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel227.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel227.setText("100");
+        jLabel227.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel228.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel228.setText("100");
+        jLabel228.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel229.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel229.setText("100");
+        jLabel229.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel230.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel230.setText("100");
+        jLabel230.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel231.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel231.setText("100");
+        jLabel231.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel232.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel232.setText("100");
+        jLabel232.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel233.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel233.setText("100");
+        jLabel233.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel234.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel234.setText("100");
+        jLabel234.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel235.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel235.setText("100");
+        jLabel235.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel236.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel236.setText("100");
+        jLabel236.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel237.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel237.setText("100");
+        jLabel237.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel238.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel238.setText("100");
+        jLabel238.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel239.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel239.setText("100");
+        jLabel239.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel240.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel240.setText("100");
+        jLabel240.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel241.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel241.setText("100");
+        jLabel241.setAlignmentX(1.0F);
+        jLabel241.setAlignmentY(1.0F);
+        jLabel241.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel242.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel242.setText("100");
+        jLabel242.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel243.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel243.setText("100");
+        jLabel243.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel244.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel244.setText("100");
+        jLabel244.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel245.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel245.setText("100");
+        jLabel245.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel246.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel246.setText("100");
+        jLabel246.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel247.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel247.setText("100");
+        jLabel247.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel248.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel248.setText("100");
+        jLabel248.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel249.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel249.setText("100");
+        jLabel249.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel250.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel250.setText("100");
+        jLabel250.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel251.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel251.setText("100");
+        jLabel251.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel252.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel252.setText("100");
+        jLabel252.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel253.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel253.setText("100");
+        jLabel253.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel254.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel254.setText("100");
+        jLabel254.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel255.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel255.setText("100");
+        jLabel255.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel256.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel256.setText("100");
+        jLabel256.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel257.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel257.setText("100");
+        jLabel257.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel258.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel258.setText("100");
+        jLabel258.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel259.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel259.setText("100");
+        jLabel259.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel260.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel260.setText("100");
+        jLabel260.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel261.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel261.setText("100");
+        jLabel261.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel262.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel262.setText("100");
+        jLabel262.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel263.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel263.setText("100");
+        jLabel263.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel264.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel264.setText("100");
+        jLabel264.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel265.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel265.setText("100");
+        jLabel265.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel266.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel266.setText("100");
+        jLabel266.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel267.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel267.setText("100");
+        jLabel267.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel268.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel268.setText("100");
+        jLabel268.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel269.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel269.setText("100");
+        jLabel269.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel270.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel270.setText("100");
+        jLabel270.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel271.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel271.setText("100");
+        jLabel271.setAlignmentX(1.0F);
+        jLabel271.setAlignmentY(1.0F);
+        jLabel271.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel272.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel272.setText("100");
+        jLabel272.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel273.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel273.setText("100");
+        jLabel273.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel274.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel274.setText("100");
+        jLabel274.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel275.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel275.setText("100");
+        jLabel275.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel276.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel276.setText("100");
+        jLabel276.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel277.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel277.setText("100");
+        jLabel277.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel278.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel278.setText("100");
+        jLabel278.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel279.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel279.setText("100");
+        jLabel279.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel280.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel280.setText("100");
+        jLabel280.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel281.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel281.setText("100");
+        jLabel281.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel282.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel282.setText("100");
+        jLabel282.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel283.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel283.setText("100");
+        jLabel283.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel284.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel284.setText("100");
+        jLabel284.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel285.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel285.setText("100");
+        jLabel285.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel286.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel286.setText("100");
+        jLabel286.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel287.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel287.setText("100");
+        jLabel287.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel288.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel288.setText("100");
+        jLabel288.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel289.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel289.setText("100");
+        jLabel289.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel290.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel290.setText("100");
+        jLabel290.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel291.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel291.setText("100");
+        jLabel291.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel292.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel292.setText("100");
+        jLabel292.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel293.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel293.setText("100");
+        jLabel293.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel294.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel294.setText("100");
+        jLabel294.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel295.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel295.setText("100");
+        jLabel295.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel296.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel296.setText("100");
+        jLabel296.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel297.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel297.setText("100");
+        jLabel297.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel298.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel298.setText("100");
+        jLabel298.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel299.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel299.setText("100");
+        jLabel299.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel300.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel300.setText("100");
+        jLabel300.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel301.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel301.setText("100");
+        jLabel301.setAlignmentX(1.0F);
+        jLabel301.setAlignmentY(1.0F);
+        jLabel301.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel302.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel302.setText("100");
+        jLabel302.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel303.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel303.setText("100");
+        jLabel303.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel304.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel304.setText("100");
+        jLabel304.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel305.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel305.setText("100");
+        jLabel305.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel306.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel306.setText("100");
+        jLabel306.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel307.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel307.setText("100");
+        jLabel307.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel308.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel308.setText("100");
+        jLabel308.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel309.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel309.setText("100");
+        jLabel309.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel310.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel310.setText("100");
+        jLabel310.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel311.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel311.setText("100");
+        jLabel311.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel312.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel312.setText("100");
+        jLabel312.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel313.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel313.setText("100");
+        jLabel313.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel314.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel314.setText("100");
+        jLabel314.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel315.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel315.setText("100");
+        jLabel315.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel316.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel316.setText("100");
+        jLabel316.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel317.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel317.setText("100");
+        jLabel317.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel318.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel318.setText("100");
+        jLabel318.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel319.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel319.setText("100");
+        jLabel319.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel320.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel320.setText("100");
+        jLabel320.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel321.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel321.setText("100");
+        jLabel321.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel322.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel322.setText("100");
+        jLabel322.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel323.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel323.setText("100");
+        jLabel323.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel324.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel324.setText("100");
+        jLabel324.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel325.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel325.setText("100");
+        jLabel325.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel326.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel326.setText("100");
+        jLabel326.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel327.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel327.setText("100");
+        jLabel327.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel328.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel328.setText("100");
+        jLabel328.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel329.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel329.setText("100");
+        jLabel329.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel330.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel330.setText("100");
+        jLabel330.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel331.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel331.setText("100");
+        jLabel331.setAlignmentX(1.0F);
+        jLabel331.setAlignmentY(1.0F);
+        jLabel331.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel332.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel332.setText("100");
+        jLabel332.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel333.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel333.setText("100");
+        jLabel333.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel334.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel334.setText("100");
+        jLabel334.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel335.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel335.setText("100");
+        jLabel335.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel336.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel336.setText("100");
+        jLabel336.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel337.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel337.setText("100");
+        jLabel337.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel338.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel338.setText("100");
+        jLabel338.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel339.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel339.setText("100");
+        jLabel339.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel340.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel340.setText("100");
+        jLabel340.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel341.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel341.setText("100");
+        jLabel341.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel342.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel342.setText("100");
+        jLabel342.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel343.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel343.setText("100");
+        jLabel343.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel344.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel344.setText("100");
+        jLabel344.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel345.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel345.setText("100");
+        jLabel345.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel346.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel346.setText("100");
+        jLabel346.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel347.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel347.setText("100");
+        jLabel347.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel348.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel348.setText("100");
+        jLabel348.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel349.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel349.setText("100");
+        jLabel349.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel350.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel350.setText("100");
+        jLabel350.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel351.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel351.setText("100");
+        jLabel351.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel352.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel352.setText("100");
+        jLabel352.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel353.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel353.setText("100");
+        jLabel353.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel354.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel354.setText("100");
+        jLabel354.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel355.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel355.setText("100");
+        jLabel355.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel356.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel356.setText("100");
+        jLabel356.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel357.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel357.setText("100");
+        jLabel357.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel358.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel358.setText("100");
+        jLabel358.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel359.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel359.setText("100");
+        jLabel359.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel360.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel360.setText("100");
+        jLabel360.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel361.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel361.setText("100");
+        jLabel361.setAlignmentX(1.0F);
+        jLabel361.setAlignmentY(1.0F);
+        jLabel361.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel362.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel362.setText("100");
+        jLabel362.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel363.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel363.setText("100");
+        jLabel363.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel364.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel364.setText("100");
+        jLabel364.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel365.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel365.setText("100");
+        jLabel365.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel366.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel366.setText("100");
+        jLabel366.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel367.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel367.setText("100");
+        jLabel367.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel368.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel368.setText("100");
+        jLabel368.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel369.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel369.setText("100");
+        jLabel369.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel370.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel370.setText("100");
+        jLabel370.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel371.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel371.setText("100");
+        jLabel371.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel372.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel372.setText("100");
+        jLabel372.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel373.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel373.setText("100");
+        jLabel373.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel374.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel374.setText("100");
+        jLabel374.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel375.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel375.setText("100");
+        jLabel375.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel376.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel376.setText("100");
+        jLabel376.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel377.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel377.setText("100");
+        jLabel377.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel378.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel378.setText("100");
+        jLabel378.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel379.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel379.setText("100");
+        jLabel379.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel380.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel380.setText("100");
+        jLabel380.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel381.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel381.setText("100");
+        jLabel381.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel382.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel382.setText("100");
+        jLabel382.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel383.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel383.setText("100");
+        jLabel383.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel384.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel384.setText("100");
+        jLabel384.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel385.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel385.setText("100");
+        jLabel385.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel386.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel386.setText("100");
+        jLabel386.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel387.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel387.setText("100");
+        jLabel387.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel388.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel388.setText("100");
+        jLabel388.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel389.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel389.setText("100");
+        jLabel389.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel390.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel390.setText("100");
+        jLabel390.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel391.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel391.setText("100");
+        jLabel391.setAlignmentX(1.0F);
+        jLabel391.setAlignmentY(1.0F);
+        jLabel391.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel392.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel392.setText("100");
+        jLabel392.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel393.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel393.setText("100");
+        jLabel393.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel394.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel394.setText("100");
+        jLabel394.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel395.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel395.setText("100");
+        jLabel395.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel396.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel396.setText("100");
+        jLabel396.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel397.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel397.setText("100");
+        jLabel397.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel398.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel398.setText("100");
+        jLabel398.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel399.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel399.setText("100");
+        jLabel399.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel400.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel400.setText("100");
+        jLabel400.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel401.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel401.setText("100");
+        jLabel401.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel402.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel402.setText("100");
+        jLabel402.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel403.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel403.setText("100");
+        jLabel403.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel404.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel404.setText("100");
+        jLabel404.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel405.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel405.setText("100");
+        jLabel405.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel406.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel406.setText("100");
+        jLabel406.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel407.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel407.setText("100");
+        jLabel407.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel408.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel408.setText("100");
+        jLabel408.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel409.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel409.setText("100");
+        jLabel409.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel410.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel410.setText("100");
+        jLabel410.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel411.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel411.setText("100");
+        jLabel411.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel412.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel412.setText("100");
+        jLabel412.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel413.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel413.setText("100");
+        jLabel413.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel414.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel414.setText("100");
+        jLabel414.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel415.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel415.setText("100");
+        jLabel415.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel416.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel416.setText("100");
+        jLabel416.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel417.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel417.setText("100");
+        jLabel417.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel418.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel418.setText("100");
+        jLabel418.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel419.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel419.setText("100");
+        jLabel419.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel420.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel420.setText("100");
+        jLabel420.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel421.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel421.setText("100");
+        jLabel421.setAlignmentX(1.0F);
+        jLabel421.setAlignmentY(1.0F);
+        jLabel421.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel422.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel422.setText("100");
+        jLabel422.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel423.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel423.setText("100");
+        jLabel423.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel424.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel424.setText("100");
+        jLabel424.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel425.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel425.setText("100");
+        jLabel425.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel426.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel426.setText("100");
+        jLabel426.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel427.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel427.setText("100");
+        jLabel427.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel428.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel428.setText("100");
+        jLabel428.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel429.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel429.setText("100");
+        jLabel429.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel430.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel430.setText("100");
+        jLabel430.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel431.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel431.setText("100");
+        jLabel431.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel432.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel432.setText("100");
+        jLabel432.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel433.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel433.setText("100");
+        jLabel433.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel434.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel434.setText("100");
+        jLabel434.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel435.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel435.setText("100");
+        jLabel435.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel436.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel436.setText("100");
+        jLabel436.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel437.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel437.setText("100");
+        jLabel437.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel438.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel438.setText("100");
+        jLabel438.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel439.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel439.setText("100");
+        jLabel439.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel440.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel440.setText("100");
+        jLabel440.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel441.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel441.setText("100");
+        jLabel441.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel442.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel442.setText("100");
+        jLabel442.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel443.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel443.setText("100");
+        jLabel443.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel444.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel444.setText("100");
+        jLabel444.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel445.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel445.setText("100");
+        jLabel445.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel446.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel446.setText("100");
+        jLabel446.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel447.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel447.setText("100");
+        jLabel447.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel448.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel448.setText("100");
+        jLabel448.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel449.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel449.setText("100");
+        jLabel449.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel450.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel450.setText("100");
+        jLabel450.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel451.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel451.setText("100");
+        jLabel451.setAlignmentX(1.0F);
+        jLabel451.setAlignmentY(1.0F);
+        jLabel451.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel452.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel452.setText("100");
+        jLabel452.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel453.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel453.setText("100");
+        jLabel453.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel454.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel454.setText("100");
+        jLabel454.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel455.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel455.setText("100");
+        jLabel455.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel456.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel456.setText("100");
+        jLabel456.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel457.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel457.setText("100");
+        jLabel457.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel458.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel458.setText("100");
+        jLabel458.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel459.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel459.setText("100");
+        jLabel459.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel460.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel460.setText("100");
+        jLabel460.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel461.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel461.setText("100");
+        jLabel461.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel462.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel462.setText("100");
+        jLabel462.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel463.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel463.setText("100");
+        jLabel463.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel464.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel464.setText("100");
+        jLabel464.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel465.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel465.setText("100");
+        jLabel465.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel466.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel466.setText("100");
+        jLabel466.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel467.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel467.setText("100");
+        jLabel467.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel468.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel468.setText("100");
+        jLabel468.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel469.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel469.setText("100");
+        jLabel469.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel470.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel470.setText("100");
+        jLabel470.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel471.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel471.setText("100");
+        jLabel471.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel472.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel472.setText("100");
+        jLabel472.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel473.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel473.setText("100");
+        jLabel473.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel474.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel474.setText("100");
+        jLabel474.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel475.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel475.setText("100");
+        jLabel475.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel476.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel476.setText("100");
+        jLabel476.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel477.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel477.setText("100");
+        jLabel477.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel478.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel478.setText("100");
+        jLabel478.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel479.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel479.setText("100");
+        jLabel479.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel480.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel480.setText("100");
+        jLabel480.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel481.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel481.setText("100");
+        jLabel481.setAlignmentX(1.0F);
+        jLabel481.setAlignmentY(1.0F);
+        jLabel481.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel482.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel482.setText("100");
+        jLabel482.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel483.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel483.setText("100");
+        jLabel483.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel484.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel484.setText("100");
+        jLabel484.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel485.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel485.setText("100");
+        jLabel485.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel486.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel486.setText("100");
+        jLabel486.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel487.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel487.setText("100");
+        jLabel487.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel488.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel488.setText("100");
+        jLabel488.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel489.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel489.setText("100");
+        jLabel489.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel490.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel490.setText("100");
+        jLabel490.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel491.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel491.setText("100");
+        jLabel491.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel492.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel492.setText("100");
+        jLabel492.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel493.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel493.setText("100");
+        jLabel493.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel494.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel494.setText("100");
+        jLabel494.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel495.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel495.setText("100");
+        jLabel495.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel496.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel496.setText("100");
+        jLabel496.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel497.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel497.setText("100");
+        jLabel497.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel498.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel498.setText("100");
+        jLabel498.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel499.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel499.setText("100");
+        jLabel499.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel500.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel500.setText("100");
+        jLabel500.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel501.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel501.setText("100");
+        jLabel501.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel502.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel502.setText("100");
+        jLabel502.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel503.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel503.setText("100");
+        jLabel503.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel504.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel504.setText("100");
+        jLabel504.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel505.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel505.setText("100");
+        jLabel505.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel506.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel506.setText("100");
+        jLabel506.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel507.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel507.setText("100");
+        jLabel507.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel508.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel508.setText("100");
+        jLabel508.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel509.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel509.setText("100");
+        jLabel509.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel510.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel510.setText("100");
+        jLabel510.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel511.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel511.setText("100");
+        jLabel511.setAlignmentX(1.0F);
+        jLabel511.setAlignmentY(1.0F);
+        jLabel511.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel512.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel512.setText("100");
+        jLabel512.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel513.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel513.setText("100");
+        jLabel513.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel514.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel514.setText("100");
+        jLabel514.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel515.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel515.setText("100");
+        jLabel515.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel516.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel516.setText("100");
+        jLabel516.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel517.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel517.setText("100");
+        jLabel517.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel518.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel518.setText("100");
+        jLabel518.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel519.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel519.setText("100");
+        jLabel519.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel520.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel520.setText("100");
+        jLabel520.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel521.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel521.setText("100");
+        jLabel521.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel522.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel522.setText("100");
+        jLabel522.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel523.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel523.setText("100");
+        jLabel523.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel524.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel524.setText("100");
+        jLabel524.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel525.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel525.setText("100");
+        jLabel525.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel526.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel526.setText("100");
+        jLabel526.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel527.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel527.setText("100");
+        jLabel527.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel528.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel528.setText("100");
+        jLabel528.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel529.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel529.setText("100");
+        jLabel529.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel530.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel530.setText("100");
+        jLabel530.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel531.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel531.setText("100");
+        jLabel531.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel532.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel532.setText("100");
+        jLabel532.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel533.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel533.setText("100");
+        jLabel533.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel534.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel534.setText("100");
+        jLabel534.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel535.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel535.setText("100");
+        jLabel535.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel536.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel536.setText("100");
+        jLabel536.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel537.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel537.setText("100");
+        jLabel537.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel538.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel538.setText("100");
+        jLabel538.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel539.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel539.setText("100");
+        jLabel539.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel540.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel540.setText("100");
+        jLabel540.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel571.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel571.setText("100");
+        jLabel571.setAlignmentX(1.0F);
+        jLabel571.setAlignmentY(1.0F);
+        jLabel571.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel572.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel572.setText("100");
+        jLabel572.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel573.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel573.setText("100");
+        jLabel573.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel574.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel574.setText("100");
+        jLabel574.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel575.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel575.setText("100");
+        jLabel575.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel576.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel576.setText("100");
+        jLabel576.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel578.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel578.setText("100");
+        jLabel578.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel579.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel579.setText("100");
+        jLabel579.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel580.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel580.setText("100");
+        jLabel580.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel581.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel581.setText("100");
+        jLabel581.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel582.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel582.setText("100");
+        jLabel582.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel583.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel583.setText("100");
+        jLabel583.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel584.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel584.setText("100");
+        jLabel584.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel585.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel585.setText("100");
+        jLabel585.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel586.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel586.setText("100");
+        jLabel586.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel587.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel587.setText("100");
+        jLabel587.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel588.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel588.setText("100");
+        jLabel588.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel589.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel589.setText("100");
+        jLabel589.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel590.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel590.setText("100");
+        jLabel590.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel591.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel591.setText("100");
+        jLabel591.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel592.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel592.setText("100");
+        jLabel592.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel593.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel593.setText("100");
+        jLabel593.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel594.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel594.setText("100");
+        jLabel594.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel595.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel595.setText("100");
+        jLabel595.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel596.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel596.setText("100");
+        jLabel596.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel597.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel597.setText("100");
+        jLabel597.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel598.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel598.setText("100");
+        jLabel598.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel599.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel599.setText("100");
+        jLabel599.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel600.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel600.setText("100");
+        jLabel600.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel541.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel541.setText("100");
+        jLabel541.setAlignmentX(1.0F);
+        jLabel541.setAlignmentY(1.0F);
+        jLabel541.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel542.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel542.setText("100");
+        jLabel542.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel543.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel543.setText("100");
+        jLabel543.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel544.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel544.setText("100");
+        jLabel544.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel545.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel545.setText("100");
+        jLabel545.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel546.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel546.setText("100");
+        jLabel546.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel547.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel547.setText("100");
+        jLabel547.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel548.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel548.setText("100");
+        jLabel548.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel549.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel549.setText("100");
+        jLabel549.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel550.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel550.setText("100");
+        jLabel550.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel551.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel551.setText("100");
+        jLabel551.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel552.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel552.setText("100");
+        jLabel552.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel553.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel553.setText("100");
+        jLabel553.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel554.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel554.setText("100");
+        jLabel554.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel555.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel555.setText("100");
+        jLabel555.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel556.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel556.setText("100");
+        jLabel556.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel557.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel557.setText("100");
+        jLabel557.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel558.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel558.setText("100");
+        jLabel558.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel559.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel559.setText("100");
+        jLabel559.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel560.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel560.setText("100");
+        jLabel560.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel561.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel561.setText("100");
+        jLabel561.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel562.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel562.setText("100");
+        jLabel562.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel563.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel563.setText("100");
+        jLabel563.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel564.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel564.setText("100");
+        jLabel564.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel565.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel565.setText("100");
+        jLabel565.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel566.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel566.setText("100");
+        jLabel566.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel567.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel567.setText("100");
+        jLabel567.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel568.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel568.setText("100");
+        jLabel568.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel569.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel569.setText("100");
+        jLabel569.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel570.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel570.setText("100");
+        jLabel570.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel577.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel577.setText("100");
+        jLabel577.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout jPuebloLayout = new javax.swing.GroupLayout(jPueblo);
+        jPueblo.setLayout(jPuebloLayout);
+        jPuebloLayout.setHorizontalGroup(
+            jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPuebloLayout.createSequentialGroup()
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPuebloLayout.createSequentialGroup()
+                            .addComponent(jLabel271)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel272)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel273)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel274)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel275)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel276)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel277)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel278)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel279)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel280)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel281)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel282)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel283)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel284)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel285)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel286)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel287)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel288)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel289)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel290)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel291)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel292)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel293)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel294)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel295)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel296)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel297)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel298)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel299)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel300))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPuebloLayout.createSequentialGroup()
+                                    .addComponent(jLabel151)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel152)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel153)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel154)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel155)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel156)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel157)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel158)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel159)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel160)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel161)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel162)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel163)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel164)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel165)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel166)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel167)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel168)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel169)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel170)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel171)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel172)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel173)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel174)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel175)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel176)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel177)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel178)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel179)
+                                    .addGap(0, 0, 0)
+                                    .addComponent(jLabel180))
+                                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPuebloLayout.createSequentialGroup()
+                                        .addComponent(jLabel1)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel2)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel3)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel4)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel5)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel6)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel7)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel8)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel9)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel10)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel11)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel12)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel13)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel14)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel15)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel16)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel17)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel18)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel19)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel20)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel21)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel22)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel23)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel24)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel25)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel26)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel27)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel28)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel29)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel30))
+                                    .addGroup(jPuebloLayout.createSequentialGroup()
+                                        .addComponent(jLabel31)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel32)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel33)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel34)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel35)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel36)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel37)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel38)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel39)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel40)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel41)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel42)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel43)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel44)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel45)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel46)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel47)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel48)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel49)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel50)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel51)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel52)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel53)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel54)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel55)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel56)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel57)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel58)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel59)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel60))
+                                    .addGroup(jPuebloLayout.createSequentialGroup()
+                                        .addComponent(jLabel61)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel62)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel63)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel64)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel65)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel66)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel67)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel68)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel69)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel70)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel71)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel72)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel73)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel74)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel75)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel76)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel77)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel78)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel79)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel80)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel81)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel82)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel83)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel84)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel85)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel86)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel87)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel88)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel89)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel90))
+                                    .addGroup(jPuebloLayout.createSequentialGroup()
+                                        .addComponent(jLabel91)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel92)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel93)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel94)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel95)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel96)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel97)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel98)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel99)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel100)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel101)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel102)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel103)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel104)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel105)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel106)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel107)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel108)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel109)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel110)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel111)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel112)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel113)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel114)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel115)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel116)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel117)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel118)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel119)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel120))
+                                    .addGroup(jPuebloLayout.createSequentialGroup()
+                                        .addComponent(jLabel121)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel122)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel123)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel124)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel125)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel126)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel127)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel128)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel129)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel130)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel131)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel132)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel133)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel134)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel135)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel136)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel137)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel138)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel139)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel140)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel141)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel142)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel143)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel144)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel145)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel146)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel147)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel148)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel149)
+                                        .addGap(0, 0, 0)
+                                        .addComponent(jLabel150))))
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel181)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel182)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel183)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel184)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel185)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel186)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel187)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel188)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel189)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel190)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel191)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel192)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel193)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel194)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel195)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel196)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel197)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel198)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel199)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel200)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel201)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel202)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel203)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel204)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel205)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel206)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel207)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel208)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel209)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel210))
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel211)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel212)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel213)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel214)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel215)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel216)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel217)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel218)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel219)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel220)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel221)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel222)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel223)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel224)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel225)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel226)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel227)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel228)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel229)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel230)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel231)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel232)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel233)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel234)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel235)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel236)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel237)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel238)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel239)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel240))
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel241)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel242)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel243)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel244)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel245)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel246)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel247)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel248)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel249)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel250)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel251)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel252)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel253)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel254)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel255)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel256)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel257)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel258)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel259)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel260)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel261)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel262)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel263)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel264)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel265)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel266)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel267)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel268)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel269)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel270))))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel301)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel302)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel303)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel304)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel305)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel306)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel307)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel308)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel309)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel310)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel311)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel312)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel313)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel314)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel315)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel316)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel317)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel318)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel319)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel320)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel321)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel322)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel323)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel324)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel325)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel326)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel327)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel328)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel329)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel330))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel331)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel332)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel333)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel334)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel335)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel336)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel337)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel338)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel339)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel340)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel341)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel342)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel343)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel344)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel345)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel346)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel347)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel348)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel349)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel350)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel351)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel352)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel353)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel354)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel355)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel356)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel357)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel358)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel359)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel360))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel361)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel362)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel363)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel364)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel365)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel366)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel367)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel368)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel369)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel370)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel371)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel372)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel373)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel374)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel375)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel376)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel377)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel378)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel379)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel380)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel381)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel382)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel383)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel384)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel385)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel386)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel387)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel388)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel389)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel390))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel391)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel392)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel393)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel394)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel395)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel396)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel397)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel398)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel399)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel400)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel401)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel402)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel403)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel404)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel405)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel406)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel407)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel408)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel409)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel410)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel411)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel412)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel413)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel414)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel415)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel416)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel417)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel418)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel419)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel420))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel481)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel482)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel483)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel484)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel485)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel486)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel487)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel488)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel489)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel490)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel491)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel492)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel493)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel494)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel495)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel496)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel497)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel498)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel499)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel500)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel501)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel502)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel503)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel504)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel505)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel506)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel507)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel508)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel509)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel510))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addComponent(jLabel511)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel512)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel513)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel514)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel515)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel516)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel517)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel518)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel519)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel520)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel521)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel522)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel523)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel524)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel525)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel526)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel527)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel528)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel529)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel530)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel531)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel532)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel533)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel534)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel535)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel536)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel537)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel538)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel539)
+                        .addGap(0, 0, 0)
+                        .addComponent(jLabel540))
+                    .addGroup(jPuebloLayout.createSequentialGroup()
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel541, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel571)
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel542)
+                            .addComponent(jLabel572))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel543)
+                            .addComponent(jLabel573))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel544)
+                            .addComponent(jLabel574))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel545)
+                            .addComponent(jLabel575))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel546)
+                            .addComponent(jLabel576))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel547)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel548)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel549)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel550))
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel577)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel578)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel579)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel580)))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel551)
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel581)))
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel582)
+                            .addComponent(jLabel552))
+                        .addGap(0, 0, 0)
+                        .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel583)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel584)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel585)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel586)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel587)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel588)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel589)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel590)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel591)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel592)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel593)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel594)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel595)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel596)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel597)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel598)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel599)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel600))
+                            .addGroup(jPuebloLayout.createSequentialGroup()
+                                .addComponent(jLabel553)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel554)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel555)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel556)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel557)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel558)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel559)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel560)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel561)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel562)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel563)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel564)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel565)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel566)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel567)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel568)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel569)
+                                .addGap(0, 0, 0)
+                                .addComponent(jLabel570)))
+                        .addGap(29, 29, 29))
+                    .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPuebloLayout.createSequentialGroup()
+                            .addComponent(jLabel421)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel422)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel423)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel424)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel425)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel426)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel427)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel428)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel429)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel430)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel431)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel432)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel433)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel434)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel435)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel436)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel437)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel438)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel439)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel440)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel441)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel442)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel443)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel444)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel445)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel446)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel447)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel448)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel449)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel450, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPuebloLayout.createSequentialGroup()
+                            .addComponent(jLabel451)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel452)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel453)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel454)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel455)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel456)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel457)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel458)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel459)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel460)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel461)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel462)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel463)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel464)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel465)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel466)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel467)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel468)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel469)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel470)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel471)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel472)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel473)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel474)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel475)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel476)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel477)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel478)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel479)
+                            .addGap(0, 0, 0)
+                            .addComponent(jLabel480))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPuebloLayout.setVerticalGroup(
+            jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPuebloLayout.createSequentialGroup()
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel23)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel25)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel30))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35)
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel37)
+                    .addComponent(jLabel38)
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel46)
+                    .addComponent(jLabel47)
+                    .addComponent(jLabel48)
+                    .addComponent(jLabel49)
+                    .addComponent(jLabel50)
+                    .addComponent(jLabel51)
+                    .addComponent(jLabel52)
+                    .addComponent(jLabel53)
+                    .addComponent(jLabel54)
+                    .addComponent(jLabel55)
+                    .addComponent(jLabel56)
+                    .addComponent(jLabel57)
+                    .addComponent(jLabel58)
+                    .addComponent(jLabel59)
+                    .addComponent(jLabel60))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel61)
+                    .addComponent(jLabel62)
+                    .addComponent(jLabel63)
+                    .addComponent(jLabel64)
+                    .addComponent(jLabel65)
+                    .addComponent(jLabel66)
+                    .addComponent(jLabel67)
+                    .addComponent(jLabel68)
+                    .addComponent(jLabel69)
+                    .addComponent(jLabel70)
+                    .addComponent(jLabel71)
+                    .addComponent(jLabel72)
+                    .addComponent(jLabel73)
+                    .addComponent(jLabel74)
+                    .addComponent(jLabel75)
+                    .addComponent(jLabel76)
+                    .addComponent(jLabel77)
+                    .addComponent(jLabel78)
+                    .addComponent(jLabel79)
+                    .addComponent(jLabel80)
+                    .addComponent(jLabel81)
+                    .addComponent(jLabel82)
+                    .addComponent(jLabel83)
+                    .addComponent(jLabel84)
+                    .addComponent(jLabel85)
+                    .addComponent(jLabel86)
+                    .addComponent(jLabel87)
+                    .addComponent(jLabel88)
+                    .addComponent(jLabel89)
+                    .addComponent(jLabel90))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel91)
+                    .addComponent(jLabel92)
+                    .addComponent(jLabel93)
+                    .addComponent(jLabel94)
+                    .addComponent(jLabel95)
+                    .addComponent(jLabel96)
+                    .addComponent(jLabel97)
+                    .addComponent(jLabel98)
+                    .addComponent(jLabel99)
+                    .addComponent(jLabel100)
+                    .addComponent(jLabel101)
+                    .addComponent(jLabel102)
+                    .addComponent(jLabel103)
+                    .addComponent(jLabel104)
+                    .addComponent(jLabel105)
+                    .addComponent(jLabel106)
+                    .addComponent(jLabel107)
+                    .addComponent(jLabel108)
+                    .addComponent(jLabel109)
+                    .addComponent(jLabel110)
+                    .addComponent(jLabel111)
+                    .addComponent(jLabel112)
+                    .addComponent(jLabel113)
+                    .addComponent(jLabel114)
+                    .addComponent(jLabel115)
+                    .addComponent(jLabel116)
+                    .addComponent(jLabel117)
+                    .addComponent(jLabel118)
+                    .addComponent(jLabel119)
+                    .addComponent(jLabel120))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel121)
+                    .addComponent(jLabel122)
+                    .addComponent(jLabel123)
+                    .addComponent(jLabel124)
+                    .addComponent(jLabel125)
+                    .addComponent(jLabel126)
+                    .addComponent(jLabel127)
+                    .addComponent(jLabel128)
+                    .addComponent(jLabel129)
+                    .addComponent(jLabel130)
+                    .addComponent(jLabel131)
+                    .addComponent(jLabel132)
+                    .addComponent(jLabel133)
+                    .addComponent(jLabel134)
+                    .addComponent(jLabel135)
+                    .addComponent(jLabel136)
+                    .addComponent(jLabel137)
+                    .addComponent(jLabel138)
+                    .addComponent(jLabel139)
+                    .addComponent(jLabel140)
+                    .addComponent(jLabel141)
+                    .addComponent(jLabel142)
+                    .addComponent(jLabel143)
+                    .addComponent(jLabel144)
+                    .addComponent(jLabel145)
+                    .addComponent(jLabel146)
+                    .addComponent(jLabel147)
+                    .addComponent(jLabel148)
+                    .addComponent(jLabel149)
+                    .addComponent(jLabel150))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel151)
+                    .addComponent(jLabel152)
+                    .addComponent(jLabel153)
+                    .addComponent(jLabel154)
+                    .addComponent(jLabel155)
+                    .addComponent(jLabel156)
+                    .addComponent(jLabel157)
+                    .addComponent(jLabel158)
+                    .addComponent(jLabel159)
+                    .addComponent(jLabel160)
+                    .addComponent(jLabel161)
+                    .addComponent(jLabel162)
+                    .addComponent(jLabel163)
+                    .addComponent(jLabel164)
+                    .addComponent(jLabel165)
+                    .addComponent(jLabel166)
+                    .addComponent(jLabel167)
+                    .addComponent(jLabel168)
+                    .addComponent(jLabel169)
+                    .addComponent(jLabel170)
+                    .addComponent(jLabel171)
+                    .addComponent(jLabel172)
+                    .addComponent(jLabel173)
+                    .addComponent(jLabel174)
+                    .addComponent(jLabel175)
+                    .addComponent(jLabel176)
+                    .addComponent(jLabel177)
+                    .addComponent(jLabel178)
+                    .addComponent(jLabel179)
+                    .addComponent(jLabel180))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel181)
+                    .addComponent(jLabel182)
+                    .addComponent(jLabel183)
+                    .addComponent(jLabel184)
+                    .addComponent(jLabel185)
+                    .addComponent(jLabel186)
+                    .addComponent(jLabel187)
+                    .addComponent(jLabel188)
+                    .addComponent(jLabel189)
+                    .addComponent(jLabel190)
+                    .addComponent(jLabel191)
+                    .addComponent(jLabel192)
+                    .addComponent(jLabel193)
+                    .addComponent(jLabel194)
+                    .addComponent(jLabel195)
+                    .addComponent(jLabel196)
+                    .addComponent(jLabel197)
+                    .addComponent(jLabel198)
+                    .addComponent(jLabel199)
+                    .addComponent(jLabel200)
+                    .addComponent(jLabel201)
+                    .addComponent(jLabel202)
+                    .addComponent(jLabel203)
+                    .addComponent(jLabel204)
+                    .addComponent(jLabel205)
+                    .addComponent(jLabel206)
+                    .addComponent(jLabel207)
+                    .addComponent(jLabel208)
+                    .addComponent(jLabel209)
+                    .addComponent(jLabel210))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel211)
+                    .addComponent(jLabel212)
+                    .addComponent(jLabel213)
+                    .addComponent(jLabel214)
+                    .addComponent(jLabel215)
+                    .addComponent(jLabel216)
+                    .addComponent(jLabel217)
+                    .addComponent(jLabel218)
+                    .addComponent(jLabel219)
+                    .addComponent(jLabel220)
+                    .addComponent(jLabel221)
+                    .addComponent(jLabel222)
+                    .addComponent(jLabel223)
+                    .addComponent(jLabel224)
+                    .addComponent(jLabel225)
+                    .addComponent(jLabel226)
+                    .addComponent(jLabel227)
+                    .addComponent(jLabel228)
+                    .addComponent(jLabel229)
+                    .addComponent(jLabel230)
+                    .addComponent(jLabel231)
+                    .addComponent(jLabel232)
+                    .addComponent(jLabel233)
+                    .addComponent(jLabel234)
+                    .addComponent(jLabel235)
+                    .addComponent(jLabel236)
+                    .addComponent(jLabel237)
+                    .addComponent(jLabel238)
+                    .addComponent(jLabel239)
+                    .addComponent(jLabel240))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel241)
+                    .addComponent(jLabel242)
+                    .addComponent(jLabel243)
+                    .addComponent(jLabel244)
+                    .addComponent(jLabel245)
+                    .addComponent(jLabel246)
+                    .addComponent(jLabel247)
+                    .addComponent(jLabel248)
+                    .addComponent(jLabel249)
+                    .addComponent(jLabel250)
+                    .addComponent(jLabel251)
+                    .addComponent(jLabel252)
+                    .addComponent(jLabel253)
+                    .addComponent(jLabel254)
+                    .addComponent(jLabel255)
+                    .addComponent(jLabel256)
+                    .addComponent(jLabel257)
+                    .addComponent(jLabel258)
+                    .addComponent(jLabel259)
+                    .addComponent(jLabel260)
+                    .addComponent(jLabel261)
+                    .addComponent(jLabel262)
+                    .addComponent(jLabel263)
+                    .addComponent(jLabel264)
+                    .addComponent(jLabel265)
+                    .addComponent(jLabel266)
+                    .addComponent(jLabel267)
+                    .addComponent(jLabel268)
+                    .addComponent(jLabel269)
+                    .addComponent(jLabel270))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel271)
+                    .addComponent(jLabel272)
+                    .addComponent(jLabel273)
+                    .addComponent(jLabel274)
+                    .addComponent(jLabel275)
+                    .addComponent(jLabel276)
+                    .addComponent(jLabel277)
+                    .addComponent(jLabel278)
+                    .addComponent(jLabel279)
+                    .addComponent(jLabel280)
+                    .addComponent(jLabel281)
+                    .addComponent(jLabel282)
+                    .addComponent(jLabel283)
+                    .addComponent(jLabel284)
+                    .addComponent(jLabel285)
+                    .addComponent(jLabel286)
+                    .addComponent(jLabel287)
+                    .addComponent(jLabel288)
+                    .addComponent(jLabel289)
+                    .addComponent(jLabel290)
+                    .addComponent(jLabel291)
+                    .addComponent(jLabel292)
+                    .addComponent(jLabel293)
+                    .addComponent(jLabel294)
+                    .addComponent(jLabel295)
+                    .addComponent(jLabel296)
+                    .addComponent(jLabel297)
+                    .addComponent(jLabel298)
+                    .addComponent(jLabel299)
+                    .addComponent(jLabel300))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel301)
+                    .addComponent(jLabel302)
+                    .addComponent(jLabel303)
+                    .addComponent(jLabel304)
+                    .addComponent(jLabel305)
+                    .addComponent(jLabel306)
+                    .addComponent(jLabel307)
+                    .addComponent(jLabel308)
+                    .addComponent(jLabel309)
+                    .addComponent(jLabel310)
+                    .addComponent(jLabel311)
+                    .addComponent(jLabel312)
+                    .addComponent(jLabel313)
+                    .addComponent(jLabel314)
+                    .addComponent(jLabel315)
+                    .addComponent(jLabel316)
+                    .addComponent(jLabel317)
+                    .addComponent(jLabel318)
+                    .addComponent(jLabel319)
+                    .addComponent(jLabel320)
+                    .addComponent(jLabel321)
+                    .addComponent(jLabel322)
+                    .addComponent(jLabel323)
+                    .addComponent(jLabel324)
+                    .addComponent(jLabel325)
+                    .addComponent(jLabel326)
+                    .addComponent(jLabel327)
+                    .addComponent(jLabel328)
+                    .addComponent(jLabel329)
+                    .addComponent(jLabel330))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel331)
+                    .addComponent(jLabel332)
+                    .addComponent(jLabel333)
+                    .addComponent(jLabel334)
+                    .addComponent(jLabel335)
+                    .addComponent(jLabel336)
+                    .addComponent(jLabel337)
+                    .addComponent(jLabel338)
+                    .addComponent(jLabel339)
+                    .addComponent(jLabel340)
+                    .addComponent(jLabel341)
+                    .addComponent(jLabel342)
+                    .addComponent(jLabel343)
+                    .addComponent(jLabel344)
+                    .addComponent(jLabel345)
+                    .addComponent(jLabel346)
+                    .addComponent(jLabel347)
+                    .addComponent(jLabel348)
+                    .addComponent(jLabel349)
+                    .addComponent(jLabel350)
+                    .addComponent(jLabel351)
+                    .addComponent(jLabel352)
+                    .addComponent(jLabel353)
+                    .addComponent(jLabel354)
+                    .addComponent(jLabel355)
+                    .addComponent(jLabel356)
+                    .addComponent(jLabel357)
+                    .addComponent(jLabel358)
+                    .addComponent(jLabel359)
+                    .addComponent(jLabel360))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel361)
+                    .addComponent(jLabel362)
+                    .addComponent(jLabel363)
+                    .addComponent(jLabel364)
+                    .addComponent(jLabel365)
+                    .addComponent(jLabel366)
+                    .addComponent(jLabel367)
+                    .addComponent(jLabel368)
+                    .addComponent(jLabel369)
+                    .addComponent(jLabel370)
+                    .addComponent(jLabel371)
+                    .addComponent(jLabel372)
+                    .addComponent(jLabel373)
+                    .addComponent(jLabel374)
+                    .addComponent(jLabel375)
+                    .addComponent(jLabel376)
+                    .addComponent(jLabel377)
+                    .addComponent(jLabel378)
+                    .addComponent(jLabel379)
+                    .addComponent(jLabel380)
+                    .addComponent(jLabel381)
+                    .addComponent(jLabel382)
+                    .addComponent(jLabel383)
+                    .addComponent(jLabel384)
+                    .addComponent(jLabel385)
+                    .addComponent(jLabel386)
+                    .addComponent(jLabel387)
+                    .addComponent(jLabel388)
+                    .addComponent(jLabel389)
+                    .addComponent(jLabel390))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel391)
+                    .addComponent(jLabel392)
+                    .addComponent(jLabel393)
+                    .addComponent(jLabel394)
+                    .addComponent(jLabel395)
+                    .addComponent(jLabel396)
+                    .addComponent(jLabel397)
+                    .addComponent(jLabel398)
+                    .addComponent(jLabel399)
+                    .addComponent(jLabel400)
+                    .addComponent(jLabel401)
+                    .addComponent(jLabel402)
+                    .addComponent(jLabel403)
+                    .addComponent(jLabel404)
+                    .addComponent(jLabel405)
+                    .addComponent(jLabel406)
+                    .addComponent(jLabel407)
+                    .addComponent(jLabel408)
+                    .addComponent(jLabel409)
+                    .addComponent(jLabel410)
+                    .addComponent(jLabel411)
+                    .addComponent(jLabel412)
+                    .addComponent(jLabel413)
+                    .addComponent(jLabel414)
+                    .addComponent(jLabel415)
+                    .addComponent(jLabel416)
+                    .addComponent(jLabel417)
+                    .addComponent(jLabel418)
+                    .addComponent(jLabel419)
+                    .addComponent(jLabel420))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel421)
+                    .addComponent(jLabel422)
+                    .addComponent(jLabel423)
+                    .addComponent(jLabel424)
+                    .addComponent(jLabel425)
+                    .addComponent(jLabel426)
+                    .addComponent(jLabel427)
+                    .addComponent(jLabel428)
+                    .addComponent(jLabel429)
+                    .addComponent(jLabel430)
+                    .addComponent(jLabel431)
+                    .addComponent(jLabel432)
+                    .addComponent(jLabel433)
+                    .addComponent(jLabel434)
+                    .addComponent(jLabel435)
+                    .addComponent(jLabel436)
+                    .addComponent(jLabel437)
+                    .addComponent(jLabel438)
+                    .addComponent(jLabel439)
+                    .addComponent(jLabel440)
+                    .addComponent(jLabel441)
+                    .addComponent(jLabel442)
+                    .addComponent(jLabel443)
+                    .addComponent(jLabel444)
+                    .addComponent(jLabel445)
+                    .addComponent(jLabel446)
+                    .addComponent(jLabel447)
+                    .addComponent(jLabel448)
+                    .addComponent(jLabel449)
+                    .addComponent(jLabel450))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel451)
+                    .addComponent(jLabel452)
+                    .addComponent(jLabel453)
+                    .addComponent(jLabel454)
+                    .addComponent(jLabel455)
+                    .addComponent(jLabel456)
+                    .addComponent(jLabel457)
+                    .addComponent(jLabel458)
+                    .addComponent(jLabel459)
+                    .addComponent(jLabel460)
+                    .addComponent(jLabel461)
+                    .addComponent(jLabel462)
+                    .addComponent(jLabel463)
+                    .addComponent(jLabel464)
+                    .addComponent(jLabel465)
+                    .addComponent(jLabel466)
+                    .addComponent(jLabel467)
+                    .addComponent(jLabel468)
+                    .addComponent(jLabel469)
+                    .addComponent(jLabel470)
+                    .addComponent(jLabel471)
+                    .addComponent(jLabel472)
+                    .addComponent(jLabel473)
+                    .addComponent(jLabel474)
+                    .addComponent(jLabel475)
+                    .addComponent(jLabel476)
+                    .addComponent(jLabel477)
+                    .addComponent(jLabel478)
+                    .addComponent(jLabel479)
+                    .addComponent(jLabel480))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel481)
+                    .addComponent(jLabel482)
+                    .addComponent(jLabel483)
+                    .addComponent(jLabel484)
+                    .addComponent(jLabel485)
+                    .addComponent(jLabel486)
+                    .addComponent(jLabel487)
+                    .addComponent(jLabel488)
+                    .addComponent(jLabel489)
+                    .addComponent(jLabel490)
+                    .addComponent(jLabel491)
+                    .addComponent(jLabel492)
+                    .addComponent(jLabel493)
+                    .addComponent(jLabel494)
+                    .addComponent(jLabel495)
+                    .addComponent(jLabel496)
+                    .addComponent(jLabel497)
+                    .addComponent(jLabel498)
+                    .addComponent(jLabel499)
+                    .addComponent(jLabel500)
+                    .addComponent(jLabel501)
+                    .addComponent(jLabel502)
+                    .addComponent(jLabel503)
+                    .addComponent(jLabel504)
+                    .addComponent(jLabel505)
+                    .addComponent(jLabel506)
+                    .addComponent(jLabel507)
+                    .addComponent(jLabel508)
+                    .addComponent(jLabel509)
+                    .addComponent(jLabel510))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel511)
+                    .addComponent(jLabel512)
+                    .addComponent(jLabel513)
+                    .addComponent(jLabel514)
+                    .addComponent(jLabel515)
+                    .addComponent(jLabel516)
+                    .addComponent(jLabel517)
+                    .addComponent(jLabel518)
+                    .addComponent(jLabel519)
+                    .addComponent(jLabel520)
+                    .addComponent(jLabel521)
+                    .addComponent(jLabel522)
+                    .addComponent(jLabel523)
+                    .addComponent(jLabel524)
+                    .addComponent(jLabel525)
+                    .addComponent(jLabel526)
+                    .addComponent(jLabel527)
+                    .addComponent(jLabel528)
+                    .addComponent(jLabel529)
+                    .addComponent(jLabel530)
+                    .addComponent(jLabel531)
+                    .addComponent(jLabel532)
+                    .addComponent(jLabel533)
+                    .addComponent(jLabel534)
+                    .addComponent(jLabel535)
+                    .addComponent(jLabel536)
+                    .addComponent(jLabel537)
+                    .addComponent(jLabel538)
+                    .addComponent(jLabel539)
+                    .addComponent(jLabel540))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel541)
+                    .addComponent(jLabel542)
+                    .addComponent(jLabel543)
+                    .addComponent(jLabel544)
+                    .addComponent(jLabel545)
+                    .addComponent(jLabel546)
+                    .addComponent(jLabel547)
+                    .addComponent(jLabel548)
+                    .addComponent(jLabel549)
+                    .addComponent(jLabel550)
+                    .addComponent(jLabel551)
+                    .addComponent(jLabel552)
+                    .addComponent(jLabel553)
+                    .addComponent(jLabel554)
+                    .addComponent(jLabel555)
+                    .addComponent(jLabel556)
+                    .addComponent(jLabel557)
+                    .addComponent(jLabel558)
+                    .addComponent(jLabel559)
+                    .addComponent(jLabel560)
+                    .addComponent(jLabel561)
+                    .addComponent(jLabel562)
+                    .addComponent(jLabel563)
+                    .addComponent(jLabel564)
+                    .addComponent(jLabel565)
+                    .addComponent(jLabel566)
+                    .addComponent(jLabel567)
+                    .addComponent(jLabel568)
+                    .addComponent(jLabel569)
+                    .addComponent(jLabel570))
+                .addGap(0, 0, 0)
+                .addGroup(jPuebloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel571)
+                    .addComponent(jLabel572)
+                    .addComponent(jLabel573)
+                    .addComponent(jLabel574)
+                    .addComponent(jLabel575)
+                    .addComponent(jLabel576)
+                    .addComponent(jLabel578)
+                    .addComponent(jLabel579)
+                    .addComponent(jLabel580)
+                    .addComponent(jLabel581)
+                    .addComponent(jLabel582)
+                    .addComponent(jLabel583)
+                    .addComponent(jLabel584)
+                    .addComponent(jLabel585)
+                    .addComponent(jLabel586)
+                    .addComponent(jLabel587)
+                    .addComponent(jLabel588)
+                    .addComponent(jLabel589)
+                    .addComponent(jLabel590)
+                    .addComponent(jLabel591)
+                    .addComponent(jLabel592)
+                    .addComponent(jLabel593)
+                    .addComponent(jLabel594)
+                    .addComponent(jLabel595)
+                    .addComponent(jLabel596)
+                    .addComponent(jLabel597)
+                    .addComponent(jLabel598)
+                    .addComponent(jLabel599)
+                    .addComponent(jLabel600)
+                    .addComponent(jLabel577))
+                .addContainerGap())
+        );
+
+        jLabel2.getAccessibleContext().setAccessibleName("1");
+
+        txfCommand.setText("area de Comandos");
+        txfCommand.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txfCommandActionPerformed(evt);
+            }
+        });
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        jLjugador1.setBorder(new javax.swing.border.MatteBorder(null));
+
+        jLjugador2.setText("jLabel452");
+        jLjugador2.setAutoscrolls(true);
+        jLjugador2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+
+        jLjugador3.setBackground(new java.awt.Color(255, 51, 51));
+        jLjugador3.setText("jLabel452");
+        jLjugador3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
+
+        btnSend1.setText("Send");
+        btnSend1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSend1ActionPerformed(evt);
+            }
+        });
+
+        btnConnect.setText("Connect");
+        btnConnect.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConnectActionPerformed(evt);
+            }
+        });
+
+        Nombrejugador.setText("nombre : juagador");
+
+        lbVidaP.setText("Vida ");
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane1.setViewportView(jTextArea2);
+
+        jTextArea3.setColumns(20);
+        jTextArea3.setRows(5);
+        jScrollPane3.setViewportView(jTextArea3);
+
+        lbResistenciaP.setText("Resistencia");
+
+        lbSanacionP.setText("sanacion");
+
+        lbNombreP.setText("Nombre personaje 1");
+        lbNombreP.setToolTipText("");
+
+        lbVidaP1.setText("Vida ");
+
+        lbNombreP1.setText("Nombre personaje 2");
+
+        lbSanacionP1.setText("sanacion");
+
+        lbResistenciaP1.setText("Resistencia");
+
+        lbVidaP2.setText("Vida ");
+
+        lbNombreP2.setText("Nombre personaje 3");
+
+        lbSanacionP2.setText("sanacion");
+
+        lbResistenciaP2.setText("Resistencia");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 916, Short.MAX_VALUE)
+                            .addComponent(txfCommand))
+                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSend1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnConnect, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPueblo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLjugador1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jLjugador2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLjugador3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(90, 90, 90)
+                                        .addComponent(lbVida1))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lbVidaP2)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lbSanacionP2))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(lbVidaP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(lbNombreP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addGap(30, 30, 30)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lbResistenciaP)
+                                            .addComponent(lbSanacionP)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(lbVidaP1))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(lbNombreP1)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(26, 26, 26)
+                                                .addComponent(lbSanacionP1))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(46, 46, 46)
+                                                .addComponent(lbResistenciaP1))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lbNombreP2)
+                                        .addGap(78, 78, 78)
+                                        .addComponent(lbResistenciaP2))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(Nombrejugador, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(3, 3, 3)))
+                .addGap(115, 115, 115))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(83, 83, 83)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbNombreP, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbResistenciaP))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbVidaP)
+                                    .addComponent(lbSanacionP))
+                                .addGap(74, 74, 74)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbNombreP1)
+                                    .addComponent(lbResistenciaP1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbVidaP1)
+                                    .addComponent(lbSanacionP1))
+                                .addGap(84, 84, 84)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbNombreP2)
+                                    .addComponent(lbResistenciaP2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lbVidaP2)
+                                    .addComponent(lbSanacionP2)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jPueblo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(Nombrejugador)
+                                .addGap(47, 47, 47)
+                                .addComponent(lbVida1))
+                            .addComponent(jLjugador1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLjugador2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                        .addComponent(jLjugador3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(82, 82, 82)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnConnect, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txfCommand, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSend1))
+                .addGap(10, 10, 10))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
 
         private void txfCommandActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_txfCommandActionPerformed
                 // TODO add your handling code here:
         }// GEN-LAST:event_txfCommandActionPerformed
 
         private void btnSend1ActionPerformed(java.awt.event.ActionEvent evt) {
-                // chat hola a todos
+                boolean comandoPantalla=false;
+                ImageIcon iconLogoLocal = new ImageIcon("");
+                ImageIcon icLocal = new ImageIcon(iconLogoLocal.getImage());
+
                 String comando = txfCommand.getText().trim();
                 txfCommand.setText("");
+                System.out.println(comando);
 
                 if (!comando.equals("")) {
                         String array[] = CommandUtils.convertToArray(comando);
-                        if(array[0].equals("IMAGENURL")){
-                                
-                                if (array[0].toUpperCase().equalsIgnoreCase("IMAGENURL")) {
-                                       
-                                        URL url = null;
-                                        Image imURL = null;
-                                        System.out.println(array[0]+array[1]+array[2]);
-                                        if (array[1].equals("A")) {
-                                                System.out.println("entrooo");;
-                                                try {
-                                                        System.out.println(array[2]);
-                                                        url = new URL(array[2]);
-                                                } catch (MalformedURLException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                
-                                                try {
-                                                        imURL = ImageIO.read(url);
-                                                } catch (IOException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                                                jLjugador1.setIcon(new ImageIcon(imURL));    
-        
-                                        } else if (array[1].equals('2')) {
-                                                try {
-                                                        url = new URL(array[2]);
-                                                } catch (MalformedURLException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                
-                                                try {
-                                                        imURL = ImageIO.read(url);
-                                                } catch (IOException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                                                jLjugador2.setIcon(new ImageIcon(imURL));
-                                        } else if (array[1].equals('3')) {
-                                                try {
-                                                        url = new URL(array[2]);
-                                                } catch (MalformedURLException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                
-                                                try {
-                                                        imURL = ImageIO.read(url);
-                                                } catch (IOException ex) {
-                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
-                                                }
-                                                jLjugador2.setIcon(new ImageIcon(imURL));
-                                        }
-        
-        
-                                                                             
-        
-        
-        
-                                }
-                        }
+
                         BaseCommand newCommand = CommandFactory.getCommand(array[0], array, this);
 
-                        if (newCommand.getCommandName().toUpperCase().equals("ERROR")) {
-                                showClientMessage(newCommand.executeOnClient());
-                        } else {
-                                try {
-                                        if (newCommand.getCommandName().toUpperCase().equals("NUEVOJUGADOR")) {
-                                                Nombrejugador.setText("Jugador: " + array[1]);
+
+                      
+                                if (newCommand.getCommandName().toUpperCase().equals("ERROR")) {
+                                        if (array[0].equals("IMAGENURL")) {
+                                                comandoPantalla =true;
+
+                                                if (array[0].toUpperCase().equalsIgnoreCase("IMAGENURL")) {
+                
+                                                        URL url = null;
+                                                        Image imURL = null;
+                                                        System.out.println(array[0] + array[1] + array[2]);
+                                                        if (array[1].equals("A")) {
+                                                                System.out.println("entrooo");
+                                                                ;
+                                                                try {
+                                                                        System.out.println(array[2]);
+                                                                        url = new URL(array[2]);
+                                                                } catch (MalformedURLException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                
+                                                                try {
+                                                                        imURL = ImageIO.read(url);
+                                                                } catch (IOException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                                                                jLjugador1.setIcon(new ImageIcon(imURL));
+                
+                                                        } else if (array[2].equals("B")) {
+                                                                try {
+                                                                        url = new URL(array[2]);
+                                                                } catch (MalformedURLException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                
+                                                                try {
+                                                                        imURL = ImageIO.read(url);
+                                                                } catch (IOException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                                                                jLjugador2.setIcon(new ImageIcon(imURL));
+                                                        } else if (array[1].equals("C")) {
+                                                                try {
+                                                                        url = new URL(array[2]);
+                                                                } catch (MalformedURLException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                
+                                                                try {
+                                                                        imURL = ImageIO.read(url);
+                                                                } catch (IOException ex) {
+                                                                        Logger.getLogger(Pantalla.class.getName()).log(
+                                                                                        Level.SEVERE,
+                                                                                        null, ex);
+                                                                }
+                                                                jLjugador3.setIcon(new ImageIcon(imURL));
+                                                        }
+                                                }
+                
+                                        } else if (array[0].toUpperCase().equalsIgnoreCase("IMAGEN")) {
+                                                iconLogoLocal = new ImageIcon(array[1]);
+                                                icLocal = new ImageIcon(iconLogoLocal.getImage());
+                                                if (array[1].equals("A")) {
+                                                        jLjugador1.setIcon(icLocal);
+                
+                                                } else if (array[2].equals("B")) {
+                
+                                                        jLjugador2.setIcon(icLocal);
+                                                } else if (array[1].equals("C")) {
+                
+                                                        jLjugador3.setIcon(icLocal);
+                                                }
+                                                comandoPantalla =true;
+                
                                         }
-                                        if (newCommand.getCommandName().toUpperCase().equals("PRIVATECHAT")) {
-                                                showClientMessage(newCommand.executeOnClient());
+                
+                                        else if (array[0].toUpperCase().equalsIgnoreCase("NUEVOPERSONAJE")) {
+                
+                                                Personaje e = new Personaje(array[1], Integer.parseInt(array[2]),
+                                                                Integer.parseInt(array[3]), Integer.parseInt(array[4]),
+                                                                Integer.parseInt(array[5]), Integer.parseInt(array[6]));
+                                                personajes.add(e);
+                                                if(lbNombreP.getText().equals("Nombre personaje 1")){
+                                                    lbNombreP.setText(lbNombreP.getText() + " "+ array[1]);
+                                                    lbResistenciaP.setText(lbResistenciaP.getText() + " "+ array[3]);
+                                                    lbVidaP.setText(lbVidaP.getText() + " "+ array[6]);
+                                                    lbSanacionP.setText(lbSanacionP.getText() + " "+ array[4]);
 
+                                                }
+                                                else if(lbNombreP1.getText().equals("Nombre personaje 2")){
+                                                    lbNombreP1.setText(lbNombreP1.getText() + " "+ array[1]);
+                                                    lbResistenciaP1.setText(lbResistenciaP1.getText() + " "+ array[3]);
+                                                    lbVidaP1.setText(lbVidaP1.getText() + " "+ array[6]);
+                                                    lbSanacionP1.setText(lbSanacionP1.getText() + " "+ array[4]);
+                                                }
+                                                else if(lbNombreP2.getText().equals("Nombre personaje 3")){
+                                                    lbNombreP2.setText(lbNombreP2.getText() + " "+ array[1]);
+                                                    lbResistenciaP2.setText(lbResistenciaP2.getText() + " "+ array[3]);
+                                                    lbVidaP2.setText(lbVidaP2.getText() + " "+ array[6]);
+                                                    lbSanacionP2.setText(lbSanacionP2.getText() + " "+ array[4]);
+                                                }
+
+
+
+
+                
+                                                for (int i = 0; i < personajes.size(); i++) {
+                                                        personajes.get(i).mostrar();
+                                                }
+                                                comandoPantalla =true;
+                
                                         }
+                                        else if(!comandoPantalla){
+                                             showClientMessage(newCommand.executeOnClient());   
+                                        }
+                
+                                        
+                                } else  {
+                                        try {
+                                                if (newCommand.getCommandName().toUpperCase()
+                                                                .equals("NUEVOJUGADOR")) {
+                                                        Nombrejugador.setText("Jugador: " + array[1]);
+                                                } else if (newCommand.getCommandName().toUpperCase()
+                                                                .equals("PRIVATECHAT")) {
+                                                        showClientMessage(newCommand.executeOnClient());
 
+                                                }
 
-                                        client.writer.writeObject(newCommand);
+                                                client.writer.writeObject(newCommand);
 
-                                } catch (IOException ex) {
+                                        } catch (IOException ex) {
+                                        }
                                 }
-                        }
+                        
+
                 }
 
         }// GEN-LAST:event_btnSend1ActionPerformed
@@ -5402,623 +5431,635 @@ public class Pantalla extends javax.swing.JFrame {
                 });
         }
 
-        // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JLabel Nombrejugador;
-        private javax.swing.JButton btnConnect;
-        private javax.swing.JButton btnSend1;
-        private javax.swing.JLabel jLabel1;
-        private javax.swing.JLabel jLabel10;
-        private javax.swing.JLabel jLabel100;
-        private javax.swing.JLabel jLabel101;
-        private javax.swing.JLabel jLabel102;
-        private javax.swing.JLabel jLabel103;
-        private javax.swing.JLabel jLabel104;
-        private javax.swing.JLabel jLabel105;
-        private javax.swing.JLabel jLabel106;
-        private javax.swing.JLabel jLabel107;
-        private javax.swing.JLabel jLabel108;
-        private javax.swing.JLabel jLabel109;
-        private javax.swing.JLabel jLabel11;
-        private javax.swing.JLabel jLabel110;
-        private javax.swing.JLabel jLabel111;
-        private javax.swing.JLabel jLabel112;
-        private javax.swing.JLabel jLabel113;
-        private javax.swing.JLabel jLabel114;
-        private javax.swing.JLabel jLabel115;
-        private javax.swing.JLabel jLabel116;
-        private javax.swing.JLabel jLabel117;
-        private javax.swing.JLabel jLabel118;
-        private javax.swing.JLabel jLabel119;
-        private javax.swing.JLabel jLabel12;
-        private javax.swing.JLabel jLabel120;
-        private javax.swing.JLabel jLabel121;
-        private javax.swing.JLabel jLabel122;
-        private javax.swing.JLabel jLabel123;
-        private javax.swing.JLabel jLabel124;
-        private javax.swing.JLabel jLabel125;
-        private javax.swing.JLabel jLabel126;
-        private javax.swing.JLabel jLabel127;
-        private javax.swing.JLabel jLabel128;
-        private javax.swing.JLabel jLabel129;
-        private javax.swing.JLabel jLabel13;
-        private javax.swing.JLabel jLabel130;
-        private javax.swing.JLabel jLabel131;
-        private javax.swing.JLabel jLabel132;
-        private javax.swing.JLabel jLabel133;
-        private javax.swing.JLabel jLabel134;
-        private javax.swing.JLabel jLabel135;
-        private javax.swing.JLabel jLabel136;
-        private javax.swing.JLabel jLabel137;
-        private javax.swing.JLabel jLabel138;
-        private javax.swing.JLabel jLabel139;
-        private javax.swing.JLabel jLabel14;
-        private javax.swing.JLabel jLabel140;
-        private javax.swing.JLabel jLabel141;
-        private javax.swing.JLabel jLabel142;
-        private javax.swing.JLabel jLabel143;
-        private javax.swing.JLabel jLabel144;
-        private javax.swing.JLabel jLabel145;
-        private javax.swing.JLabel jLabel146;
-        private javax.swing.JLabel jLabel147;
-        private javax.swing.JLabel jLabel148;
-        private javax.swing.JLabel jLabel149;
-        private javax.swing.JLabel jLabel15;
-        private javax.swing.JLabel jLabel150;
-        private javax.swing.JLabel jLabel151;
-        private javax.swing.JLabel jLabel152;
-        private javax.swing.JLabel jLabel153;
-        private javax.swing.JLabel jLabel154;
-        private javax.swing.JLabel jLabel155;
-        private javax.swing.JLabel jLabel156;
-        private javax.swing.JLabel jLabel157;
-        private javax.swing.JLabel jLabel158;
-        private javax.swing.JLabel jLabel159;
-        private javax.swing.JLabel jLabel16;
-        private javax.swing.JLabel jLabel160;
-        private javax.swing.JLabel jLabel161;
-        private javax.swing.JLabel jLabel162;
-        private javax.swing.JLabel jLabel163;
-        private javax.swing.JLabel jLabel164;
-        private javax.swing.JLabel jLabel165;
-        private javax.swing.JLabel jLabel166;
-        private javax.swing.JLabel jLabel167;
-        private javax.swing.JLabel jLabel168;
-        private javax.swing.JLabel jLabel169;
-        private javax.swing.JLabel jLabel17;
-        private javax.swing.JLabel jLabel170;
-        private javax.swing.JLabel jLabel171;
-        private javax.swing.JLabel jLabel172;
-        private javax.swing.JLabel jLabel173;
-        private javax.swing.JLabel jLabel174;
-        private javax.swing.JLabel jLabel175;
-        private javax.swing.JLabel jLabel176;
-        private javax.swing.JLabel jLabel177;
-        private javax.swing.JLabel jLabel178;
-        private javax.swing.JLabel jLabel179;
-        private javax.swing.JLabel jLabel18;
-        private javax.swing.JLabel jLabel180;
-        private javax.swing.JLabel jLabel181;
-        private javax.swing.JLabel jLabel182;
-        private javax.swing.JLabel jLabel183;
-        private javax.swing.JLabel jLabel184;
-        private javax.swing.JLabel jLabel185;
-        private javax.swing.JLabel jLabel186;
-        private javax.swing.JLabel jLabel187;
-        private javax.swing.JLabel jLabel188;
-        private javax.swing.JLabel jLabel189;
-        private javax.swing.JLabel jLabel19;
-        private javax.swing.JLabel jLabel190;
-        private javax.swing.JLabel jLabel191;
-        private javax.swing.JLabel jLabel192;
-        private javax.swing.JLabel jLabel193;
-        private javax.swing.JLabel jLabel194;
-        private javax.swing.JLabel jLabel195;
-        private javax.swing.JLabel jLabel196;
-        private javax.swing.JLabel jLabel197;
-        private javax.swing.JLabel jLabel198;
-        private javax.swing.JLabel jLabel199;
-        private javax.swing.JLabel jLabel2;
-        private javax.swing.JLabel jLabel20;
-        private javax.swing.JLabel jLabel200;
-        private javax.swing.JLabel jLabel201;
-        private javax.swing.JLabel jLabel202;
-        private javax.swing.JLabel jLabel203;
-        private javax.swing.JLabel jLabel204;
-        private javax.swing.JLabel jLabel205;
-        private javax.swing.JLabel jLabel206;
-        private javax.swing.JLabel jLabel207;
-        private javax.swing.JLabel jLabel208;
-        private javax.swing.JLabel jLabel209;
-        private javax.swing.JLabel jLabel21;
-        private javax.swing.JLabel jLabel210;
-        private javax.swing.JLabel jLabel211;
-        private javax.swing.JLabel jLabel212;
-        private javax.swing.JLabel jLabel213;
-        private javax.swing.JLabel jLabel214;
-        private javax.swing.JLabel jLabel215;
-        private javax.swing.JLabel jLabel216;
-        private javax.swing.JLabel jLabel217;
-        private javax.swing.JLabel jLabel218;
-        private javax.swing.JLabel jLabel219;
-        private javax.swing.JLabel jLabel22;
-        private javax.swing.JLabel jLabel220;
-        private javax.swing.JLabel jLabel221;
-        private javax.swing.JLabel jLabel222;
-        private javax.swing.JLabel jLabel223;
-        private javax.swing.JLabel jLabel224;
-        private javax.swing.JLabel jLabel225;
-        private javax.swing.JLabel jLabel226;
-        private javax.swing.JLabel jLabel227;
-        private javax.swing.JLabel jLabel228;
-        private javax.swing.JLabel jLabel229;
-        private javax.swing.JLabel jLabel23;
-        private javax.swing.JLabel jLabel230;
-        private javax.swing.JLabel jLabel231;
-        private javax.swing.JLabel jLabel232;
-        private javax.swing.JLabel jLabel233;
-        private javax.swing.JLabel jLabel234;
-        private javax.swing.JLabel jLabel235;
-        private javax.swing.JLabel jLabel236;
-        private javax.swing.JLabel jLabel237;
-        private javax.swing.JLabel jLabel238;
-        private javax.swing.JLabel jLabel239;
-        private javax.swing.JLabel jLabel24;
-        private javax.swing.JLabel jLabel240;
-        private javax.swing.JLabel jLabel241;
-        private javax.swing.JLabel jLabel242;
-        private javax.swing.JLabel jLabel243;
-        private javax.swing.JLabel jLabel244;
-        private javax.swing.JLabel jLabel245;
-        private javax.swing.JLabel jLabel246;
-        private javax.swing.JLabel jLabel247;
-        private javax.swing.JLabel jLabel248;
-        private javax.swing.JLabel jLabel249;
-        private javax.swing.JLabel jLabel25;
-        private javax.swing.JLabel jLabel250;
-        private javax.swing.JLabel jLabel251;
-        private javax.swing.JLabel jLabel252;
-        private javax.swing.JLabel jLabel253;
-        private javax.swing.JLabel jLabel254;
-        private javax.swing.JLabel jLabel255;
-        private javax.swing.JLabel jLabel256;
-        private javax.swing.JLabel jLabel257;
-        private javax.swing.JLabel jLabel258;
-        private javax.swing.JLabel jLabel259;
-        private javax.swing.JLabel jLabel26;
-        private javax.swing.JLabel jLabel260;
-        private javax.swing.JLabel jLabel261;
-        private javax.swing.JLabel jLabel262;
-        private javax.swing.JLabel jLabel263;
-        private javax.swing.JLabel jLabel264;
-        private javax.swing.JLabel jLabel265;
-        private javax.swing.JLabel jLabel266;
-        private javax.swing.JLabel jLabel267;
-        private javax.swing.JLabel jLabel268;
-        private javax.swing.JLabel jLabel269;
-        private javax.swing.JLabel jLabel27;
-        private javax.swing.JLabel jLabel270;
-        private javax.swing.JLabel jLabel271;
-        private javax.swing.JLabel jLabel272;
-        private javax.swing.JLabel jLabel273;
-        private javax.swing.JLabel jLabel274;
-        private javax.swing.JLabel jLabel275;
-        private javax.swing.JLabel jLabel276;
-        private javax.swing.JLabel jLabel277;
-        private javax.swing.JLabel jLabel278;
-        private javax.swing.JLabel jLabel279;
-        private javax.swing.JLabel jLabel28;
-        private javax.swing.JLabel jLabel280;
-        private javax.swing.JLabel jLabel281;
-        private javax.swing.JLabel jLabel282;
-        private javax.swing.JLabel jLabel283;
-        private javax.swing.JLabel jLabel284;
-        private javax.swing.JLabel jLabel285;
-        private javax.swing.JLabel jLabel286;
-        private javax.swing.JLabel jLabel287;
-        private javax.swing.JLabel jLabel288;
-        private javax.swing.JLabel jLabel289;
-        private javax.swing.JLabel jLabel29;
-        private javax.swing.JLabel jLabel290;
-        private javax.swing.JLabel jLabel291;
-        private javax.swing.JLabel jLabel292;
-        private javax.swing.JLabel jLabel293;
-        private javax.swing.JLabel jLabel294;
-        private javax.swing.JLabel jLabel295;
-        private javax.swing.JLabel jLabel296;
-        private javax.swing.JLabel jLabel297;
-        private javax.swing.JLabel jLabel298;
-        private javax.swing.JLabel jLabel299;
-        private javax.swing.JLabel jLabel3;
-        private javax.swing.JLabel jLabel30;
-        private javax.swing.JLabel jLabel300;
-        private javax.swing.JLabel jLabel301;
-        private javax.swing.JLabel jLabel302;
-        private javax.swing.JLabel jLabel303;
-        private javax.swing.JLabel jLabel304;
-        private javax.swing.JLabel jLabel305;
-        private javax.swing.JLabel jLabel306;
-        private javax.swing.JLabel jLabel307;
-        private javax.swing.JLabel jLabel308;
-        private javax.swing.JLabel jLabel309;
-        private javax.swing.JLabel jLabel31;
-        private javax.swing.JLabel jLabel310;
-        private javax.swing.JLabel jLabel311;
-        private javax.swing.JLabel jLabel312;
-        private javax.swing.JLabel jLabel313;
-        private javax.swing.JLabel jLabel314;
-        private javax.swing.JLabel jLabel315;
-        private javax.swing.JLabel jLabel316;
-        private javax.swing.JLabel jLabel317;
-        private javax.swing.JLabel jLabel318;
-        private javax.swing.JLabel jLabel319;
-        private javax.swing.JLabel jLabel32;
-        private javax.swing.JLabel jLabel320;
-        private javax.swing.JLabel jLabel321;
-        private javax.swing.JLabel jLabel322;
-        private javax.swing.JLabel jLabel323;
-        private javax.swing.JLabel jLabel324;
-        private javax.swing.JLabel jLabel325;
-        private javax.swing.JLabel jLabel326;
-        private javax.swing.JLabel jLabel327;
-        private javax.swing.JLabel jLabel328;
-        private javax.swing.JLabel jLabel329;
-        private javax.swing.JLabel jLabel33;
-        private javax.swing.JLabel jLabel330;
-        private javax.swing.JLabel jLabel331;
-        private javax.swing.JLabel jLabel332;
-        private javax.swing.JLabel jLabel333;
-        private javax.swing.JLabel jLabel334;
-        private javax.swing.JLabel jLabel335;
-        private javax.swing.JLabel jLabel336;
-        private javax.swing.JLabel jLabel337;
-        private javax.swing.JLabel jLabel338;
-        private javax.swing.JLabel jLabel339;
-        private javax.swing.JLabel jLabel34;
-        private javax.swing.JLabel jLabel340;
-        private javax.swing.JLabel jLabel341;
-        private javax.swing.JLabel jLabel342;
-        private javax.swing.JLabel jLabel343;
-        private javax.swing.JLabel jLabel344;
-        private javax.swing.JLabel jLabel345;
-        private javax.swing.JLabel jLabel346;
-        private javax.swing.JLabel jLabel347;
-        private javax.swing.JLabel jLabel348;
-        private javax.swing.JLabel jLabel349;
-        private javax.swing.JLabel jLabel35;
-        private javax.swing.JLabel jLabel350;
-        private javax.swing.JLabel jLabel351;
-        private javax.swing.JLabel jLabel352;
-        private javax.swing.JLabel jLabel353;
-        private javax.swing.JLabel jLabel354;
-        private javax.swing.JLabel jLabel355;
-        private javax.swing.JLabel jLabel356;
-        private javax.swing.JLabel jLabel357;
-        private javax.swing.JLabel jLabel358;
-        private javax.swing.JLabel jLabel359;
-        private javax.swing.JLabel jLabel36;
-        private javax.swing.JLabel jLabel360;
-        private javax.swing.JLabel jLabel361;
-        private javax.swing.JLabel jLabel362;
-        private javax.swing.JLabel jLabel363;
-        private javax.swing.JLabel jLabel364;
-        private javax.swing.JLabel jLabel365;
-        private javax.swing.JLabel jLabel366;
-        private javax.swing.JLabel jLabel367;
-        private javax.swing.JLabel jLabel368;
-        private javax.swing.JLabel jLabel369;
-        private javax.swing.JLabel jLabel37;
-        private javax.swing.JLabel jLabel370;
-        private javax.swing.JLabel jLabel371;
-        private javax.swing.JLabel jLabel372;
-        private javax.swing.JLabel jLabel373;
-        private javax.swing.JLabel jLabel374;
-        private javax.swing.JLabel jLabel375;
-        private javax.swing.JLabel jLabel376;
-        private javax.swing.JLabel jLabel377;
-        private javax.swing.JLabel jLabel378;
-        private javax.swing.JLabel jLabel379;
-        private javax.swing.JLabel jLabel38;
-        private javax.swing.JLabel jLabel380;
-        private javax.swing.JLabel jLabel381;
-        private javax.swing.JLabel jLabel382;
-        private javax.swing.JLabel jLabel383;
-        private javax.swing.JLabel jLabel384;
-        private javax.swing.JLabel jLabel385;
-        private javax.swing.JLabel jLabel386;
-        private javax.swing.JLabel jLabel387;
-        private javax.swing.JLabel jLabel388;
-        private javax.swing.JLabel jLabel389;
-        private javax.swing.JLabel jLabel39;
-        private javax.swing.JLabel jLabel390;
-        private javax.swing.JLabel jLabel391;
-        private javax.swing.JLabel jLabel392;
-        private javax.swing.JLabel jLabel393;
-        private javax.swing.JLabel jLabel394;
-        private javax.swing.JLabel jLabel395;
-        private javax.swing.JLabel jLabel396;
-        private javax.swing.JLabel jLabel397;
-        private javax.swing.JLabel jLabel398;
-        private javax.swing.JLabel jLabel399;
-        private javax.swing.JLabel jLabel4;
-        private javax.swing.JLabel jLabel40;
-        private javax.swing.JLabel jLabel400;
-        private javax.swing.JLabel jLabel401;
-        private javax.swing.JLabel jLabel402;
-        private javax.swing.JLabel jLabel403;
-        private javax.swing.JLabel jLabel404;
-        private javax.swing.JLabel jLabel405;
-        private javax.swing.JLabel jLabel406;
-        private javax.swing.JLabel jLabel407;
-        private javax.swing.JLabel jLabel408;
-        private javax.swing.JLabel jLabel409;
-        private javax.swing.JLabel jLabel41;
-        private javax.swing.JLabel jLabel410;
-        private javax.swing.JLabel jLabel411;
-        private javax.swing.JLabel jLabel412;
-        private javax.swing.JLabel jLabel413;
-        private javax.swing.JLabel jLabel414;
-        private javax.swing.JLabel jLabel415;
-        private javax.swing.JLabel jLabel416;
-        private javax.swing.JLabel jLabel417;
-        private javax.swing.JLabel jLabel418;
-        private javax.swing.JLabel jLabel419;
-        private javax.swing.JLabel jLabel42;
-        private javax.swing.JLabel jLabel420;
-        private javax.swing.JLabel jLabel421;
-        private javax.swing.JLabel jLabel422;
-        private javax.swing.JLabel jLabel423;
-        private javax.swing.JLabel jLabel424;
-        private javax.swing.JLabel jLabel425;
-        private javax.swing.JLabel jLabel426;
-        private javax.swing.JLabel jLabel427;
-        private javax.swing.JLabel jLabel428;
-        private javax.swing.JLabel jLabel429;
-        private javax.swing.JLabel jLabel43;
-        private javax.swing.JLabel jLabel430;
-        private javax.swing.JLabel jLabel431;
-        private javax.swing.JLabel jLabel432;
-        private javax.swing.JLabel jLabel433;
-        private javax.swing.JLabel jLabel434;
-        private javax.swing.JLabel jLabel435;
-        private javax.swing.JLabel jLabel436;
-        private javax.swing.JLabel jLabel437;
-        private javax.swing.JLabel jLabel438;
-        private javax.swing.JLabel jLabel439;
-        private javax.swing.JLabel jLabel44;
-        private javax.swing.JLabel jLabel440;
-        private javax.swing.JLabel jLabel441;
-        private javax.swing.JLabel jLabel442;
-        private javax.swing.JLabel jLabel443;
-        private javax.swing.JLabel jLabel444;
-        private javax.swing.JLabel jLabel445;
-        private javax.swing.JLabel jLabel446;
-        private javax.swing.JLabel jLabel447;
-        private javax.swing.JLabel jLabel448;
-        private javax.swing.JLabel jLabel449;
-        private javax.swing.JLabel jLabel45;
-        private javax.swing.JLabel jLabel450;
-        private javax.swing.JLabel jLabel451;
-        private javax.swing.JLabel jLabel452;
-        private javax.swing.JLabel jLabel453;
-        private javax.swing.JLabel jLabel454;
-        private javax.swing.JLabel jLabel455;
-        private javax.swing.JLabel jLabel456;
-        private javax.swing.JLabel jLabel457;
-        private javax.swing.JLabel jLabel458;
-        private javax.swing.JLabel jLabel459;
-        private javax.swing.JLabel jLabel46;
-        private javax.swing.JLabel jLabel460;
-        private javax.swing.JLabel jLabel461;
-        private javax.swing.JLabel jLabel462;
-        private javax.swing.JLabel jLabel463;
-        private javax.swing.JLabel jLabel464;
-        private javax.swing.JLabel jLabel465;
-        private javax.swing.JLabel jLabel466;
-        private javax.swing.JLabel jLabel467;
-        private javax.swing.JLabel jLabel468;
-        private javax.swing.JLabel jLabel469;
-        private javax.swing.JLabel jLabel47;
-        private javax.swing.JLabel jLabel470;
-        private javax.swing.JLabel jLabel471;
-        private javax.swing.JLabel jLabel472;
-        private javax.swing.JLabel jLabel473;
-        private javax.swing.JLabel jLabel474;
-        private javax.swing.JLabel jLabel475;
-        private javax.swing.JLabel jLabel476;
-        private javax.swing.JLabel jLabel477;
-        private javax.swing.JLabel jLabel478;
-        private javax.swing.JLabel jLabel479;
-        private javax.swing.JLabel jLabel48;
-        private javax.swing.JLabel jLabel480;
-        private javax.swing.JLabel jLabel481;
-        private javax.swing.JLabel jLabel482;
-        private javax.swing.JLabel jLabel483;
-        private javax.swing.JLabel jLabel484;
-        private javax.swing.JLabel jLabel485;
-        private javax.swing.JLabel jLabel486;
-        private javax.swing.JLabel jLabel487;
-        private javax.swing.JLabel jLabel488;
-        private javax.swing.JLabel jLabel489;
-        private javax.swing.JLabel jLabel49;
-        private javax.swing.JLabel jLabel490;
-        private javax.swing.JLabel jLabel491;
-        private javax.swing.JLabel jLabel492;
-        private javax.swing.JLabel jLabel493;
-        private javax.swing.JLabel jLabel494;
-        private javax.swing.JLabel jLabel495;
-        private javax.swing.JLabel jLabel496;
-        private javax.swing.JLabel jLabel497;
-        private javax.swing.JLabel jLabel498;
-        private javax.swing.JLabel jLabel499;
-        private javax.swing.JLabel jLabel5;
-        private javax.swing.JLabel jLabel50;
-        private javax.swing.JLabel jLabel500;
-        private javax.swing.JLabel jLabel501;
-        private javax.swing.JLabel jLabel502;
-        private javax.swing.JLabel jLabel503;
-        private javax.swing.JLabel jLabel504;
-        private javax.swing.JLabel jLabel505;
-        private javax.swing.JLabel jLabel506;
-        private javax.swing.JLabel jLabel507;
-        private javax.swing.JLabel jLabel508;
-        private javax.swing.JLabel jLabel509;
-        private javax.swing.JLabel jLabel51;
-        private javax.swing.JLabel jLabel510;
-        private javax.swing.JLabel jLabel511;
-        private javax.swing.JLabel jLabel512;
-        private javax.swing.JLabel jLabel513;
-        private javax.swing.JLabel jLabel514;
-        private javax.swing.JLabel jLabel515;
-        private javax.swing.JLabel jLabel516;
-        private javax.swing.JLabel jLabel517;
-        private javax.swing.JLabel jLabel518;
-        private javax.swing.JLabel jLabel519;
-        private javax.swing.JLabel jLabel52;
-        private javax.swing.JLabel jLabel520;
-        private javax.swing.JLabel jLabel521;
-        private javax.swing.JLabel jLabel522;
-        private javax.swing.JLabel jLabel523;
-        private javax.swing.JLabel jLabel524;
-        private javax.swing.JLabel jLabel525;
-        private javax.swing.JLabel jLabel526;
-        private javax.swing.JLabel jLabel527;
-        private javax.swing.JLabel jLabel528;
-        private javax.swing.JLabel jLabel529;
-        private javax.swing.JLabel jLabel53;
-        private javax.swing.JLabel jLabel530;
-        private javax.swing.JLabel jLabel531;
-        private javax.swing.JLabel jLabel532;
-        private javax.swing.JLabel jLabel533;
-        private javax.swing.JLabel jLabel534;
-        private javax.swing.JLabel jLabel535;
-        private javax.swing.JLabel jLabel536;
-        private javax.swing.JLabel jLabel537;
-        private javax.swing.JLabel jLabel538;
-        private javax.swing.JLabel jLabel539;
-        private javax.swing.JLabel jLabel54;
-        private javax.swing.JLabel jLabel540;
-        private javax.swing.JLabel jLabel541;
-        private javax.swing.JLabel jLabel542;
-        private javax.swing.JLabel jLabel543;
-        private javax.swing.JLabel jLabel544;
-        private javax.swing.JLabel jLabel545;
-        private javax.swing.JLabel jLabel546;
-        private javax.swing.JLabel jLabel547;
-        private javax.swing.JLabel jLabel548;
-        private javax.swing.JLabel jLabel549;
-        private javax.swing.JLabel jLabel55;
-        private javax.swing.JLabel jLabel550;
-        private javax.swing.JLabel jLabel551;
-        private javax.swing.JLabel jLabel552;
-        private javax.swing.JLabel jLabel553;
-        private javax.swing.JLabel jLabel554;
-        private javax.swing.JLabel jLabel555;
-        private javax.swing.JLabel jLabel556;
-        private javax.swing.JLabel jLabel557;
-        private javax.swing.JLabel jLabel558;
-        private javax.swing.JLabel jLabel559;
-        private javax.swing.JLabel jLabel56;
-        private javax.swing.JLabel jLabel560;
-        private javax.swing.JLabel jLabel561;
-        private javax.swing.JLabel jLabel562;
-        private javax.swing.JLabel jLabel563;
-        private javax.swing.JLabel jLabel564;
-        private javax.swing.JLabel jLabel565;
-        private javax.swing.JLabel jLabel566;
-        private javax.swing.JLabel jLabel567;
-        private javax.swing.JLabel jLabel568;
-        private javax.swing.JLabel jLabel569;
-        private javax.swing.JLabel jLabel57;
-        private javax.swing.JLabel jLabel570;
-        private javax.swing.JLabel jLabel571;
-        private javax.swing.JLabel jLabel572;
-        private javax.swing.JLabel jLabel573;
-        private javax.swing.JLabel jLabel574;
-        private javax.swing.JLabel jLabel575;
-        private javax.swing.JLabel jLabel576;
-        private javax.swing.JLabel jLabel577;
-        private javax.swing.JLabel jLabel578;
-        private javax.swing.JLabel jLabel579;
-        private javax.swing.JLabel jLabel58;
-        private javax.swing.JLabel jLabel580;
-        private javax.swing.JLabel jLabel581;
-        private javax.swing.JLabel jLabel582;
-        private javax.swing.JLabel jLabel583;
-        private javax.swing.JLabel jLabel584;
-        private javax.swing.JLabel jLabel585;
-        private javax.swing.JLabel jLabel586;
-        private javax.swing.JLabel jLabel587;
-        private javax.swing.JLabel jLabel588;
-        private javax.swing.JLabel jLabel589;
-        private javax.swing.JLabel jLabel59;
-        private javax.swing.JLabel jLabel590;
-        private javax.swing.JLabel jLabel591;
-        private javax.swing.JLabel jLabel592;
-        private javax.swing.JLabel jLabel593;
-        private javax.swing.JLabel jLabel594;
-        private javax.swing.JLabel jLabel595;
-        private javax.swing.JLabel jLabel596;
-        private javax.swing.JLabel jLabel597;
-        private javax.swing.JLabel jLabel598;
-        private javax.swing.JLabel jLabel599;
-        private javax.swing.JLabel jLabel6;
-        private javax.swing.JLabel jLabel60;
-        private javax.swing.JLabel jLabel600;
-        private javax.swing.JLabel jLabel61;
-        private javax.swing.JLabel jLabel62;
-        private javax.swing.JLabel jLabel63;
-        private javax.swing.JLabel jLabel64;
-        private javax.swing.JLabel jLabel65;
-        private javax.swing.JLabel jLabel66;
-        private javax.swing.JLabel jLabel67;
-        private javax.swing.JLabel jLabel68;
-        private javax.swing.JLabel jLabel69;
-        private javax.swing.JLabel jLabel7;
-        private javax.swing.JLabel jLabel70;
-        private javax.swing.JLabel jLabel71;
-        private javax.swing.JLabel jLabel72;
-        private javax.swing.JLabel jLabel73;
-        private javax.swing.JLabel jLabel74;
-        private javax.swing.JLabel jLabel75;
-        private javax.swing.JLabel jLabel76;
-        private javax.swing.JLabel jLabel77;
-        private javax.swing.JLabel jLabel78;
-        private javax.swing.JLabel jLabel79;
-        private javax.swing.JLabel jLabel8;
-        private javax.swing.JLabel jLabel80;
-        private javax.swing.JLabel jLabel81;
-        private javax.swing.JLabel jLabel82;
-        private javax.swing.JLabel jLabel83;
-        private javax.swing.JLabel jLabel84;
-        private javax.swing.JLabel jLabel85;
-        private javax.swing.JLabel jLabel86;
-        private javax.swing.JLabel jLabel87;
-        private javax.swing.JLabel jLabel88;
-        private javax.swing.JLabel jLabel89;
-        private javax.swing.JLabel jLabel9;
-        private javax.swing.JLabel jLabel90;
-        private javax.swing.JLabel jLabel91;
-        private javax.swing.JLabel jLabel92;
-        private javax.swing.JLabel jLabel93;
-        private javax.swing.JLabel jLabel94;
-        private javax.swing.JLabel jLabel95;
-        private javax.swing.JLabel jLabel96;
-        private javax.swing.JLabel jLabel97;
-        private javax.swing.JLabel jLabel98;
-        private javax.swing.JLabel jLabel99;
-        private javax.swing.JLabel jLjugador1;
-        private javax.swing.JLabel jLjugador2;
-        private javax.swing.JLabel jLjugador3;
-        private javax.swing.JPanel jPueblo;
-        private javax.swing.JScrollPane jScrollPane1;
-        private javax.swing.JScrollPane jScrollPane2;
-        private javax.swing.JScrollPane jScrollPane3;
-        private javax.swing.JTextArea jTextArea1;
-        private javax.swing.JTextArea jTextArea2;
-        private javax.swing.JTextArea jTextArea3;
-        private javax.swing.JLabel lbVida;
-        private javax.swing.JTextField txfCommand;
-        // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Nombrejugador;
+    private javax.swing.JButton btnConnect;
+    private javax.swing.JButton btnSend1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
+    private javax.swing.JLabel jLabel112;
+    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
+    private javax.swing.JLabel jLabel152;
+    private javax.swing.JLabel jLabel153;
+    private javax.swing.JLabel jLabel154;
+    private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
+    private javax.swing.JLabel jLabel158;
+    private javax.swing.JLabel jLabel159;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel160;
+    private javax.swing.JLabel jLabel161;
+    private javax.swing.JLabel jLabel162;
+    private javax.swing.JLabel jLabel163;
+    private javax.swing.JLabel jLabel164;
+    private javax.swing.JLabel jLabel165;
+    private javax.swing.JLabel jLabel166;
+    private javax.swing.JLabel jLabel167;
+    private javax.swing.JLabel jLabel168;
+    private javax.swing.JLabel jLabel169;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel170;
+    private javax.swing.JLabel jLabel171;
+    private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
+    private javax.swing.JLabel jLabel174;
+    private javax.swing.JLabel jLabel175;
+    private javax.swing.JLabel jLabel176;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
+    private javax.swing.JLabel jLabel182;
+    private javax.swing.JLabel jLabel183;
+    private javax.swing.JLabel jLabel184;
+    private javax.swing.JLabel jLabel185;
+    private javax.swing.JLabel jLabel186;
+    private javax.swing.JLabel jLabel187;
+    private javax.swing.JLabel jLabel188;
+    private javax.swing.JLabel jLabel189;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel190;
+    private javax.swing.JLabel jLabel191;
+    private javax.swing.JLabel jLabel192;
+    private javax.swing.JLabel jLabel193;
+    private javax.swing.JLabel jLabel194;
+    private javax.swing.JLabel jLabel195;
+    private javax.swing.JLabel jLabel196;
+    private javax.swing.JLabel jLabel197;
+    private javax.swing.JLabel jLabel198;
+    private javax.swing.JLabel jLabel199;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel200;
+    private javax.swing.JLabel jLabel201;
+    private javax.swing.JLabel jLabel202;
+    private javax.swing.JLabel jLabel203;
+    private javax.swing.JLabel jLabel204;
+    private javax.swing.JLabel jLabel205;
+    private javax.swing.JLabel jLabel206;
+    private javax.swing.JLabel jLabel207;
+    private javax.swing.JLabel jLabel208;
+    private javax.swing.JLabel jLabel209;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel210;
+    private javax.swing.JLabel jLabel211;
+    private javax.swing.JLabel jLabel212;
+    private javax.swing.JLabel jLabel213;
+    private javax.swing.JLabel jLabel214;
+    private javax.swing.JLabel jLabel215;
+    private javax.swing.JLabel jLabel216;
+    private javax.swing.JLabel jLabel217;
+    private javax.swing.JLabel jLabel218;
+    private javax.swing.JLabel jLabel219;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel220;
+    private javax.swing.JLabel jLabel221;
+    private javax.swing.JLabel jLabel222;
+    private javax.swing.JLabel jLabel223;
+    private javax.swing.JLabel jLabel224;
+    private javax.swing.JLabel jLabel225;
+    private javax.swing.JLabel jLabel226;
+    private javax.swing.JLabel jLabel227;
+    private javax.swing.JLabel jLabel228;
+    private javax.swing.JLabel jLabel229;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel230;
+    private javax.swing.JLabel jLabel231;
+    private javax.swing.JLabel jLabel232;
+    private javax.swing.JLabel jLabel233;
+    private javax.swing.JLabel jLabel234;
+    private javax.swing.JLabel jLabel235;
+    private javax.swing.JLabel jLabel236;
+    private javax.swing.JLabel jLabel237;
+    private javax.swing.JLabel jLabel238;
+    private javax.swing.JLabel jLabel239;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel240;
+    private javax.swing.JLabel jLabel241;
+    private javax.swing.JLabel jLabel242;
+    private javax.swing.JLabel jLabel243;
+    private javax.swing.JLabel jLabel244;
+    private javax.swing.JLabel jLabel245;
+    private javax.swing.JLabel jLabel246;
+    private javax.swing.JLabel jLabel247;
+    private javax.swing.JLabel jLabel248;
+    private javax.swing.JLabel jLabel249;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel250;
+    private javax.swing.JLabel jLabel251;
+    private javax.swing.JLabel jLabel252;
+    private javax.swing.JLabel jLabel253;
+    private javax.swing.JLabel jLabel254;
+    private javax.swing.JLabel jLabel255;
+    private javax.swing.JLabel jLabel256;
+    private javax.swing.JLabel jLabel257;
+    private javax.swing.JLabel jLabel258;
+    private javax.swing.JLabel jLabel259;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel260;
+    private javax.swing.JLabel jLabel261;
+    private javax.swing.JLabel jLabel262;
+    private javax.swing.JLabel jLabel263;
+    private javax.swing.JLabel jLabel264;
+    private javax.swing.JLabel jLabel265;
+    private javax.swing.JLabel jLabel266;
+    private javax.swing.JLabel jLabel267;
+    private javax.swing.JLabel jLabel268;
+    private javax.swing.JLabel jLabel269;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel270;
+    private javax.swing.JLabel jLabel271;
+    private javax.swing.JLabel jLabel272;
+    private javax.swing.JLabel jLabel273;
+    private javax.swing.JLabel jLabel274;
+    private javax.swing.JLabel jLabel275;
+    private javax.swing.JLabel jLabel276;
+    private javax.swing.JLabel jLabel277;
+    private javax.swing.JLabel jLabel278;
+    private javax.swing.JLabel jLabel279;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel280;
+    private javax.swing.JLabel jLabel281;
+    private javax.swing.JLabel jLabel282;
+    private javax.swing.JLabel jLabel283;
+    private javax.swing.JLabel jLabel284;
+    private javax.swing.JLabel jLabel285;
+    private javax.swing.JLabel jLabel286;
+    private javax.swing.JLabel jLabel287;
+    private javax.swing.JLabel jLabel288;
+    private javax.swing.JLabel jLabel289;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel290;
+    private javax.swing.JLabel jLabel291;
+    private javax.swing.JLabel jLabel292;
+    private javax.swing.JLabel jLabel293;
+    private javax.swing.JLabel jLabel294;
+    private javax.swing.JLabel jLabel295;
+    private javax.swing.JLabel jLabel296;
+    private javax.swing.JLabel jLabel297;
+    private javax.swing.JLabel jLabel298;
+    private javax.swing.JLabel jLabel299;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel300;
+    private javax.swing.JLabel jLabel301;
+    private javax.swing.JLabel jLabel302;
+    private javax.swing.JLabel jLabel303;
+    private javax.swing.JLabel jLabel304;
+    private javax.swing.JLabel jLabel305;
+    private javax.swing.JLabel jLabel306;
+    private javax.swing.JLabel jLabel307;
+    private javax.swing.JLabel jLabel308;
+    private javax.swing.JLabel jLabel309;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel310;
+    private javax.swing.JLabel jLabel311;
+    private javax.swing.JLabel jLabel312;
+    private javax.swing.JLabel jLabel313;
+    private javax.swing.JLabel jLabel314;
+    private javax.swing.JLabel jLabel315;
+    private javax.swing.JLabel jLabel316;
+    private javax.swing.JLabel jLabel317;
+    private javax.swing.JLabel jLabel318;
+    private javax.swing.JLabel jLabel319;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel320;
+    private javax.swing.JLabel jLabel321;
+    private javax.swing.JLabel jLabel322;
+    private javax.swing.JLabel jLabel323;
+    private javax.swing.JLabel jLabel324;
+    private javax.swing.JLabel jLabel325;
+    private javax.swing.JLabel jLabel326;
+    private javax.swing.JLabel jLabel327;
+    private javax.swing.JLabel jLabel328;
+    private javax.swing.JLabel jLabel329;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel330;
+    private javax.swing.JLabel jLabel331;
+    private javax.swing.JLabel jLabel332;
+    private javax.swing.JLabel jLabel333;
+    private javax.swing.JLabel jLabel334;
+    private javax.swing.JLabel jLabel335;
+    private javax.swing.JLabel jLabel336;
+    private javax.swing.JLabel jLabel337;
+    private javax.swing.JLabel jLabel338;
+    private javax.swing.JLabel jLabel339;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel340;
+    private javax.swing.JLabel jLabel341;
+    private javax.swing.JLabel jLabel342;
+    private javax.swing.JLabel jLabel343;
+    private javax.swing.JLabel jLabel344;
+    private javax.swing.JLabel jLabel345;
+    private javax.swing.JLabel jLabel346;
+    private javax.swing.JLabel jLabel347;
+    private javax.swing.JLabel jLabel348;
+    private javax.swing.JLabel jLabel349;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel350;
+    private javax.swing.JLabel jLabel351;
+    private javax.swing.JLabel jLabel352;
+    private javax.swing.JLabel jLabel353;
+    private javax.swing.JLabel jLabel354;
+    private javax.swing.JLabel jLabel355;
+    private javax.swing.JLabel jLabel356;
+    private javax.swing.JLabel jLabel357;
+    private javax.swing.JLabel jLabel358;
+    private javax.swing.JLabel jLabel359;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel360;
+    private javax.swing.JLabel jLabel361;
+    private javax.swing.JLabel jLabel362;
+    private javax.swing.JLabel jLabel363;
+    private javax.swing.JLabel jLabel364;
+    private javax.swing.JLabel jLabel365;
+    private javax.swing.JLabel jLabel366;
+    private javax.swing.JLabel jLabel367;
+    private javax.swing.JLabel jLabel368;
+    private javax.swing.JLabel jLabel369;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel370;
+    private javax.swing.JLabel jLabel371;
+    private javax.swing.JLabel jLabel372;
+    private javax.swing.JLabel jLabel373;
+    private javax.swing.JLabel jLabel374;
+    private javax.swing.JLabel jLabel375;
+    private javax.swing.JLabel jLabel376;
+    private javax.swing.JLabel jLabel377;
+    private javax.swing.JLabel jLabel378;
+    private javax.swing.JLabel jLabel379;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel380;
+    private javax.swing.JLabel jLabel381;
+    private javax.swing.JLabel jLabel382;
+    private javax.swing.JLabel jLabel383;
+    private javax.swing.JLabel jLabel384;
+    private javax.swing.JLabel jLabel385;
+    private javax.swing.JLabel jLabel386;
+    private javax.swing.JLabel jLabel387;
+    private javax.swing.JLabel jLabel388;
+    private javax.swing.JLabel jLabel389;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel390;
+    private javax.swing.JLabel jLabel391;
+    private javax.swing.JLabel jLabel392;
+    private javax.swing.JLabel jLabel393;
+    private javax.swing.JLabel jLabel394;
+    private javax.swing.JLabel jLabel395;
+    private javax.swing.JLabel jLabel396;
+    private javax.swing.JLabel jLabel397;
+    private javax.swing.JLabel jLabel398;
+    private javax.swing.JLabel jLabel399;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel400;
+    private javax.swing.JLabel jLabel401;
+    private javax.swing.JLabel jLabel402;
+    private javax.swing.JLabel jLabel403;
+    private javax.swing.JLabel jLabel404;
+    private javax.swing.JLabel jLabel405;
+    private javax.swing.JLabel jLabel406;
+    private javax.swing.JLabel jLabel407;
+    private javax.swing.JLabel jLabel408;
+    private javax.swing.JLabel jLabel409;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel410;
+    private javax.swing.JLabel jLabel411;
+    private javax.swing.JLabel jLabel412;
+    private javax.swing.JLabel jLabel413;
+    private javax.swing.JLabel jLabel414;
+    private javax.swing.JLabel jLabel415;
+    private javax.swing.JLabel jLabel416;
+    private javax.swing.JLabel jLabel417;
+    private javax.swing.JLabel jLabel418;
+    private javax.swing.JLabel jLabel419;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel420;
+    private javax.swing.JLabel jLabel421;
+    private javax.swing.JLabel jLabel422;
+    private javax.swing.JLabel jLabel423;
+    private javax.swing.JLabel jLabel424;
+    private javax.swing.JLabel jLabel425;
+    private javax.swing.JLabel jLabel426;
+    private javax.swing.JLabel jLabel427;
+    private javax.swing.JLabel jLabel428;
+    private javax.swing.JLabel jLabel429;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel430;
+    private javax.swing.JLabel jLabel431;
+    private javax.swing.JLabel jLabel432;
+    private javax.swing.JLabel jLabel433;
+    private javax.swing.JLabel jLabel434;
+    private javax.swing.JLabel jLabel435;
+    private javax.swing.JLabel jLabel436;
+    private javax.swing.JLabel jLabel437;
+    private javax.swing.JLabel jLabel438;
+    private javax.swing.JLabel jLabel439;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel440;
+    private javax.swing.JLabel jLabel441;
+    private javax.swing.JLabel jLabel442;
+    private javax.swing.JLabel jLabel443;
+    private javax.swing.JLabel jLabel444;
+    private javax.swing.JLabel jLabel445;
+    private javax.swing.JLabel jLabel446;
+    private javax.swing.JLabel jLabel447;
+    private javax.swing.JLabel jLabel448;
+    private javax.swing.JLabel jLabel449;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel450;
+    private javax.swing.JLabel jLabel451;
+    private javax.swing.JLabel jLabel452;
+    private javax.swing.JLabel jLabel453;
+    private javax.swing.JLabel jLabel454;
+    private javax.swing.JLabel jLabel455;
+    private javax.swing.JLabel jLabel456;
+    private javax.swing.JLabel jLabel457;
+    private javax.swing.JLabel jLabel458;
+    private javax.swing.JLabel jLabel459;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel460;
+    private javax.swing.JLabel jLabel461;
+    private javax.swing.JLabel jLabel462;
+    private javax.swing.JLabel jLabel463;
+    private javax.swing.JLabel jLabel464;
+    private javax.swing.JLabel jLabel465;
+    private javax.swing.JLabel jLabel466;
+    private javax.swing.JLabel jLabel467;
+    private javax.swing.JLabel jLabel468;
+    private javax.swing.JLabel jLabel469;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel470;
+    private javax.swing.JLabel jLabel471;
+    private javax.swing.JLabel jLabel472;
+    private javax.swing.JLabel jLabel473;
+    private javax.swing.JLabel jLabel474;
+    private javax.swing.JLabel jLabel475;
+    private javax.swing.JLabel jLabel476;
+    private javax.swing.JLabel jLabel477;
+    private javax.swing.JLabel jLabel478;
+    private javax.swing.JLabel jLabel479;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel480;
+    private javax.swing.JLabel jLabel481;
+    private javax.swing.JLabel jLabel482;
+    private javax.swing.JLabel jLabel483;
+    private javax.swing.JLabel jLabel484;
+    private javax.swing.JLabel jLabel485;
+    private javax.swing.JLabel jLabel486;
+    private javax.swing.JLabel jLabel487;
+    private javax.swing.JLabel jLabel488;
+    private javax.swing.JLabel jLabel489;
+    private javax.swing.JLabel jLabel49;
+    private javax.swing.JLabel jLabel490;
+    private javax.swing.JLabel jLabel491;
+    private javax.swing.JLabel jLabel492;
+    private javax.swing.JLabel jLabel493;
+    private javax.swing.JLabel jLabel494;
+    private javax.swing.JLabel jLabel495;
+    private javax.swing.JLabel jLabel496;
+    private javax.swing.JLabel jLabel497;
+    private javax.swing.JLabel jLabel498;
+    private javax.swing.JLabel jLabel499;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel500;
+    private javax.swing.JLabel jLabel501;
+    private javax.swing.JLabel jLabel502;
+    private javax.swing.JLabel jLabel503;
+    private javax.swing.JLabel jLabel504;
+    private javax.swing.JLabel jLabel505;
+    private javax.swing.JLabel jLabel506;
+    private javax.swing.JLabel jLabel507;
+    private javax.swing.JLabel jLabel508;
+    private javax.swing.JLabel jLabel509;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel510;
+    private javax.swing.JLabel jLabel511;
+    private javax.swing.JLabel jLabel512;
+    private javax.swing.JLabel jLabel513;
+    private javax.swing.JLabel jLabel514;
+    private javax.swing.JLabel jLabel515;
+    private javax.swing.JLabel jLabel516;
+    private javax.swing.JLabel jLabel517;
+    private javax.swing.JLabel jLabel518;
+    private javax.swing.JLabel jLabel519;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel520;
+    private javax.swing.JLabel jLabel521;
+    private javax.swing.JLabel jLabel522;
+    private javax.swing.JLabel jLabel523;
+    private javax.swing.JLabel jLabel524;
+    private javax.swing.JLabel jLabel525;
+    private javax.swing.JLabel jLabel526;
+    private javax.swing.JLabel jLabel527;
+    private javax.swing.JLabel jLabel528;
+    private javax.swing.JLabel jLabel529;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel530;
+    private javax.swing.JLabel jLabel531;
+    private javax.swing.JLabel jLabel532;
+    private javax.swing.JLabel jLabel533;
+    private javax.swing.JLabel jLabel534;
+    private javax.swing.JLabel jLabel535;
+    private javax.swing.JLabel jLabel536;
+    private javax.swing.JLabel jLabel537;
+    private javax.swing.JLabel jLabel538;
+    private javax.swing.JLabel jLabel539;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel540;
+    private javax.swing.JLabel jLabel541;
+    private javax.swing.JLabel jLabel542;
+    private javax.swing.JLabel jLabel543;
+    private javax.swing.JLabel jLabel544;
+    private javax.swing.JLabel jLabel545;
+    private javax.swing.JLabel jLabel546;
+    private javax.swing.JLabel jLabel547;
+    private javax.swing.JLabel jLabel548;
+    private javax.swing.JLabel jLabel549;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel550;
+    private javax.swing.JLabel jLabel551;
+    private javax.swing.JLabel jLabel552;
+    private javax.swing.JLabel jLabel553;
+    private javax.swing.JLabel jLabel554;
+    private javax.swing.JLabel jLabel555;
+    private javax.swing.JLabel jLabel556;
+    private javax.swing.JLabel jLabel557;
+    private javax.swing.JLabel jLabel558;
+    private javax.swing.JLabel jLabel559;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel560;
+    private javax.swing.JLabel jLabel561;
+    private javax.swing.JLabel jLabel562;
+    private javax.swing.JLabel jLabel563;
+    private javax.swing.JLabel jLabel564;
+    private javax.swing.JLabel jLabel565;
+    private javax.swing.JLabel jLabel566;
+    private javax.swing.JLabel jLabel567;
+    private javax.swing.JLabel jLabel568;
+    private javax.swing.JLabel jLabel569;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel570;
+    private javax.swing.JLabel jLabel571;
+    private javax.swing.JLabel jLabel572;
+    private javax.swing.JLabel jLabel573;
+    private javax.swing.JLabel jLabel574;
+    private javax.swing.JLabel jLabel575;
+    private javax.swing.JLabel jLabel576;
+    private javax.swing.JLabel jLabel577;
+    private javax.swing.JLabel jLabel578;
+    private javax.swing.JLabel jLabel579;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel580;
+    private javax.swing.JLabel jLabel581;
+    private javax.swing.JLabel jLabel582;
+    private javax.swing.JLabel jLabel583;
+    private javax.swing.JLabel jLabel584;
+    private javax.swing.JLabel jLabel585;
+    private javax.swing.JLabel jLabel586;
+    private javax.swing.JLabel jLabel587;
+    private javax.swing.JLabel jLabel588;
+    private javax.swing.JLabel jLabel589;
+    private javax.swing.JLabel jLabel59;
+    private javax.swing.JLabel jLabel590;
+    private javax.swing.JLabel jLabel591;
+    private javax.swing.JLabel jLabel592;
+    private javax.swing.JLabel jLabel593;
+    private javax.swing.JLabel jLabel594;
+    private javax.swing.JLabel jLabel595;
+    private javax.swing.JLabel jLabel596;
+    private javax.swing.JLabel jLabel597;
+    private javax.swing.JLabel jLabel598;
+    private javax.swing.JLabel jLabel599;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel600;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
+    private javax.swing.JLabel jLjugador1;
+    private javax.swing.JLabel jLjugador2;
+    private javax.swing.JLabel jLjugador3;
+    private javax.swing.JPanel jPueblo;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea jTextArea3;
+    private javax.swing.JLabel lbNombreP;
+    private javax.swing.JLabel lbNombreP1;
+    private javax.swing.JLabel lbNombreP2;
+    private javax.swing.JLabel lbResistenciaP;
+    private javax.swing.JLabel lbResistenciaP1;
+    private javax.swing.JLabel lbResistenciaP2;
+    private javax.swing.JLabel lbSanacionP;
+    private javax.swing.JLabel lbSanacionP1;
+    private javax.swing.JLabel lbSanacionP2;
+    private javax.swing.JLabel lbVida1;
+    private javax.swing.JLabel lbVidaP;
+    private javax.swing.JLabel lbVidaP1;
+    private javax.swing.JLabel lbVidaP2;
+    private javax.swing.JTextField txfCommand;
+    // End of variables declaration//GEN-END:variables
 
         public JLabel getNombrejugador() {
                 return Nombrejugador;
@@ -6028,13 +6069,7 @@ public class Pantalla extends javax.swing.JFrame {
                 return jLabel10;
         }
 
-        public JLabel setlbVida() {
-                return lbVida;
-        }
-
-        public JLabel getlbVida() {
-                return lbVida;
-        }
+ 
 
         public JTextArea getjTextArea1() {
                 return jTextArea1;

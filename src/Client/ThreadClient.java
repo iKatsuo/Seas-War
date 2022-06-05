@@ -45,6 +45,7 @@ public class ThreadClient extends Thread{
 //              client.screenRef2.showClientMessage(readMessage.executeOnClient());
 //            }
             //client.screenRef.showClientMessage(readMessage.executeOnClient());
+       
           client.screenRef2.showClientMessage(readMessage.executeOnClient());
             
             if (readMessage.isIsPrivateChat()){
@@ -52,10 +53,8 @@ public class ThreadClient extends Thread{
                 client.screenRef2.showClientMessage("Recibido: " + readMessage.executeOnClient());
                 
                 
-            }else {
-//                if (readMessage){
-//                client.screenRef.showClientMessage("ATAQUE: " + readMessage.toString());
             }
+  
         }
     }
 }

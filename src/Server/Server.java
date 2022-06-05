@@ -86,6 +86,8 @@ public class Server extends Thread{
                 Socket newSocket = serverSoccket.accept();
                 this.screenRef.showServerMessage("Nuevo cliente conectado");
                 ThreadServer newThread = new ThreadServer(newSocket, this);  
+             
+                
                 newThread.start();
                 connections.add(newThread);
                 this.screenRef.showServerMessage("Nuevo thread creado");

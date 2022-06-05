@@ -84,7 +84,7 @@ public class ThreadServer extends Thread {
             }
 
             if (readCommand.isPrivateChat()) {
-
+                
                 System.out.println("preunta si es chat privado");
                 System.out.println("tamanio del arrego " + server.getConnections().size());
                 for (int i = 0; i < server.getConnections().size(); i++) {

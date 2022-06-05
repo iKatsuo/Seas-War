@@ -25,8 +25,7 @@ public class CommandFactory {
                 return new ChatCommand(name, args);
             case "NUEVOJUGADOR":
                 return new nuevojugadorCommand(name, args);
-            case "NUEVOPERSONAJE":
-                return new NuevoPersonajeCommand(name, args);
+          
             
             
             default:

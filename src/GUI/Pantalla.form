@@ -29,29 +29,88 @@
                   <Component id="jScrollPane3" min="-2" pref="226" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jPueblo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jLjugador1" alignment="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="jLjugador2" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
-                          <Component id="jLjugador3" pref="0" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane2" alignment="1" pref="916" max="32767" attributes="0"/>
+                          <Component id="txfCommand" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbVida" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnSend1" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                          <Component id="btnConnect" min="-2" pref="131" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jScrollPane2" alignment="1" pref="916" max="32767" attributes="0"/>
-                      <Component id="txfCommand" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jPueblo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="117" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="jLjugador1" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jLjugador2" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
+                                  <Component id="jLjugador3" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                                      <Component id="lbVida1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lbVidaP2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbSanacionP2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lbVidaP" max="32767" attributes="0"/>
+                                          <Component id="lbNombreP" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lbResistenciaP" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lbSanacionP" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="lbVidaP1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Component id="lbNombreP1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                              <Component id="lbSanacionP1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                              <Component id="lbResistenciaP1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lbNombreP2" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                      <Component id="lbResistenciaP2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="Nombrejugador" min="-2" pref="249" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnSend1" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
-                  <Component id="btnConnect" min="-2" pref="131" max="-2" attributes="0"/>
-                  <Component id="Nombrejugador" alignment="0" min="-2" pref="249" max="-2" attributes="0"/>
-              </Group>
+              <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -62,31 +121,66 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Component id="jLjugador1" min="-2" pref="141" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbNombreP" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                                  <Component id="lbResistenciaP" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbVidaP" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbSanacionP" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbNombreP1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbResistenciaP1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbVidaP1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbSanacionP1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbNombreP2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbResistenciaP2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lbVidaP2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lbSanacionP2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                              <Component id="lbVida" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPueblo" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane1" min="-2" pref="206" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane3" min="-2" pref="206" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="Nombrejugador" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="lbVida1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLjugador1" min="-2" pref="141" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLjugador2" min="-2" pref="125" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="33" max="32767" attributes="0"/>
                       <Component id="jLjugador3" min="-2" pref="113" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="Nombrejugador" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jPueblo" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPane1" min="-2" pref="206" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane3" min="-2" pref="206" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
                   <Component id="btnConnect" min="-2" pref="37" max="-2" attributes="0"/>
@@ -9952,9 +10046,9 @@
         <Property name="text" type="java.lang.String" value="nombre : juagador"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lbVida">
+    <Component class="javax.swing.JLabel" name="lbVidaP">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel601"/>
+        <Property name="text" type="java.lang.String" value="Vida "/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -9987,5 +10081,63 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="lbVida1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbResistenciaP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Resistencia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbSanacionP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="sanacion"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbNombreP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre personaje 1"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbVidaP1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vida "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbNombreP1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre personaje 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbSanacionP1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="sanacion"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbResistenciaP1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Resistencia"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbVidaP2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vida "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbNombreP2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre personaje 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbSanacionP2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="sanacion"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbResistenciaP2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Resistencia"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>
