@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import seas.war.Jugador;
 
 public class nuevojugadorCommand extends BaseCommand implements Serializable{
-     public Jugador jugador;
+     
     
 
     public nuevojugadorCommand(String commandName, String[] args) {
         
-        super(commandName, args, true,true ,false);
+        super(commandName, args, true,true ,false,false);
       
        
         
@@ -29,9 +29,7 @@ public class nuevojugadorCommand extends BaseCommand implements Serializable{
         return "Recibido: creado  " + CommandUtils.concatArray(getArgs());
     }
     
-    public  Jugador getJugador(){
-        return jugador;
-    }
+ 
 
    
 

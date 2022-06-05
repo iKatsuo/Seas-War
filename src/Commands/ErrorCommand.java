@@ -29,7 +29,7 @@ public class ErrorCommand  extends BaseCommand implements Serializable{
     }
 
     public ErrorCommand(String commandName, String[] args) {
-        super(commandName, args, false, false,false);
+        super(commandName, args, false, false,false,false);
     }
 
     

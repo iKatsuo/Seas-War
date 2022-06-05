@@ -78,6 +78,7 @@ public class ThreadServer extends Thread {
 
             if (readCommand.isNuevoJugador()) {
                 this.name = readCommand.getArgs()[1];
+
                // server.broadcast(readCommand);
 
             }
@@ -102,8 +103,11 @@ public class ThreadServer extends Thread {
 
                 }
 
+    
+
 //         
             } else {
+                
                 server.screenRef.showServerMessage(readCommand.executeOnServer());
             }
         }

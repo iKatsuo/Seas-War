@@ -22,6 +22,12 @@ public class ServerFrame extends javax.swing.JFrame {
         
     }
 
+    public void recorrer(String msg){
+        server.getConnections();
+        
+        
+    }
+
     
 
 

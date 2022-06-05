@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class ChatCommand extends BaseCommand implements Serializable{
 
     public ChatCommand(String commandName, String[] args) {
-        super(commandName, args ,true, false ,false);
+        super(commandName, args ,true, false ,false,false);
     }
 
    

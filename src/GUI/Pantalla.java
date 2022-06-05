@@ -20,6 +20,14 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 import seas.war.Jugador;
 
+import java.awt.Image;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 /**
  *
  * @author juanj
@@ -5262,6 +5270,64 @@ public class Pantalla extends javax.swing.JFrame {
 
                 if (!comando.equals("")) {
                         String array[] = CommandUtils.convertToArray(comando);
+                        if(array[0].equals("IMAGENURL")){
+                                
+                                if (array[0].toUpperCase().equalsIgnoreCase("IMAGENURL")) {
+                                       
+                                        URL url = null;
+                                        Image imURL = null;
+                                        System.out.println(array[0]+array[1]+array[2]);
+                                        if (array[1].equals("A")) {
+                                                System.out.println("entrooo");;
+                                                try {
+                                                        System.out.println(array[2]);
+                                                        url = new URL(array[2]);
+                                                } catch (MalformedURLException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                
+                                                try {
+                                                        imURL = ImageIO.read(url);
+                                                } catch (IOException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                                                jLjugador1.setIcon(new ImageIcon(imURL));    
+        
+                                        } else if (array[1].equals('2')) {
+                                                try {
+                                                        url = new URL(array[2]);
+                                                } catch (MalformedURLException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                
+                                                try {
+                                                        imURL = ImageIO.read(url);
+                                                } catch (IOException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                                                jLjugador2.setIcon(new ImageIcon(imURL));
+                                        } else if (array[1].equals('3')) {
+                                                try {
+                                                        url = new URL(array[2]);
+                                                } catch (MalformedURLException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                
+                                                try {
+                                                        imURL = ImageIO.read(url);
+                                                } catch (IOException ex) {
+                                                        Logger.getLogger(Pantalla.class.getName()).log(Level.SEVERE, null, ex);
+                                                }
+                                                jLjugador2.setIcon(new ImageIcon(imURL));
+                                        }
+        
+        
+                                                                             
+        
+        
+        
+                                }
+                        }
                         BaseCommand newCommand = CommandFactory.getCommand(array[0], array, this);
 
                         if (newCommand.getCommandName().toUpperCase().equals("ERROR")) {
@@ -5275,6 +5341,7 @@ public class Pantalla extends javax.swing.JFrame {
                                                 showClientMessage(newCommand.executeOnClient());
 
                                         }
+
 
                                         client.writer.writeObject(newCommand);
 

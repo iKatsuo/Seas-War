@@ -8,15 +8,15 @@ import seas.war.Personaje;
 public class NuevoPersonajeCommand extends BaseCommand {
 
     public NuevoPersonajeCommand(String commandName, String[] args) {
-        super(commandName, args, true, false,false);
+        super(commandName, args, false, false,false,true);
 
         int poder = Integer.parseInt(args[2]);
         int resistencia = Integer.parseInt(args[3]);
         int sanacion = Integer.parseInt(args[4]);
         int nCasillas = Integer.parseInt(args[5]);
 
-        Personaje nuevo = new Personaje(args[1], poder, resistencia, sanacion, nCasillas, 100);
-        Jugador.addPersonaje(nuevo);
+       // Personaje nuevo = new Personaje(args[1], poder, resistencia, sanacion, nCasillas, 100);
+       
         
     }
 
@@ -29,4 +29,6 @@ public class NuevoPersonajeCommand extends BaseCommand {
     public String executeOnClient() {
         return "Recibido: creado  " + CommandUtils.concatArray(getArgs());
     }
+
+
 }

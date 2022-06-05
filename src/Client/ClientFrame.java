@@ -20,7 +20,7 @@ import seas.war.Jugador;
  * @author diemo
  */
 public class ClientFrame extends javax.swing.JFrame {
-    public static ArrayList<Jugador> Jugadores;
+    public static ArrayList<ThreadClient> Jugadores;
     private Client client;
 
     /**

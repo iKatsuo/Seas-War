@@ -20,9 +20,10 @@ public abstract class BaseCommand implements iCommand, Serializable{
     private boolean isBroadcast;
     private boolean isNuevoJugador;
     private boolean isPrivateChat;
+    private boolean nuevoPersonaje;
     private String commandName;
 
-    public BaseCommand(String commandName, String[] args,boolean isBroadcast, boolean isNuevoJugador,boolean isPrivateChat) {
+    public BaseCommand(String commandName, String[] args,boolean isBroadcast, boolean isNuevoJugador,boolean isPrivateChat, boolean nuevoPersona) {
         
         this.args = args;
        
@@ -71,6 +72,9 @@ public abstract class BaseCommand implements iCommand, Serializable{
         return isPrivateChat;
     }
     
+    public boolean isNuevoPersonaje() {
+        return nuevoPersonaje;
+    }
 
     
     public abstract String executeOnServer();
