@@ -5560,8 +5560,7 @@ public class Pantalla extends javax.swing.JFrame {
                                         } else if (newCommand.getCommandName().toUpperCase().equals("PRIVATECHAT")) {
                                                 showClientMessage(newCommand.executeOnClient());
 
-                                        }
-                                        else if (newCommand.getCommandName().toUpperCase().equals("CHAT")) {
+                                        } else if (newCommand.getCommandName().toUpperCase().equals("CHAT")) {
                                                 showClientMessage(newCommand.executeOnClient());
 
                                         }

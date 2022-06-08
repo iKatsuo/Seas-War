@@ -20,7 +20,7 @@ public abstract class BaseCommand implements iCommand, Serializable{
     private boolean isBroadcast;
     private boolean isNuevoJugador;
     private boolean isPrivateChat;
-    private boolean nuevoPersonaje;
+    private boolean isNuevoPersonaje;
     private String commandName;
 
     public BaseCommand(String commandName, String[] args,boolean isBroadcast, boolean isNuevoJugador,boolean isPrivateChat, boolean nuevoPersona) {
@@ -73,7 +73,7 @@ public abstract class BaseCommand implements iCommand, Serializable{
     }
     
     public boolean isNuevoPersonaje() {
-        return nuevoPersonaje;
+        return isNuevoPersonaje;
     }
 
     
